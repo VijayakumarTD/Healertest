@@ -12,6 +12,8 @@ public class ReusableActions extends Keywords {
 	public boolean loginMethod(WebDriver driver,String emailId,String password) {
 		
 		try {
+			
+			
 			waitForElement(driver, loginMain);
 			click(driver, loginMain);
 			wait(driver,"1");
@@ -74,6 +76,7 @@ public class ReusableActions extends Keywords {
 		
 
 	}
+	
 	
 	
 	

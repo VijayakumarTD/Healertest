@@ -1,6 +1,9 @@
 package scripts;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import commonMethods.Keywords;
 import commonMethods.Utils;
@@ -87,10 +90,12 @@ public class HealerActions extends Keywords {
 		
 		
 		navigateUrl(driver, URL);
-		deleteAllCookies(driver);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
 		
 		boolean login = reusableActions.loginMethod(driver, emailId, password);	
 		
+		wait(driver,"2");
 		/*
 		
 		
@@ -171,6 +176,7 @@ public class HealerActions extends Keywords {
 		waitForElement(driver, saveAndContinue);
 		click(driver, saveAndContinue);
 		wait(driver, "4");
+		
 		*/
 				
 	}
@@ -185,10 +191,12 @@ public class HealerActions extends Keywords {
 		String qualification1 = Utils.getDataFromTestData("Yoga_Class","Qualification");
 		String clientPrice = Utils.getDataFromTestData("Yoga_Class","ClientPrice");
 		String maximumregister = Utils.getDataFromTestData("Yoga_Class","MaximumRegister");
+		String LevelExpertise = Utils.getDataFromTestData("Yoga_Class","levelofExpertise");
+		
 
 		wait(driver, "3");
 		scrollUsingElement(driver,yogaClassDescription);	
-		verifyElementIsPresent(driver,yogaClassDescription);
+		waitForElement(driver,yogaClassDescription);
 		click(driver, yogaClassDescription);
 		wait(driver, "2");
 		
@@ -236,9 +244,31 @@ public class HealerActions extends Keywords {
 		sendKeys(driver, qualification, qualification1);	
 		wait(driver, "2");
 		click(driver, level1);
-		waitForElement(driver,threeYears);
-		click(driver, threeYears);
-		wait(driver, "2");
+		wait(driver, "3");
+		
+		if ("Not Certified" == LevelExpertise ) {
+			
+			waitForElement(driver, yogaNotCertified);
+			click(driver, yogaNotCertified);
+			wait(driver, "2");	
+			
+		}else if ("1+ years" == LevelExpertise ) {
+			waitForElement(driver, yogaCertified);
+			click(driver, yogaCertified);
+			wait(driver, "2");	
+			
+		}else if ("3+ years" == LevelExpertise ) {
+			waitForElement(driver,threeYears);
+			click(driver, threeYears);
+			wait(driver, "2");
+		}else if ("15+ years"==LevelExpertise) {
+			waitForElement(driver,yogaMaster);
+			click(driver, yogaMaster);
+			wait(driver, "2");
+			
+		}	
+		
+		
 		
 		//pricing
 		scrollUsingElement(driver, pricing);
@@ -291,11 +321,12 @@ public class HealerActions extends Keywords {
 		String personalDescription = Utils.getDataFromTestData("Personal_Yoga","PersonalYoga");
 		String qualification2 = Utils.getDataFromTestData("Personal_Yoga","Qualification");
 		String EnterPrice = Utils.getDataFromTestData("Personal_Yoga","EnterPrice");
+		String LevelExpertise = Utils.getDataFromTestData("Personal_Yoga","levelofExpertise");
 		
 		
 		wait(driver, "4");
 		scrollUsingElement(driver,personalYogaSession);	
-		verifyElementIsPresent(driver,personalYogaSession);
+		waitForElement(driver,personalYogaSession);
 		click(driver, personalYogaSession);
 		wait(driver, "2");
 		
@@ -340,9 +371,31 @@ public class HealerActions extends Keywords {
 		sendKeys(driver, qualification, qualification2);	
 		wait(driver, "2");
 		click(driver, level1);
-		waitForElement(driver,threeYears);
-		click(driver, threeYears);
-		wait(driver, "2");
+		wait(driver, "3");
+		
+		if ("Not Certified" == LevelExpertise ) {
+			
+			waitForElement(driver, yogaNotCertified);
+			click(driver, yogaNotCertified);
+			wait(driver, "2");	
+			
+		}else if ("1+ years" == LevelExpertise ) {
+			waitForElement(driver, yogaCertified);
+			click(driver, yogaCertified);
+			wait(driver, "2");	
+			
+		}else if ("3+ years" == LevelExpertise ) {
+			waitForElement(driver,yogaExpert);
+			click(driver, yogaExpert);
+			wait(driver, "2");
+		}else if ("15+ years"==LevelExpertise) {
+			waitForElement(driver,yogaMaster);
+			click(driver, yogaMaster);
+			wait(driver, "2");
+			
+		}	
+		
+		
 		
 		
 		//pricing
@@ -398,10 +451,11 @@ public class HealerActions extends Keywords {
 		String therapyDescription = Utils.getDataFromTestData("Yoga_Therapy","YogaTherapy");
 		String qualification3 = Utils.getDataFromTestData("Yoga_Therapy","Qualification");
 		String EnterPrice3 = Utils.getDataFromTestData("Yoga_Therapy","EnterPrice");
+		String LevelExpertise = Utils.getDataFromTestData("Yoga_Therapy","levelofExpertise");
 			
 		wait(driver, "2");
 		scrollUsingElement(driver,yogaTherapyDescr);	
-		verifyElementIsPresent(driver,yogaTherapyDescr);
+		waitForElement(driver,yogaTherapyDescr);
 		click(driver, yogaTherapyDescr);
 		wait(driver, "2");
 		
@@ -446,9 +500,29 @@ public class HealerActions extends Keywords {
 		sendKeys(driver, qualification, qualification3);	
 		wait(driver, "2");
 		click(driver, level1);
-		waitForElement(driver,threeYears);
-		click(driver, threeYears);
-		wait(driver, "2");
+		wait(driver, "3");
+		
+		if ("Not Certified" == LevelExpertise ) {
+			
+			waitForElement(driver, yogaNotCertified);
+			click(driver, yogaNotCertified);
+			wait(driver, "2");	
+			
+		}else if ("1+ years" == LevelExpertise ) {
+			waitForElement(driver, yogaCertified);
+			click(driver, yogaCertified);
+			wait(driver, "2");	
+			
+		}else if ("3+ years" == LevelExpertise ) {
+			waitForElement(driver,threeYears);
+			click(driver, threeYears);
+			wait(driver, "2");
+		}else if ("15+ years"==LevelExpertise) {
+			waitForElement(driver,yogaMaster);
+			click(driver, yogaMaster);
+			wait(driver, "2");
+			
+		}	
 		
 		
 		//pricing
@@ -511,6 +585,11 @@ public class HealerActions extends Keywords {
 		String PackageName = Utils.getDataFromTestData("Retreat_Service","PackageName");
 		String PackageFeature = Utils.getDataFromTestData("Retreat_Service","PackageFeature");
 		String OnePersonPrice = Utils.getDataFromTestData("Retreat_Service","OnePersonPrice");
+		String Time = Utils.getDataFromTestData("Retreat_Service", "Time");
+		String AgendaActivity= Utils.getDataFromTestData("Retreat_Service", "AgendaActivity");
+		String AgendaWhere = Utils.getDataFromTestData("Retreat_Service", "AgendaWhere");
+		
+		
 
 		
 		
@@ -561,8 +640,13 @@ public class HealerActions extends Keywords {
 		click(driver, crop);
 		wait(driver, "4");
 		
-		
 		scrollUsingElement(driver, qualificationTab);
+		waitForElement(driver, certificaiton);
+		click(driver, certificaiton);
+		wait(driver, "2");
+		click(driver, yes);
+		wait(driver, "2");
+		
 		wait(driver,"2");
 		sendKeys(driver, describeYourself,DescribeYourself);
 		wait(driver,"2");
@@ -581,7 +665,7 @@ public class HealerActions extends Keywords {
 			
 			wait(driver,"2");
 			click(driver, retreatEnd1);
-			
+			wait(driver,"2");
 			
 		} else {
 			
@@ -597,22 +681,20 @@ public class HealerActions extends Keywords {
 		wait(driver,"2");
 		
 		waitForElement(driver, timeAgenda);
-		sendKeys(driver, timeAgenda, "1111");
+		sendKeys(driver, timeAgenda, Time);
 		wait(driver,"2");
 		
 		
 		waitForElement(driver, activityAgenda);
-		sendKeys(driver, activityAgenda, "Retreat add");
+		sendKeys(driver, activityAgenda, AgendaActivity);
 		wait(driver,"2");
 		
 		waitForElement(driver, whereAgenda);
-		sendKeys(driver, whereAgenda, "Chennai");
+		sendKeys(driver, whereAgenda, AgendaWhere);
 		wait(driver,"2");
 		
-		
-	//	waitForElement(driver, plusAgenda);
-	//	click(driver, plusAgenda);
-		
+	
+	
 		wait(driver,"2");
 		scrollUsingElement(driver,saveAndContinue);
 		waitForElement(driver, saveAndContinue);
@@ -649,22 +731,23 @@ public class HealerActions extends Keywords {
 		
 		waitForElement(driver, savepackage);
 		click(driver, savepackage);
-		wait(driver,"2");
+		wait(driver,"4");
 		
 			
-		scrollUsingElement(driver,  moderateCancellation);
+		scrollUsingElement(driver,  moderateRetreat);
 		wait(driver,"2");
-		verifyElementIsPresent(driver, moderateCancellation);
-		click(driver, moderateCancellation);
-		
-		
-		
+		verifyElementIsPresent(driver, moderateRetreat);
+		click(driver, moderateRetreat);
+			
 		wait(driver,"2");
 		scrollUsingElement(driver,saveAndContinue);
 		waitForElement(driver, saveAndContinue);
 		click(driver, saveAndContinue);
 		wait(driver,"4");
 		
+		waitForElement(driver, firstRetreatComplete);
+		verifyElementIsPresent(driver, firstRetreatComplete);
+		wait(driver,"5");
 		
 	}
 	
@@ -746,7 +829,6 @@ public class HealerActions extends Keywords {
 			
 		
 	}
-
 	
 	
 	//Abhyanga
@@ -961,19 +1043,205 @@ public class HealerActions extends Keywords {
 		verifyElementIsPresent(driver, januVastiComplete);
 		wait(driver,"3");
 	
-		boolean logout = reusableActions.healerLogout(driver);
-		wait(driver,"2");
-		
-		
+			
 		
 		
 	}
 	
+	//Second Retreat service
+	
+	public void second_RetreatService(WebDriver driver) {
+		
+		
+		String RetreatName = Utils.getDataFromTestData("Second_RetreatService","RetreatName");
+		String RetreatDescription = Utils.getDataFromTestData("Second_RetreatService","RetreatDescription");
+		String DescribeYourself = Utils.getDataFromTestData("Second_RetreatService","DescribeYourself");
+		String MaximumNumber = Utils.getDataFromTestData("Second_RetreatService","MaximumNumber");
+		String PeopleNumber = Utils.getDataFromTestData("Second_RetreatService","PeopleNumber");
+		String PackageName = Utils.getDataFromTestData("Second_RetreatService","PackageName");
+		String PackageFeature = Utils.getDataFromTestData("Second_RetreatService","PackageFeature");
+		String OnePersonPrice = Utils.getDataFromTestData("Second_RetreatService","OnePersonPrice");
+		String Time = Utils.getDataFromTestData("Second_RetreatService", "Time");
+		String AgendaActivity= Utils.getDataFromTestData("Second_RetreatService", "AgendaActivity");
+		String AgendaWhere = Utils.getDataFromTestData("Second_RetreatService", "AgendaWhere");
+		
+		
+
+		
+		
+		wait(driver,"4");
+		scrollUsingElement(driver,addRetreat2);
+		wait(driver,"2");
+		waitForElement(driver, addRetreat2);
+		click(driver, addRetreat2);
+		wait(driver,"2");
+		sendKeys(driver, retreatName, RetreatName);
+		wait(driver,"2");
+		waitForElement(driver, retreatCheckbox);
+		click(driver, retreatCheckbox);
+		wait(driver,"2");
+		scrollUsingElement(driver,retreatCategory);
+		wait(driver,"2");
+		waitForElement(driver, retreatCategory);
+		click(driver, retreatCategory);
+		wait(driver,"2");
+		click(driver, yogaTraining);
+		wait(driver,"2");
+		sendKeys(driver, retreatDescribe,RetreatDescription);
+		wait(driver,"2");
+		wait(driver, "2");
+		click(driver, selectLanguage);
+		wait(driver, "2");
+		sendKeys(driver, selectEnglish,"English");
+		enter(driver);
+		wait(driver, "2");
+		
+		wait(driver, "2");
+		click(driver, servicePhoto1);
+		wait(driver, "1");
+		uploadFileAutoIT(System.getProperty("user.dir") + "\\uploads\\image1.jpg");
+		wait(driver, "3");
+		click(driver, crop);
+		wait(driver, "2");
+		click(driver, servicePhoto2);
+		wait(driver, "3");
+		uploadFileAutoIT(System.getProperty("user.dir") + "\\uploads\\image2.jpg");
+		wait(driver, "3");
+		click(driver, crop);
+		wait(driver, "2");
+		click(driver, servicePhoto3);
+		wait(driver, "3");
+		uploadFileAutoIT(System.getProperty("user.dir") + "\\uploads\\image3.jpg");
+		wait(driver, "2");
+		click(driver, crop);
+		wait(driver, "4");
+		
+		scrollUsingElement(driver, qualificationTab);
+		waitForElement(driver, certificaiton);
+		click(driver, certificaiton);
+		wait(driver, "2");
+		click(driver, yes);
+		wait(driver, "2");
+		
+		wait(driver,"2");
+		sendKeys(driver, describeYourself,DescribeYourself);
+		wait(driver,"2");
+		
+		scrollUsingElement(driver, fromDate);
+		wait(driver,"2");
+		
+		click(driver, fromDate);
+		wait(driver,"2");
+		click(driver, retreatStart);
+		wait(driver,"2");
+		
+		click(driver, toDate);
+		
+		if (isDisplayed(driver, retreatEnd1)) {
+			
+			wait(driver,"2");
+			click(driver, retreatEnd1);
+			wait(driver,"2");
+			
+		} else {
+			
+			wait(driver,"2");
+			click(driver, nextMonth);
+			wait(driver,"2");
+			click(driver, retreatEnd2);
+			wait(driver,"3");
+		}
+		
+		waitForElement(driver, addAgenda);
+		click(driver, addAgenda);
+		wait(driver,"2");
+		
+		waitForElement(driver, timeAgenda);
+		sendKeys(driver, timeAgenda, Time);
+		wait(driver,"2");
+		
+		
+		waitForElement(driver, activityAgenda);
+		sendKeys(driver, activityAgenda, AgendaActivity);
+		wait(driver,"2");
+		
+		waitForElement(driver, whereAgenda);
+		sendKeys(driver, whereAgenda, AgendaWhere);
+		wait(driver,"2");
+		
+	
+	
+		wait(driver,"2");
+		scrollUsingElement(driver,saveAndContinue);
+		waitForElement(driver, saveAndContinue);
+		click(driver, saveAndContinue);
+		wait(driver,"4");
+		
+		
+		waitForElement(driver, numberPeople);
+		clearAndType(driver, numberPeople, PeopleNumber);
+		wait(driver,"2");
+		
+		waitForElement(driver, maximumNumber);
+		clearAndType(driver, maximumNumber,MaximumNumber);
+		wait(driver,"2");
+		
+		waitForElement(driver, optional);
+		click(driver, optional);
+		wait(driver,"2");
+		
+		click(driver, addPackage);
+		wait(driver,"2");
+		
+		waitForElement(driver, packageName);
+		sendKeys(driver,packageName, PackageName);
+		wait(driver,"2");
+		
+		waitForElement(driver, packageFeature);
+		sendKeys(driver,packageFeature,PackageFeature);
+		wait(driver,"2");
+		
+		waitForElement(driver, onePersonPrice);
+		sendKeys(driver,onePersonPrice, OnePersonPrice);
+		wait(driver,"2");
+		
+		waitForElement(driver, savepackage);
+		click(driver, savepackage);
+		wait(driver,"4");
+		
+			
+		scrollUsingElement(driver,  moderateRetreat);
+		wait(driver,"2");
+		verifyElementIsPresent(driver, moderateRetreat);
+		click(driver, moderateRetreat);
+			
+		wait(driver,"2");
+		scrollUsingElement(driver,saveAndContinue);
+		waitForElement(driver, saveAndContinue);
+		click(driver, saveAndContinue);
+		wait(driver,"4");
+		
+		waitForElement(driver, secondRetreatComplete);
+		verifyElementIsPresent(driver, secondRetreatComplete);
+		wait(driver,"4");
+		
+		boolean logout = reusableActions.healerLogout(driver);
+		wait(driver,"2");
+		
+	}
+	
+ 
+	
+	
+	//service 
 	
 	public void healerIdVerify(WebDriver driver,String URL) {
 		
-		navigateUrl(driver, URL);
+		
 		deleteAllCookies(driver);
+		navigateUrl(driver, URL);
+		
+		
 		
 		String	emailId = Utils.getDataFromTestData("Healer_Login","EmailId");
 		String password = Utils.getDataFromTestData("Healer_Login","Password");
@@ -988,6 +1256,7 @@ public class HealerActions extends Keywords {
 		verifyElementIsPresent(driver,yogaClassActive);
 		verifyElementIsPresent(driver, personalYogaActive);
 		wait(driver,"2");
+		
 		verifyElementIsPresent(driver,yogaTherapyActive);
 		verifyElementIsPresent(driver, abhyangaActive);
 		verifyElementIsPresent(driver, januVastiComplete);
@@ -998,10 +1267,6 @@ public class HealerActions extends Keywords {
 		
 		boolean logout = reusableActions.healerLogout(driver);
 		wait(driver,"2");
-		
-		
-		
-		
 		
 		
 		

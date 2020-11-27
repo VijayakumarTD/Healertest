@@ -971,6 +971,22 @@ public class Keywords extends ATUReports implements OR {
 		Alert alert = driver.switchTo().alert();
 		alert.dismiss();
 	}
+	
+	public void acceptAlert(WebDriver driver) {
+		try {
+		
+				By cookies_accept = By.xpath("//button[text()='Accept']");
+				 WebDriverWait wait = new WebDriverWait(driver, 10);
+				 wait.until(ExpectedConditions.elementToBeClickable(cookies_accept)).click();
+				 wait(driver,"2");
+		
+			
+			
+		} catch (Exception e) {
+			
+		}
+		
+	}
 
 	public String promptBox(WebDriver driver, String path, String inputData) {
 		String[] values = splitXpath(path);

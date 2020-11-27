@@ -31,6 +31,8 @@ public interface OR {
 	 
 	 
 	//Healer service locators 
+	public static String acceptWebsite ="accept>//button[text()='Accept']";
+	
 	public static String loginMain ="Login button>//li[@class='nav-item']//a[text()='Login']";
 	public static String mainLocation="Main Location>//span[text()='“Main Location”']";
 	public static String locationName="Location Name>//input[@id='name']";
@@ -88,15 +90,16 @@ public interface OR {
 	public static String pricing ="Pricing>//strong[text()=' | Pricing']";
 	public static String serviceDuration="Duration of service>//select[@class=' custom-select ']";
 	public static String value30="Select 30>//select[@class=' custom-select ']//option[@value='1']";
-	public static String value45="Select 30>//select[@class=' custom-select ']//option[@value='2']";
-	public static String value50="Select 30>//select[@class=' custom-select ']//option[@value='3']";
-	public static String value60="Select 30>//select[@class=' custom-select ']//option[@value='4']";
-	public static String value90="Select 30>//select[@class=' custom-select ']//option[@value='5']";
-	public static String value120="Select 30>//select[@class=' custom-select ']//option[@value='6']";
+	public static String value45="Select 45>//select[@class=' custom-select ']//option[@value='2']";
+	public static String value50="Select 50>//select[@class=' custom-select ']//option[@value='3']";
+	public static String value60="Select 60>//select[@class=' custom-select ']//option[@value='4']";
+	public static String value90="Select 90>//select[@class=' custom-select ']//option[@value='5']";
+	public static String value120="Select 120>//select[@class=' custom-select ']//option[@value='6']";
 	
 	public static String perClientPrice="Per client price>//input[@placeholder='Enter price per client']";
 	public static String maximumRegister="Maximum Register>//input[@placeholder='Maximum #']";
 	public static String moderateCancellation="moderate>(//p[text()='Moderate']//preceding::span[@class='bmd-radio'])[2]";
+	public static String moderateRetreat ="Moderate>(//p[text()='Moderate']//preceding::span[@class='bmd-radio'])[4]";
 	public static String days="Days >//div//label[text()=' Days']";
 	public static String allCheckbox="All checkbox>(//input[@id='7']//following::span[@class='check'])[1]";
 	public static String selectTime="select Time >(//select[@class='custom-select'])[4]";
@@ -128,7 +131,8 @@ public interface OR {
 	
 	// Add retreat
 	
-	public static String addRetreat ="Add retreat>//li//a[text()='+ Add retreat or training services']";
+	public static String addRetreat ="Add retreat>(//li//a[text()='+ Add retreat or training services'])[1]";
+	public static String addRetreat2 ="Add retreat>(//li//a[text()='+ Add retreat or training services'])[2]";
 	public static String retreatName="Retreat Name>(//span[@class='bmd-form-group']/input)[1]";
 	public static String retreatCheckbox="Retreat Checkbox>//input[@value='retreat']//following::span[@class='bmd-radio']";
 	public static String retreatCategory="Retreat Category>(//select[@class='custom-select'])[1]";
@@ -136,8 +140,8 @@ public interface OR {
 	public static String retreatDescribe ="Describe retreat service>(//span[@class='bmd-form-group']//textarea[@class='form-control custom-form'])[1]";
 	public static String qualificationTab ="Qualification Retreat>//strong[text()='| Your qualification to provide this training or retreat']";
 	public static String describeYourself="Describe yourself>(//span[@class='bmd-form-group']//textarea[@class='form-control custom-form'])[1]";
-	public static String retreatStart ="Retreat Start Date>//td[@class=' ui-datepicker-days-cell-over  ui-datepicker-today']";
-	public static String retreatEnd1 ="Retreat End Date>//td[@class=' ui-datepicker-days-cell-over  ui-datepicker-today']";
+	public static String retreatStart ="Retreat Start Date>(//td[@class=' ui-datepicker-days-cell-over  ui-datepicker-today']//following::td)[1]";
+	public static String retreatEnd1 ="Retreat End Date>(//td[@class=' ui-datepicker-days-cell-over  ui-datepicker-today']//following::td)[1]";
 	public static String retreatEnd2="Retreat End Date>//table[@class='ui-datepicker-calendar']//tbody//tr[1]//td[7]";
 	public static String addAgenda = "Add Day Agenda>//a[text()='Add Day Agenda']";	
 	public static String timeAgenda ="day1>(//tbody//tr//td//input[@class='form-control custom-form p-0'])[1]";
@@ -152,8 +156,12 @@ public interface OR {
 	public static String packageFeature="Package Feature>//span//textarea[@placeholder='what is included in this package?']";
 	public static String onePersonPrice="one Person Registration>//input[@name='one_person_price']";
 	public static String savepackage="Save Package>//button[text()='Save package']";
+	public static String certificaiton = "Certification>//select[@class='custom-select width-60']";
+	public static String yes ="Yes>//select[@class='custom-select width-60']//option[text()='Yes']";
 	
-	
+	public static String firstRetreatComplete ="Retreat Complete>(//div[@class='table-responsive']//table//tbody//tr//td[text()='Yoga and Yoga Training']//following::td//a[text()='Complete'])[1]";
+	public static String secondRetreatComplete ="Retreat Complete>((//div[@class='table-responsive']//table//tbody//tr//td[text()='Yoga and Yoga Training'])[2]//following::td//a[text()='Complete'])[1]";
+
 	
 	
 	//Second Location

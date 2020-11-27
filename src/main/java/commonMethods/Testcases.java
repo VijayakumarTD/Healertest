@@ -58,8 +58,9 @@ public class Testcases extends Config {
 	}
 	
 	
+	
 	@Test
-	public void HealerProcess() throws InterruptedException {
+	public void TC001_HealerProcess() throws InterruptedException {
 		healtest.firstLocation(driver, healerURL);
 		healtest.first_ClassService(driver);
 		healtest.first_GeneralService(driver);
@@ -68,12 +69,22 @@ public class Testcases extends Config {
 		healtest.secondLocation(driver);
 		healtest.second_GeneralService(driver);
 		healtest.second_ClassService(driver);
+		healtest.second_RetreatService(driver);
+		
 	
 	}
 	
+	
 	@Test
-	public void AdminPage() throws InterruptedException {
+	public void TC002_AdminPage() throws InterruptedException {
 		admintest.healerAccountVerify(driver, adminURL);
+	}
+	
+	
+	
+	@Test
+	public void TC003_HealerVerification()throws InterruptedException {
+		healtest.healerIdVerify(driver, healerURL);
 	}
 	
 		

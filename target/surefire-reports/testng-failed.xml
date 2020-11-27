@@ -10,14 +10,9 @@
     <classes>
       <class name="commonMethods.Testcases">
         <methods>
-          <include name="productSearch"/>
-          <include name="productSelect"/>
-          <include name="productShopping"/>
-          <include name="productCart"/>
-          <include name="Login"/>
-          <include name="productDeliver"/>
-          <include name="productRemove"/>
-          <include name="Logout"/>
+          <include name="TC001_HealerProcess()"/>
+          <include name="TC002_AdminPage()"/>
+          <include name="TC003_HealerVerification()"/>
         </methods>
       </class> <!-- commonMethods.Testcases -->
     </classes>
@@ -26,14 +21,8 @@
     <classes>
       <class name="commonMethods.Testcases">
         <methods>
-          <include name="productSearch"/>
-          <include name="productCart"/>
-          <include name="productSelect"/>
-          <include name="productShopping"/>
-          <include name="productDeliver"/>
-          <include name="Logout"/>
-          <include name="productRemove"/>
-          <include name="Login"/>
+          <include name="TC001_HealerProcess"/>
+          <include name="TC002_AdminPage"/>
           <include name="teardown"/>
           <include name="getDataFromConfig"/>
         </methods>

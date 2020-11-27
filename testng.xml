@@ -5,7 +5,8 @@
 			<class name="commonMethods.Testcases" />
 		</classes>
 		<methods>
-			<include name="Healertest()" priority="1" />
+			
+			<include name="TC001_HealerProcess()" priority="2" />
 			
 		</methods>
 	</test>
