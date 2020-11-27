@@ -130,17 +130,110 @@
     <line>
       <![CDATA[STEP43]]>
     </line>
+    <line>
+      <![CDATA[STEP44]]>
+    </line>
+    <line>
+      <![CDATA[STEP45]]>
+    </line>
+    <line>
+      <![CDATA[STEP46]]>
+    </line>
+    <line>
+      <![CDATA[STEP47]]>
+    </line>
+    <line>
+      <![CDATA[STEP48]]>
+    </line>
+    <line>
+      <![CDATA[STEP49]]>
+    </line>
+    <line>
+      <![CDATA[STEP50]]>
+    </line>
+    <line>
+      <![CDATA[STEP51]]>
+    </line>
+    <line>
+      <![CDATA[STEP52]]>
+    </line>
+    <line>
+      <![CDATA[STEP53]]>
+    </line>
+    <line>
+      <![CDATA[STEP54]]>
+    </line>
+    <line>
+      <![CDATA[STEP55]]>
+    </line>
+    <line>
+      <![CDATA[STEP56]]>
+    </line>
+    <line>
+      <![CDATA[STEP57]]>
+    </line>
+    <line>
+      <![CDATA[STEP58]]>
+    </line>
+    <line>
+      <![CDATA[STEP59]]>
+    </line>
+    <line>
+      <![CDATA[STEP60]]>
+    </line>
+    <line>
+      <![CDATA[STEP61]]>
+    </line>
+    <line>
+      <![CDATA[STEP62]]>
+    </line>
+    <line>
+      <![CDATA[STEP63]]>
+    </line>
+    <line>
+      <![CDATA[STEP64]]>
+    </line>
+    <line>
+      <![CDATA[STEP65]]>
+    </line>
+    <line>
+      <![CDATA[STEP66]]>
+    </line>
+    <line>
+      <![CDATA[STEP67]]>
+    </line>
+    <line>
+      <![CDATA[STEP68]]>
+    </line>
+    <line>
+      <![CDATA[STEP69]]>
+    </line>
+    <line>
+      <![CDATA[STEP70]]>
+    </line>
+    <line>
+      <![CDATA[STEP71]]>
+    </line>
+    <line>
+      <![CDATA[STEP72]]>
+    </line>
+    <line>
+      <![CDATA[STEP73]]>
+    </line>
+    <line>
+      <![CDATA[STEP74]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="103931" started-at="2020-11-25T19:37:02Z" finished-at="2020-11-25T19:38:46Z">
+  <suite name="Suite" duration-ms="152283" started-at="2020-11-27T10:18:48Z" finished-at="2020-11-27T10:21:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="103931" started-at="2020-11-25T19:37:02Z" finished-at="2020-11-25T19:38:46Z">
+    <test name="Test" duration-ms="152283" started-at="2020-11-27T10:18:48Z" finished-at="2020-11-27T10:21:20Z">
       <class name="commonMethods.Testcases">
-        <test-method status="PASS" signature="getDataFromConfig()[pri:0, instance:commonMethods.Testcases@2f01783a]" name="getDataFromConfig" is-config="true" duration-ms="6358" started-at="2020-11-26T01:07:02Z" finished-at="2020-11-26T01:07:08Z">
+        <test-method status="PASS" signature="getDataFromConfig()[pri:0, instance:commonMethods.Testcases@909217e]" name="getDataFromConfig" is-config="true" duration-ms="6696" started-at="2020-11-27T15:48:48Z" finished-at="2020-11-27T15:48:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDataFromConfig -->
-        <test-method status="PASS" signature="HealerProcess()[pri:0, instance:commonMethods.Testcases@2f01783a]" name="HealerProcess" duration-ms="96719" started-at="2020-11-26T01:07:08Z" finished-at="2020-11-26T01:08:45Z">
+        <test-method status="PASS" signature="TC001_HealerProcess()[pri:0, instance:commonMethods.Testcases@909217e]" name="TC001_HealerProcess" duration-ms="144703" started-at="2020-11-27T15:48:54Z" finished-at="2020-11-27T15:51:19Z">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
@@ -271,13 +364,106 @@
             <line>
               <![CDATA[STEP43]]>
             </line>
+            <line>
+              <![CDATA[STEP44]]>
+            </line>
+            <line>
+              <![CDATA[STEP45]]>
+            </line>
+            <line>
+              <![CDATA[STEP46]]>
+            </line>
+            <line>
+              <![CDATA[STEP47]]>
+            </line>
+            <line>
+              <![CDATA[STEP48]]>
+            </line>
+            <line>
+              <![CDATA[STEP49]]>
+            </line>
+            <line>
+              <![CDATA[STEP50]]>
+            </line>
+            <line>
+              <![CDATA[STEP51]]>
+            </line>
+            <line>
+              <![CDATA[STEP52]]>
+            </line>
+            <line>
+              <![CDATA[STEP53]]>
+            </line>
+            <line>
+              <![CDATA[STEP54]]>
+            </line>
+            <line>
+              <![CDATA[STEP55]]>
+            </line>
+            <line>
+              <![CDATA[STEP56]]>
+            </line>
+            <line>
+              <![CDATA[STEP57]]>
+            </line>
+            <line>
+              <![CDATA[STEP58]]>
+            </line>
+            <line>
+              <![CDATA[STEP59]]>
+            </line>
+            <line>
+              <![CDATA[STEP60]]>
+            </line>
+            <line>
+              <![CDATA[STEP61]]>
+            </line>
+            <line>
+              <![CDATA[STEP62]]>
+            </line>
+            <line>
+              <![CDATA[STEP63]]>
+            </line>
+            <line>
+              <![CDATA[STEP64]]>
+            </line>
+            <line>
+              <![CDATA[STEP65]]>
+            </line>
+            <line>
+              <![CDATA[STEP66]]>
+            </line>
+            <line>
+              <![CDATA[STEP67]]>
+            </line>
+            <line>
+              <![CDATA[STEP68]]>
+            </line>
+            <line>
+              <![CDATA[STEP69]]>
+            </line>
+            <line>
+              <![CDATA[STEP70]]>
+            </line>
+            <line>
+              <![CDATA[STEP71]]>
+            </line>
+            <line>
+              <![CDATA[STEP72]]>
+            </line>
+            <line>
+              <![CDATA[STEP73]]>
+            </line>
+            <line>
+              <![CDATA[STEP74]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- HealerProcess -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:commonMethods.Testcases@2f01783a]" name="teardown" is-config="true" duration-ms="827" started-at="2020-11-26T01:08:45Z" finished-at="2020-11-26T01:08:46Z">
+        </test-method> <!-- TC001_HealerProcess -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:commonMethods.Testcases@909217e]" name="teardown" is-config="true" duration-ms="858" started-at="2020-11-27T15:51:19Z" finished-at="2020-11-27T15:51:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- commonMethods.Testcases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
