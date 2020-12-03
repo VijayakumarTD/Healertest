@@ -17,16 +17,4 @@
       </class> <!-- commonMethods.Testcases -->
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)" parallel="none">
-    <classes>
-      <class name="commonMethods.Testcases">
-        <methods>
-          <include name="TC001_HealerProcess"/>
-          <include name="TC002_AdminPage"/>
-          <include name="teardown"/>
-          <include name="getDataFromConfig"/>
-        </methods>
-      </class> <!-- commonMethods.Testcases -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

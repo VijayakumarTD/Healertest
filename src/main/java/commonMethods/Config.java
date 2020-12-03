@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -39,6 +41,10 @@ public WebDriver getWebDriver(String browserName) throws MalformedURLException {
 	if (browserName.equals("Chrome")) {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
+		Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("download.default_directory",  System.getProperty("user.dir") + "\\DownloadedFiles");
+		
+		prefs.put("profile.default_content_settings.geolocation", 1);
 		System.out.println("Browser launched...");	
 		setDriver(driver);
 		driver.manage().window().maximize();

@@ -14,7 +14,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import scripts.AdminActions;
-import scripts.ClientActions;
+import scripts.CustomerActions;
 import scripts.HealerActions;
 import atu.testng.reports.exceptions.ATUReporterException;
 import atu.testng.reports.listeners.ATUReportsListener;
@@ -41,7 +41,7 @@ public class Testcases extends Config {
 	
 	HealerActions healtest = new HealerActions();
 	AdminActions admintest = new AdminActions();
-	ClientActions cilenttest = new ClientActions();
+	CustomerActions customertest = new CustomerActions();
 	
 
 	@BeforeClass
@@ -61,18 +61,12 @@ public class Testcases extends Config {
 	
 	@Test
 	public void TC001_HealerProcess() throws InterruptedException {
-		healtest.firstLocation(driver, healerURL);
-		healtest.first_ClassService(driver);
-		healtest.first_GeneralService(driver);
-		healtest.first_HomeService(driver);
-		healtest.first_RetreatService(driver);
-		healtest.secondLocation(driver);
-		healtest.second_GeneralService(driver);
-		healtest.second_ClassService(driver);
-		healtest.second_RetreatService(driver);
+		
+		healtest.healerActions(driver, healerURL);
 		
 	
 	}
+		
 	
 	
 	@Test
@@ -82,10 +76,22 @@ public class Testcases extends Config {
 	
 	
 	
+	
 	@Test
-	public void TC003_HealerVerification()throws InterruptedException {
+	public void TC003_HealerVerification() throws InterruptedException {
 		healtest.healerIdVerify(driver, healerURL);
 	}
+	
+	
+	
+	@Test 
+	public void TC004_CustomerProcess() throws InterruptedException {
+	customertest.first_Customer(driver, clientURL);
+	customertest.second_Customer(driver, clientURL);	
+	customertest.firstcancellation(driver, clientURL);
+	customertest.secondCancellation(driver, clientURL);
+	}
+	
 	
 		
 

@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 285.81 s <<< FAILURE! - in TestSuite
-TC001_HealerProcess(commonMethods.Testcases)  Time elapsed: 91.828 s  <<< FAILURE!
-java.lang.AssertionError: null
-	at commonMethods.Testcases.TC001_HealerProcess(Testcases.java:64)
-
-TC002_AdminPage(commonMethods.Testcases)  Time elapsed: 127.214 s  <<< FAILURE!
-java.lang.AssertionError: null
-	at commonMethods.Testcases.TC002_AdminPage(Testcases.java:76)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1,030.647 s - in TestSuite

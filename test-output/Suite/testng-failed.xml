@@ -10,7 +10,7 @@
     <classes>
       <class name="commonMethods.Testcases">
         <methods>
-          <include name="TC001_HealerProcess()"/>
+          <include name="TC004_CustomerProcess()"/>
         </methods>
       </class> <!-- commonMethods.Testcases -->
     </classes>

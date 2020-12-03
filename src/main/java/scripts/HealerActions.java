@@ -13,6 +13,41 @@ public class HealerActions extends Keywords {
 	private ReusableActions reusableActions = new ReusableActions();
 	
 	
+	
+	public void healerActions(WebDriver driver,String URL) {
+		
+		navigateUrl(driver, URL);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
+		
+		String	emailId = Utils.getDataFromTestData("Healer_Login","EmailId");
+		String password = Utils.getDataFromTestData("Healer_Login","Password");
+		
+		
+		boolean login = reusableActions.loginMethod(driver, emailId, password);	
+		
+		wait(driver,"2");
+		
+		firstLocation(driver);
+		first_ClassService(driver);
+		first_GeneralService(driver);
+		first_HomeService(driver);
+		first_RetreatService(driver);
+		
+		
+		secondLocation(driver);
+		second_HomeService(driver);
+		second_GeneralService(driver);
+		second_ClassService(driver);
+		second_RetreatService(driver);
+		
+		boolean logout = reusableActions.Logout(driver);
+		wait(driver,"2");
+		
+		
+	}
+	
+	
 	// Join as healer
 	
 	public void healerRegistration(WebDriver driver,String URL) {
@@ -28,11 +63,7 @@ public class HealerActions extends Keywords {
 		String confirmpassword = Utils.getDataFromTestData("HA001","ConfirmPassword");
 		String testmailURL	 = Utils.getDataFromTestData("HA001","YOPURL");
 		
-	
-	
-		
 			
-		
 		waitForElement(driver, joinHealer);
 		wait(driver, "2");
 		click(driver, joinHealer);
@@ -80,24 +111,12 @@ public class HealerActions extends Keywords {
 	
 	//1st location and Service type
 	
-	public void firstLocation(WebDriver driver,String URL) {
+	public void firstLocation(WebDriver driver) {
 				
-		String	emailId = Utils.getDataFromTestData("Healer_Login","EmailId");
-		String password = Utils.getDataFromTestData("Healer_Login","Password");
+		
 		String LocationName = Utils.getDataFromTestData("First_Location","LocationName");
 		String address1 = Utils.getDataFromTestData("First_Location","Address1");
 		String ZipCode= Utils.getDataFromTestData("First_Location","ZipCode");
-		
-		
-		navigateUrl(driver, URL);
-		deleteAllCookies(driver);		
-		acceptAlert(driver);
-		
-		boolean login = reusableActions.loginMethod(driver, emailId, password);	
-		
-		wait(driver,"2");
-		/*
-		
 		
 		verifyElementIsPresent(driver, mainLocation);
 		
@@ -177,7 +196,7 @@ public class HealerActions extends Keywords {
 		click(driver, saveAndContinue);
 		wait(driver, "4");
 		
-		*/
+		
 				
 	}
 	
@@ -187,19 +206,31 @@ public class HealerActions extends Keywords {
 	
 	public void first_ClassService(WebDriver driver) {
 		
+		
+		String ServiceName = Utils.getDataFromTestData("Yoga_Class","ServiceName");
 		String ServiceDescription = Utils.getDataFromTestData("Yoga_Class","YogaService");
 		String qualification1 = Utils.getDataFromTestData("Yoga_Class","Qualification");
 		String clientPrice = Utils.getDataFromTestData("Yoga_Class","ClientPrice");
 		String maximumregister = Utils.getDataFromTestData("Yoga_Class","MaximumRegister");
 		String LevelExpertise = Utils.getDataFromTestData("Yoga_Class","levelofExpertise");
-		
+		String DurationService = Utils.getDataFromTestData("Yoga_Class","DurationService");
+		String StartTime  = Utils.getDataFromTestData("Yoga_Class","StartTime");
+		String EndTime  = Utils.getDataFromTestData("Yoga_Class","EndTime");
 
+		
+		
+		
 		wait(driver, "3");
 		scrollUsingElement(driver,yogaClassDescription);	
 		waitForElement(driver,yogaClassDescription);
 		click(driver, yogaClassDescription);
 		wait(driver, "2");
+
 		
+		waitForElement(driver, serviceName);
+		clearAndType(driver, serviceName, ServiceName);
+		wait(driver, "2");
+				
 		//service description
 		scrollUsingElement(driver,serviceDescribe);
 		wait(driver, "2");
@@ -246,25 +277,34 @@ public class HealerActions extends Keywords {
 		click(driver, level1);
 		wait(driver, "3");
 		
-		if ("Not Certified" == LevelExpertise ) {
+		
+		
+		String text = "Not Certified";
+		String text1 ="Certified";
+		String text2 ="Expert";
+		String text3 ="Master";
+		
+	
+		
+		if (LevelExpertise.equalsIgnoreCase("Not Certified")){
 			
 			waitForElement(driver, yogaNotCertified);
 			click(driver, yogaNotCertified);
-			wait(driver, "2");	
+			wait(driver, "4");	
 			
-		}else if ("1+ years" == LevelExpertise ) {
+		}else if (LevelExpertise.equalsIgnoreCase("Certified")) {
 			waitForElement(driver, yogaCertified);
 			click(driver, yogaCertified);
-			wait(driver, "2");	
+			wait(driver, "4");	
 			
-		}else if ("3+ years" == LevelExpertise ) {
+		}else if (LevelExpertise.equalsIgnoreCase("Expert") ) {
 			waitForElement(driver,threeYears);
 			click(driver, threeYears);
-			wait(driver, "2");
-		}else if ("15+ years"==LevelExpertise) {
+			wait(driver, "4");
+		}else if (LevelExpertise.equalsIgnoreCase("Master")) {
 			waitForElement(driver,yogaMaster);
 			click(driver, yogaMaster);
-			wait(driver, "2");
+			wait(driver, "4");
 			
 		}	
 		
@@ -275,18 +315,54 @@ public class HealerActions extends Keywords {
 		verifyElementIsPresent(driver, pricing);
 		wait(driver,"2");
 		click(driver, serviceDuration);
-		wait(driver,"1");
-		waitForElement(driver, value30);
-		click(driver, value30);
-		wait(driver,"1");
+		wait(driver,"4");
+		
+		System.out.println(DurationService);
+		
+		int str = Integer.parseInt(DurationService);
+		
+		if (30 == str) {
+			waitForElement(driver, value30);
+			click(driver, value30);
+			wait(driver,"2");
+		}else if (45 == str) {
+			waitForElement(driver, value45);
+			click(driver, value45);
+			wait(driver,"2");
+		}else if (50 == str) {
+			waitForElement(driver, value50);
+			click(driver, value50);
+			wait(driver,"2");
+		
+		}else if (60 == str) {
+			waitForElement(driver, value60);
+			click(driver, value60);
+			wait(driver,"2");
+		}else if (90 == str) {
+			waitForElement(driver, value90);
+			click(driver, value90);
+			wait(driver,"2");
+		}else if (120 == str) {
+			waitForElement(driver, value120);
+			click(driver, value120);
+			wait(driver,"2");
+		}else if (150 == str) {
+			waitForElement(driver, value150);
+			click(driver, value150);
+			wait(driver,"2");
+			
+		
+		}
+		
+		
 		sendKeys(driver,perClientPrice,clientPrice);
 		wait(driver,"1");
 		sendKeys(driver, maximumRegister, maximumregister);
 		wait(driver,"1");
-		scrollUsingElement(driver,  moderateCancellation);
+		scrollUsingElement(driver,  strictCancellation);
 		wait(driver,"2");
-		verifyElementIsPresent(driver, moderateCancellation);
-		click(driver, moderateCancellation);
+		verifyElementIsPresent(driver, strictCancellation);
+		click(driver, strictCancellation);
 		
 		
 		
@@ -304,6 +380,14 @@ public class HealerActions extends Keywords {
 		
 		wait(driver,"2");
 		
+		
+		//from hours
+		
+		boolean timevalidation = reusableActions.startTimeDuration(driver, StartTime, EndTime);
+		wait(driver,"2");
+		
+	    
+	   
 		scrollUsingElement(driver,saveAndContinue);	
 		wait(driver,"2");
 		
@@ -322,13 +406,24 @@ public class HealerActions extends Keywords {
 		String qualification2 = Utils.getDataFromTestData("Personal_Yoga","Qualification");
 		String EnterPrice = Utils.getDataFromTestData("Personal_Yoga","EnterPrice");
 		String LevelExpertise = Utils.getDataFromTestData("Personal_Yoga","levelofExpertise");
-		
+		String DurationService = Utils.getDataFromTestData("Personal_Yoga","DurationService");
+		String StartTime  = Utils.getDataFromTestData("Personal_Yoga","StartTime");
+		String EndTime  = Utils.getDataFromTestData("Personal_Yoga","EndTime");
+		String ServiceName = Utils.getDataFromTestData("Personal_Yoga","ServiceName");
+
+	
 		
 		wait(driver, "4");
 		scrollUsingElement(driver,personalYogaSession);	
 		waitForElement(driver,personalYogaSession);
 		click(driver, personalYogaSession);
 		wait(driver, "2");
+		
+		
+		waitForElement(driver, serviceName);
+		clearAndType(driver, serviceName, ServiceName);
+		wait(driver, "2");
+		
 		
 		//service Description
 		scrollUsingElement(driver,serviceDescribe);
@@ -373,28 +468,34 @@ public class HealerActions extends Keywords {
 		click(driver, level1);
 		wait(driver, "3");
 		
-		if ("Not Certified" == LevelExpertise ) {
+		String text = "Not Certified";
+		String text1 ="Certified";
+		String text2 ="Expert";
+		String text3 ="Master";
+		
+	
+		
+		if (LevelExpertise.equalsIgnoreCase("Not Certified")){
 			
 			waitForElement(driver, yogaNotCertified);
 			click(driver, yogaNotCertified);
-			wait(driver, "2");	
+			wait(driver, "4");	
 			
-		}else if ("1+ years" == LevelExpertise ) {
+		}else if (LevelExpertise.equalsIgnoreCase("Certified")) {
 			waitForElement(driver, yogaCertified);
 			click(driver, yogaCertified);
-			wait(driver, "2");	
+			wait(driver, "4");	
 			
-		}else if ("3+ years" == LevelExpertise ) {
-			waitForElement(driver,yogaExpert);
-			click(driver, yogaExpert);
-			wait(driver, "2");
-		}else if ("15+ years"==LevelExpertise) {
+		}else if (LevelExpertise.equalsIgnoreCase("Expert") ) {
+			waitForElement(driver,threeYears);
+			click(driver, threeYears);
+			wait(driver, "4");
+		}else if (LevelExpertise.equalsIgnoreCase("Master")) {
 			waitForElement(driver,yogaMaster);
 			click(driver, yogaMaster);
-			wait(driver, "2");
+			wait(driver, "4");
 			
 		}	
-		
 		
 		
 		
@@ -404,8 +505,44 @@ public class HealerActions extends Keywords {
 		wait(driver,"2");
 		click(driver, serviceDuration);
 		wait(driver,"1");
-		waitForElement(driver, value30);
-		click(driver, value30);
+		
+		
+		
+		int str = Integer.parseInt(DurationService);
+		
+		if (30 == str) {
+			waitForElement(driver, value30);
+			click(driver, value30);
+			wait(driver,"2");
+		}else if (45 == str) {
+			waitForElement(driver, value45);
+			click(driver, value45);
+			wait(driver,"2");
+		}else if (50 == str) {
+			waitForElement(driver, value50);
+			click(driver, value50);
+			wait(driver,"2");
+		
+		}else if (60 == str) {
+			waitForElement(driver, value60);
+			click(driver, value60);
+			wait(driver,"2");
+		}else if (90 == str) {
+			waitForElement(driver, value90);
+			click(driver, value90);
+			wait(driver,"2");
+		}else if (120 == str) {
+			waitForElement(driver, value120);
+			click(driver, value120);
+			wait(driver,"2");
+		}else if (150 == str) {
+			waitForElement(driver, value150);
+			click(driver, value150);
+			wait(driver,"2");
+			
+		
+		}
+		
 		wait(driver,"2");
 		sendKeys(driver, enterPrice, EnterPrice);
 		wait(driver,"2");
@@ -431,6 +568,10 @@ public class HealerActions extends Keywords {
 		
 		wait(driver,"2");
 		
+		boolean timevalidation = reusableActions.startTimeDuration(driver, StartTime, EndTime);
+		wait(driver,"2");
+	    
+		
 		scrollUsingElement(driver,saveAndContinue);	
 		wait(driver,"2");
 		
@@ -452,12 +593,26 @@ public class HealerActions extends Keywords {
 		String qualification3 = Utils.getDataFromTestData("Yoga_Therapy","Qualification");
 		String EnterPrice3 = Utils.getDataFromTestData("Yoga_Therapy","EnterPrice");
 		String LevelExpertise = Utils.getDataFromTestData("Yoga_Therapy","levelofExpertise");
+		String DurationService = Utils.getDataFromTestData("Yoga_Therapy","DurationService");
+		String StartTime  = Utils.getDataFromTestData("Yoga_Therapy","StartTime");
+		String EndTime  = Utils.getDataFromTestData("Yoga_Therapy","EndTime");
+		String ServiceName = Utils.getDataFromTestData("Yoga_Therapy","ServiceName");
+
+		
+		
+
 			
 		wait(driver, "2");
 		scrollUsingElement(driver,yogaTherapyDescr);	
 		waitForElement(driver,yogaTherapyDescr);
 		click(driver, yogaTherapyDescr);
 		wait(driver, "2");
+		
+		
+		waitForElement(driver, serviceName);
+		clearAndType(driver, serviceName, ServiceName);
+		wait(driver, "2");
+		
 		
 		//service Description
 		scrollUsingElement(driver,serviceDescribe);
@@ -502,28 +657,34 @@ public class HealerActions extends Keywords {
 		click(driver, level1);
 		wait(driver, "3");
 		
-		if ("Not Certified" == LevelExpertise ) {
+		String text = "Not Certified";
+		String text1 ="Certified";
+		String text2 ="Expert";
+		String text3 ="Master";
+		
+	
+		
+		if (LevelExpertise.equalsIgnoreCase("Not Certified")){
 			
 			waitForElement(driver, yogaNotCertified);
 			click(driver, yogaNotCertified);
-			wait(driver, "2");	
+			wait(driver, "4");	
 			
-		}else if ("1+ years" == LevelExpertise ) {
+		}else if (LevelExpertise.equalsIgnoreCase("Certified")) {
 			waitForElement(driver, yogaCertified);
 			click(driver, yogaCertified);
-			wait(driver, "2");	
+			wait(driver, "4");	
 			
-		}else if ("3+ years" == LevelExpertise ) {
+		}else if (LevelExpertise.equalsIgnoreCase("Expert") ) {
 			waitForElement(driver,threeYears);
 			click(driver, threeYears);
-			wait(driver, "2");
-		}else if ("15+ years"==LevelExpertise) {
+			wait(driver, "4");
+		}else if (LevelExpertise.equalsIgnoreCase("Master")) {
 			waitForElement(driver,yogaMaster);
 			click(driver, yogaMaster);
-			wait(driver, "2");
+			wait(driver, "4");
 			
-		}	
-		
+		}
 		
 		//pricing
 		scrollUsingElement(driver, pricing);
@@ -531,18 +692,54 @@ public class HealerActions extends Keywords {
 		wait(driver,"2");
 		click(driver, serviceDuration);
 		wait(driver,"1");
-		waitForElement(driver, value30);
-		click(driver, value30);
-		wait(driver,"2");
+		
+		
+		
+		int str = Integer.parseInt(DurationService);
+		
+		if (30 == str) {
+			waitForElement(driver, value30);
+			click(driver, value30);
+			wait(driver,"2");
+		}else if (45 == str) {
+			waitForElement(driver, value45);
+			click(driver, value45);
+			wait(driver,"2");
+		}else if (50 == str) {
+			waitForElement(driver, value50);
+			click(driver, value50);
+			wait(driver,"2");
+		
+		}else if (60 == str) {
+			waitForElement(driver, value60);
+			click(driver, value60);
+			wait(driver,"2");
+		}else if (90 == str) {
+			waitForElement(driver, value90);
+			click(driver, value90);
+			wait(driver,"2");
+		}else if (120 == str) {
+			waitForElement(driver, value120);
+			click(driver, value120);
+			wait(driver,"2");
+		}else if (150 == str) {
+			waitForElement(driver, value150);
+			click(driver, value150);
+			wait(driver,"2");
+			
+		
+		}
+		
+		
 		sendKeys(driver, enterPrice, EnterPrice3);
 		wait(driver,"2");
 		waitForElement(driver,priceAdd);
 		click(driver, priceAdd);
 		wait(driver,"2");
-		scrollUsingElement(driver,  moderateCancellation);
+		scrollUsingElement(driver,  relaxedCancellation);
 		wait(driver,"2");
-		verifyElementIsPresent(driver, moderateCancellation);
-		click(driver, moderateCancellation);
+		verifyElementIsPresent(driver, relaxedCancellation);
+		click(driver, relaxedCancellation);
 		
 		
 		
@@ -556,6 +753,9 @@ public class HealerActions extends Keywords {
 		wait(driver,"1");
 		click(driver, allCheckbox);
 		
+		wait(driver,"2");
+		
+		boolean timevalidation = reusableActions.startTimeDuration(driver, StartTime, EndTime);
 		wait(driver,"2");
 		
 		scrollUsingElement(driver,saveAndContinue);	
@@ -588,6 +788,7 @@ public class HealerActions extends Keywords {
 		String Time = Utils.getDataFromTestData("Retreat_Service", "Time");
 		String AgendaActivity= Utils.getDataFromTestData("Retreat_Service", "AgendaActivity");
 		String AgendaWhere = Utils.getDataFromTestData("Retreat_Service", "AgendaWhere");
+		String LevelExpertise = Utils.getDataFromTestData("Retreat_Service","levelofExpertise");
 		
 		
 
@@ -650,32 +851,76 @@ public class HealerActions extends Keywords {
 		wait(driver,"2");
 		sendKeys(driver, describeYourself,DescribeYourself);
 		wait(driver,"2");
+		click(driver, level1);
+		wait(driver, "2");
+		
+		if (LevelExpertise.equalsIgnoreCase("Not Certified") ) {
+			
+			waitForElement(driver, abhyangaNotCertified);
+			click(driver, abhyangaNotCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Certified")) {
+			waitForElement(driver, abhyangaCertified);
+			click(driver, abhyangaCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Expert")) {
+			waitForElement(driver,abhyangaExpert);
+			click(driver, abhyangaExpert);
+			wait(driver, "2");
+		}else if (LevelExpertise.equalsIgnoreCase("Master")) {
+			waitForElement(driver,abhyangaMaster);
+			click(driver, abhyangaMaster);
+			wait(driver, "2");
+			
+		}	
+		
 		
 		scrollUsingElement(driver, fromDate);
 		wait(driver,"2");
 		
 		click(driver, fromDate);
 		wait(driver,"2");
-		click(driver, retreatStart);
-		wait(driver,"2");
 		
-		click(driver, toDate);
+		//verify the current next active day
 		
-		if (isDisplayed(driver, retreatEnd1)) {
+		//it will not present click next month and add 1st active date
+		
+	
+		
+		if (isDisplayed(driver, notPresentDate)) {
 			
+			waitForElement(driver,todayDate);
+			click(driver, todayDate);
 			wait(driver,"2");
-			click(driver, retreatEnd1);
-			wait(driver,"2");
-			
-		} else {
-			
-			wait(driver,"2");
+		}else {
+
+			waitForElement(driver, nextMonth);
 			click(driver, nextMonth);
 			wait(driver,"2");
-			click(driver, retreatEnd2);
-			wait(driver,"3");
+			click(driver,nextDay);
+			wait(driver,"2");
+		}
+			
+		click(driver, toDate);
+		wait(driver,"2");
+		
+		if (isDisplayed(driver, notPresentDate)) {
+			
+			waitForElement(driver,notPresentDate);
+			click(driver,notPresentDate);
+			wait(driver,"2");
+		}else {
+
+			waitForElement(driver, nextMonth);
+			click(driver, nextMonth);
+			wait(driver,"2");
+			click(driver,nextDay);
+			wait(driver,"2");
 		}
 		
+				
 		waitForElement(driver, addAgenda);
 		click(driver, addAgenda);
 		wait(driver,"2");
@@ -817,6 +1062,8 @@ public class HealerActions extends Keywords {
 		wait(driver, "2");
 		click(driver, abhyanga);
 		wait(driver, "1");
+		click(driver, Urdvartana);
+		wait(driver, "1");
 		click(driver, JanuVasti);
 		wait(driver, "1");
 		waitForElement(driver, select);
@@ -831,20 +1078,31 @@ public class HealerActions extends Keywords {
 	}
 	
 	
-	//Abhyanga
+	//Abhyanga - homebased
 	
-	public void second_GeneralService(WebDriver driver) {
+	public void second_HomeService(WebDriver driver) {
 		
-		String personalDescription = Utils.getDataFromTestData("abhyanga_Service","Abhyanga");
-		String qualification2 = Utils.getDataFromTestData("abhyanga_Service","Qualification");
-		String EnterPrice = Utils.getDataFromTestData("abhyanga_Service","EnterPrice");
+		String personalDescription = Utils.getDataFromTestData("Abhyanga_Service","Abhyanga");
+		String qualification2 = Utils.getDataFromTestData("Abhyanga_Service","Qualification");
+		String EnterPrice = Utils.getDataFromTestData("Abhyanga_Service","EnterPrice");
+		String LevelExpertise = Utils.getDataFromTestData("Abhyanga_Service","levelofExpertise");
+		String Language = Utils.getDataFromTestData("Abhyanga_Service","Language");
+		String DurationService = Utils.getDataFromTestData("Abhyanga_Service","DurationService");
+		String StartTime  = Utils.getDataFromTestData("Abhyanga_Service","StartTime");
+		String EndTime  = Utils.getDataFromTestData("Abhyanga_Service","EndTime");
+		String ServiceName = Utils.getDataFromTestData("Abhyanga_Service","ServiceName");
+
 		
 		
-		wait(driver, "4");
+
 		scrollUsingElement(driver,abhyangaService);	
 		verifyElementIsPresent(driver,abhyangaService);
 		click(driver, abhyangaService);
 		wait(driver, "2");
+		
+		waitForElement(driver, serviceName);
+		clearAndType(driver, serviceName, ServiceName);
+		wait(driver, "4");
 						
 		//Tell about service
 		scrollUsingElement(driver,serviceDescribe);
@@ -856,7 +1114,7 @@ public class HealerActions extends Keywords {
 		wait(driver, "2");
 		click(driver, selectLanguage);
 		wait(driver, "2");
-		sendKeys(driver, selectEnglish,"English");
+		sendKeys(driver, selectEnglish,Language);
 		enter(driver);
 		wait(driver, "2");
 		
@@ -887,10 +1145,36 @@ public class HealerActions extends Keywords {
 		sendKeys(driver, qualification, qualification2);	
 		wait(driver, "2");
 		click(driver, level1);
-		waitForElement(driver,abhyangaExpert);
-		click(driver, abhyangaExpert);
 		wait(driver, "2");
 		
+		String text = "Not Certified";
+		String text1 ="Certified";
+		String text2 ="Expert";
+		String text3 ="Master";
+		
+	
+		
+		if (LevelExpertise.equalsIgnoreCase("Not Certified") ) {
+			
+			waitForElement(driver, abhyangaNotCertified);
+			click(driver, abhyangaNotCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Certified")) {
+			waitForElement(driver, abhyangaCertified);
+			click(driver, abhyangaCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Expert")) {
+			waitForElement(driver,abhyangaExpert);
+			click(driver, abhyangaExpert);
+			wait(driver, "2");
+		}else if (LevelExpertise.equalsIgnoreCase("Master")) {
+			waitForElement(driver,abhyangaMaster);
+			click(driver, abhyangaMaster);
+			wait(driver, "2");
+			
+		}	
 		
 		//pricing
 		scrollUsingElement(driver, pricing);
@@ -898,18 +1182,51 @@ public class HealerActions extends Keywords {
 		wait(driver,"2");
 		click(driver, serviceDuration);
 		wait(driver,"1");
-		waitForElement(driver, value30);
-		click(driver, value30);
-		wait(driver,"2");
+		
+		int str = Integer.parseInt(DurationService);
+		
+		if (30 == str) {
+			waitForElement(driver, value30);
+			click(driver, value30);
+			wait(driver,"2");
+		}else if (45 == str) {
+			waitForElement(driver, value45);
+			click(driver, value45);
+			wait(driver,"2");
+		}else if (50 == str) {
+			waitForElement(driver, value50);
+			click(driver, value50);
+			wait(driver,"2");
+		
+		}else if (60 == str) {
+			waitForElement(driver, value60);
+			click(driver, value60);
+			wait(driver,"2");
+		}else if (90 == str) {
+			waitForElement(driver, value90);
+			click(driver, value90);
+			wait(driver,"2");
+		}else if (120 == str) {
+			waitForElement(driver, value120);
+			click(driver, value120);
+			wait(driver,"2");
+		}else if (150 == str) {
+			waitForElement(driver, value150);
+			click(driver, value150);
+			wait(driver,"2");
+			
+		
+		}
+		
 		sendKeys(driver, enterPrice, EnterPrice);
 		wait(driver,"2");
 		waitForElement(driver, priceAdd);
 		click(driver, priceAdd);
 		wait(driver,"2");
-		scrollUsingElement(driver,  moderateCancellation);
+		scrollUsingElement(driver,  strictCancellation);
 		wait(driver,"2");
-		verifyElementIsPresent(driver, moderateCancellation);
-		click(driver, moderateCancellation);
+		verifyElementIsPresent(driver, strictCancellation);
+		click(driver, strictCancellation);
 		
 		
 		
@@ -924,6 +1241,10 @@ public class HealerActions extends Keywords {
 		wait(driver,"1");
 		click(driver, allCheckbox);
 		wait(driver,"2");
+		
+		boolean timevalidation = reusableActions.startTimeDuration(driver, StartTime, EndTime);
+		wait(driver,"2");
+	    
 		
 		scrollUsingElement(driver,saveAndContinue);	
 		wait(driver,"2");
@@ -938,33 +1259,48 @@ public class HealerActions extends Keywords {
 	}
 	
 	
-	//Janu vasti
+	//class service - Janu vasti
 	
 	public void second_ClassService(WebDriver driver) {
 		
 		
-		String personalDescription = Utils.getDataFromTestData("januvasti_Service","Januvasti");
-		String qualification2 = Utils.getDataFromTestData("januvasti_Service","Qualification");
-		String EnterPrice = Utils.getDataFromTestData("januvasti_Service","EnterPrice");
-		
+		String ServiceDescription = Utils.getDataFromTestData("Januvasti_Service","Januvasti");
+		String qualification2 = Utils.getDataFromTestData("Januvasti_Service","Qualification");
+		String EnterPrice = Utils.getDataFromTestData("Januvasti_Service","EnterPrice");
+		String Language = Utils.getDataFromTestData("Januvasti_Service","Language");
+		String LevelExpertise = Utils.getDataFromTestData("Januvasti_Service","levelofExpertise");
+		String DurationService = Utils.getDataFromTestData("Januvasti_Service","DurationService");
+		String StartTime  = Utils.getDataFromTestData("Januvasti_Service","StartTime");
+		String EndTime  = Utils.getDataFromTestData("Januvasti_Service","EndTime");
+		String ServiceName = Utils.getDataFromTestData("Januvasti_Service","ServiceName");
+
 		
 		wait(driver, "4");
 		scrollUsingElement(driver,JanuVastiService);	
 		verifyElementIsPresent(driver,JanuVastiService);
 		click(driver,JanuVastiService);
-		wait(driver, "2");
+		wait(driver, "3");
+		
+
+		
+		waitForElement(driver, serviceName);
+		clearAndType(driver, serviceName, ServiceName);
+		wait(driver, "4");
+		
+		
+		
 						
 		//Tell about service
 		scrollUsingElement(driver,serviceDescribe);
 		wait(driver, "2");
 		
-		sendKeys(driver, serviceDescribe, personalDescription);
+		sendKeys(driver, serviceDescribe, ServiceDescription);
 		wait(driver, "2");
 		waitForElement(driver, selectLanguage);
 		wait(driver, "2");
 		click(driver, selectLanguage);
 		wait(driver, "2");
-		sendKeys(driver, selectEnglish,"English");
+		sendKeys(driver, selectEnglish,Language);
 		enter(driver);
 		wait(driver, "2");
 		
@@ -995,9 +1331,39 @@ public class HealerActions extends Keywords {
 		sendKeys(driver, qualification, qualification2);	
 		wait(driver, "2");
 		click(driver, level1);
-		waitForElement(driver,abhyangaExpert);
-		click(driver, abhyangaExpert);
 		wait(driver, "2");
+		
+		
+		String text = "Not Certified";
+		String text1 ="Certified";
+		String text2 ="Expert";
+		String text3 ="Master";
+
+		
+		if (LevelExpertise.equalsIgnoreCase("Not Certified") ) {
+			
+			waitForElement(driver, abhyangaNotCertified);
+			click(driver, abhyangaNotCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Certified")) {
+			waitForElement(driver, abhyangaCertified);
+			click(driver, abhyangaCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Expert")) {
+			waitForElement(driver,abhyangaExpert);
+			click(driver, abhyangaExpert);
+			wait(driver, "2");
+		}else if (LevelExpertise.equalsIgnoreCase("Master")) {
+			waitForElement(driver,abhyangaMaster);
+			click(driver, abhyangaMaster);
+			wait(driver, "2");
+			
+		}	
+		
+		
+		
 		
 		
 		//pricing
@@ -1006,9 +1372,41 @@ public class HealerActions extends Keywords {
 		wait(driver,"2");
 		click(driver, serviceDuration);
 		wait(driver,"1");
-		waitForElement(driver, value30);
-		click(driver, value30);
-		wait(driver,"2");
+		
+		int str = Integer.parseInt(DurationService);
+
+		if (30 == str) {
+			waitForElement(driver, value30);
+			click(driver, value30);
+			wait(driver,"2");
+		}else if (45 == str) {
+			waitForElement(driver, value45);
+			click(driver, value45);
+			wait(driver,"2");
+		}else if (50 == str) {
+			waitForElement(driver, value50);
+			click(driver, value50);
+			wait(driver,"2");
+		
+		}else if (60 == str) {
+			waitForElement(driver, value60);
+			click(driver, value60);
+			wait(driver,"2");
+		}else if (90 == str) {
+			waitForElement(driver, value90);
+			click(driver, value90);
+			wait(driver,"2");
+		}else if (120 == str) {
+			waitForElement(driver, value120);
+			click(driver, value120);
+			wait(driver,"2");
+		}else if (150 == str) {
+			waitForElement(driver, value150);
+			click(driver, value150);
+			wait(driver,"2");
+			
+		
+		}
 		sendKeys(driver, enterPrice, EnterPrice);
 		wait(driver,"2");
 		waitForElement(driver, priceAdd);
@@ -1032,6 +1430,10 @@ public class HealerActions extends Keywords {
 		wait(driver,"1");
 		click(driver, allCheckbox);
 		wait(driver,"2");
+		
+		boolean timevalidation = reusableActions.startTimeDuration(driver, StartTime, EndTime);
+		wait(driver,"2");
+	    
 		
 		scrollUsingElement(driver,saveAndContinue);	
 		wait(driver,"2");
@@ -1048,7 +1450,204 @@ public class HealerActions extends Keywords {
 		
 	}
 	
-	//Second Retreat service
+	
+	
+	//Urdvartana - General Based
+	
+	public void second_GeneralService(WebDriver driver) {
+		
+		String ServiceDescription = Utils.getDataFromTestData("Urdvartana_Service","Urdvartana");
+		String qualification2 = Utils.getDataFromTestData("Urdvartana_Service","Qualification");
+		String EnterPrice = Utils.getDataFromTestData("Urdvartana_Service","EnterPrice");
+		String Language = Utils.getDataFromTestData("Urdvartana_Service","Language");
+		String LevelExpertise = Utils.getDataFromTestData("Urdvartana_Service","levelofExpertise");
+		String DurationService = Utils.getDataFromTestData("Urdvartana_Service","durationservice");
+		String StartTime  = Utils.getDataFromTestData("Urdvartana_Service","StartTime");
+		String EndTime  = Utils.getDataFromTestData("Urdvartana_Service","EndTime");
+		String ServiceName = Utils.getDataFromTestData("Urdvartana_Service","ServiceName");
+
+		
+		String text ="30";
+		String text1 ="45";
+		String text2 ="50";
+		String text3 ="60";
+		String text4 ="90";
+		String text5 ="120";
+		String text6 ="150";
+					
+		System.out.println(text);
+		System.out.println(DurationService);
+		
+		
+		
+		wait(driver, "4");
+		scrollUsingElement(driver,urdvartanaService);	
+		verifyElementIsPresent(driver,urdvartanaService);
+		click(driver,urdvartanaService);
+		wait(driver, "2");
+		
+		waitForElement(driver, serviceName);
+		clearAndType(driver, serviceName, ServiceName);
+		wait(driver, "2");
+
+		
+		
+		scrollUsingElement(driver,serviceDescribe);
+		wait(driver, "2");
+		
+		sendKeys(driver, serviceDescribe, ServiceDescription);
+		wait(driver, "2");
+		waitForElement(driver, selectLanguage);
+		wait(driver, "2");
+		click(driver, selectLanguage);
+		wait(driver, "2");
+		sendKeys(driver, selectEnglish,Language);
+		enter(driver);
+		wait(driver, "2");
+		
+		wait(driver, "2");
+		click(driver, servicePhoto1);
+		wait(driver, "1");
+		uploadFileAutoIT(System.getProperty("user.dir") + "\\uploads\\image1.jpg");
+		wait(driver, "3");
+		click(driver, crop);
+		wait(driver, "2");
+		click(driver, servicePhoto2);
+		wait(driver, "3");
+		uploadFileAutoIT(System.getProperty("user.dir") + "\\uploads\\image2.jpg");
+		wait(driver, "3");
+		click(driver, crop);
+		wait(driver, "2");
+		click(driver, servicePhoto3);
+		wait(driver, "3");
+		uploadFileAutoIT(System.getProperty("user.dir") + "\\uploads\\image3.jpg");
+		wait(driver, "2");
+		click(driver, crop);
+		wait(driver, "2");
+		
+		
+		//Qualification
+		
+		scrollUsingElement(driver,qualification);
+		wait(driver, "2");
+		waitForElement(driver, qualification);
+		sendKeys(driver, qualification, qualification2);	
+		wait(driver, "2");
+		click(driver, level1);
+		wait(driver, "2");
+		
+		if (LevelExpertise.equalsIgnoreCase("Not Certified") ) {
+			
+			waitForElement(driver, abhyangaNotCertified);
+			click(driver, abhyangaNotCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Certified")) {
+			waitForElement(driver, abhyangaCertified);
+			click(driver, abhyangaCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Expert")) {
+			waitForElement(driver,abhyangaExpert);
+			click(driver, abhyangaExpert);
+			wait(driver, "2");
+		}else if (LevelExpertise.equalsIgnoreCase("Master")) {
+			waitForElement(driver,abhyangaMaster);
+			click(driver, abhyangaMaster);
+			wait(driver, "2");
+			
+		}	
+		
+		
+		//Pricing
+		scrollUsingElement(driver, pricing);
+		verifyElementIsPresent(driver, pricing);
+		wait(driver,"2");
+		click(driver, serviceDuration);
+		wait(driver,"4");
+		waitForElement(driver, value30);
+		click(driver, value30);
+		wait(driver,"4");
+		getText(driver, value30);
+		
+		int str = Integer.parseInt(DurationService);
+		
+		if (30 == str) {
+			waitForElement(driver, value30);
+			click(driver, value30);
+			wait(driver,"2");
+		}else if (45 == str) {
+			waitForElement(driver, value45);
+			click(driver, value45);
+			wait(driver,"2");
+		}else if (50 == str) {
+			waitForElement(driver, value50);
+			click(driver, value50);
+			wait(driver,"2");
+		
+		}else if (60 == str) {
+			waitForElement(driver, value60);
+			click(driver, value60);
+			wait(driver,"2");
+		}else if (90 == str) {
+			waitForElement(driver, value90);
+			click(driver, value90);
+			wait(driver,"2");
+		}else if (120 == str) {
+			waitForElement(driver, value120);
+			click(driver, value120);
+			wait(driver,"2");
+		}else if (150 == str) {
+			waitForElement(driver, value150);
+			click(driver, value150);
+			wait(driver,"2");
+			
+		
+		}	
+		
+		sendKeys(driver, enterPrice, EnterPrice);
+		wait(driver,"2");
+		waitForElement(driver, priceAdd);
+		click(driver, priceAdd);
+		wait(driver,"2");
+		scrollUsingElement(driver,  relaxedCancellation);
+		wait(driver,"2");
+		verifyElementIsPresent(driver, relaxedCancellation);
+		click(driver, relaxedCancellation);
+		
+		wait(driver,"2");
+		scrollUsingElement(driver,saveAndContinue);
+		waitForElement(driver, saveAndContinue);
+		click(driver, saveAndContinue);
+		wait(driver,"4");
+		
+		//Availability
+		waitForElement(driver, days);
+		wait(driver,"1");
+		click(driver, allCheckbox);
+		wait(driver,"2");
+		
+		
+		boolean timevalidation = reusableActions.startTimeDuration(driver, StartTime, EndTime);
+		wait(driver,"2");
+	    
+		
+		scrollUsingElement(driver,saveAndContinue);	
+		wait(driver,"2");
+		
+		click(driver, saveAndContinue);
+		wait(driver,"3");
+		
+		waitForElement(driver, urdvartanaComplete);
+		verifyElementIsPresent(driver, urdvartanaComplete);
+		wait(driver,"3");
+		
+		
+		
+	}
+	
+	
+	//Second Retreat service 
 	
 	public void second_RetreatService(WebDriver driver) {
 		
@@ -1064,7 +1663,7 @@ public class HealerActions extends Keywords {
 		String Time = Utils.getDataFromTestData("Second_RetreatService", "Time");
 		String AgendaActivity= Utils.getDataFromTestData("Second_RetreatService", "AgendaActivity");
 		String AgendaWhere = Utils.getDataFromTestData("Second_RetreatService", "AgendaWhere");
-		
+		String LevelExpertise = Utils.getDataFromTestData("Second_RetreatService","levelofExpertise");
 		
 
 		
@@ -1126,30 +1725,66 @@ public class HealerActions extends Keywords {
 		wait(driver,"2");
 		sendKeys(driver, describeYourself,DescribeYourself);
 		wait(driver,"2");
+		click(driver, level1);
+		wait(driver, "2");
+		
+		if (LevelExpertise.equalsIgnoreCase("Not Certified") ) {
+			
+			waitForElement(driver, abhyangaNotCertified);
+			click(driver, abhyangaNotCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Certified")) {
+			waitForElement(driver, abhyangaCertified);
+			click(driver, abhyangaCertified);
+			wait(driver, "2");	
+			
+		}else if (LevelExpertise.equalsIgnoreCase("Expert")) {
+			waitForElement(driver,abhyangaExpert);
+			click(driver, abhyangaExpert);
+			wait(driver, "2");
+		}else if (LevelExpertise.equalsIgnoreCase("Master")) {
+			waitForElement(driver,abhyangaMaster);
+			click(driver, abhyangaMaster);
+			wait(driver, "2");
+			
+		}	
 		
 		scrollUsingElement(driver, fromDate);
 		wait(driver,"2");
 		
 		click(driver, fromDate);
 		wait(driver,"2");
-		click(driver, retreatStart);
-		wait(driver,"2");
 		
-		click(driver, toDate);
-		
-		if (isDisplayed(driver, retreatEnd1)) {
+		if (isDisplayed(driver, notPresentDate)) {
 			
+			waitForElement(driver,notPresentDate);
+			click(driver,notPresentDate);
 			wait(driver,"2");
-			click(driver, retreatEnd1);
-			wait(driver,"2");
-			
-		} else {
-			
-			wait(driver,"2");
+		}else {
+
+			waitForElement(driver, nextMonth);
 			click(driver, nextMonth);
 			wait(driver,"2");
-			click(driver, retreatEnd2);
-			wait(driver,"3");
+			click(driver,nextDay);
+			wait(driver,"2");
+		}
+			
+		click(driver, toDate);
+		wait(driver,"2");
+		
+		if (isDisplayed(driver, notPresentDate)) {
+			
+			waitForElement(driver,todayDate);
+			click(driver, todayDate);
+			wait(driver,"2");
+		}else {
+
+			waitForElement(driver, nextMonth);
+			click(driver, nextMonth);
+			wait(driver,"2");
+			click(driver,nextDay);
+			wait(driver,"2");
 		}
 		
 		waitForElement(driver, addAgenda);
@@ -1210,10 +1845,10 @@ public class HealerActions extends Keywords {
 		wait(driver,"4");
 		
 			
-		scrollUsingElement(driver,  moderateRetreat);
+		scrollUsingElement(driver,  relaxedRetreat);
 		wait(driver,"2");
-		verifyElementIsPresent(driver, moderateRetreat);
-		click(driver, moderateRetreat);
+		verifyElementIsPresent(driver, relaxedRetreat);
+		click(driver, relaxedRetreat);
 			
 		wait(driver,"2");
 		scrollUsingElement(driver,saveAndContinue);
@@ -1225,8 +1860,7 @@ public class HealerActions extends Keywords {
 		verifyElementIsPresent(driver, secondRetreatComplete);
 		wait(driver,"4");
 		
-		boolean logout = reusableActions.healerLogout(driver);
-		wait(driver,"2");
+		
 		
 	}
 	
@@ -1259,13 +1893,14 @@ public class HealerActions extends Keywords {
 		
 		verifyElementIsPresent(driver,yogaTherapyActive);
 		verifyElementIsPresent(driver, abhyangaActive);
+		verifyElementIsPresent(driver, urdvartanaActive);
 		verifyElementIsPresent(driver, januVastiComplete);
 		wait(driver,"2");
 		
 		
 		
 		
-		boolean logout = reusableActions.healerLogout(driver);
+		boolean logout = reusableActions.Logout(driver);
 		wait(driver,"2");
 		
 		

@@ -344,6 +344,7 @@ public class Keywords extends ATUReports implements OR {
 		}
 	}
 
+	
 	public void selectByValue(WebDriver driver, String xpaths, String inputData) {
 		String[] values = splitXpath(xpaths);
 		try {
@@ -357,6 +358,8 @@ public class Keywords extends ATUReports implements OR {
 			Assert.fail();
 		}
 	}
+	
+	
 
 	public void checkTwoString(WebDriver driver, String GetText1, String GetText2) {
 		try {
@@ -759,6 +762,9 @@ public class Keywords extends ATUReports implements OR {
 		}
 
 	}
+	
+	
+	
 
 	public void isElementClickable(WebDriver driver, String xpath) {
 		String[] values = splitXpath(xpath);
@@ -976,9 +982,23 @@ public class Keywords extends ATUReports implements OR {
 		try {
 		
 				By cookies_accept = By.xpath("//button[text()='Accept']");
-				 WebDriverWait wait = new WebDriverWait(driver, 10);
-				 wait.until(ExpectedConditions.elementToBeClickable(cookies_accept)).click();
-				 wait(driver,"2");
+				
+				WebElement element = driver.findElement((cookies_accept));
+				
+				if (element.isDisplayed()) {
+					
+					WebDriverWait wait = new WebDriverWait(driver, 10);
+					 wait.until(ExpectedConditions.elementToBeClickable(cookies_accept)).click();
+					 wait(driver,"2");
+				}else {
+					System.out.println("accept is not present");
+				}
+				
+				
+				
+				
+				
+				 
 		
 			
 			
@@ -1266,6 +1286,8 @@ public class Keywords extends ATUReports implements OR {
 	        return "th";
 	    }
 	}
+	
+	
 
 	public String getPreviousMonth() {
 		Calendar c = Calendar.getInstance();
@@ -1288,7 +1310,7 @@ public class Keywords extends ATUReports implements OR {
 	public void chooseDateFromCalendar(WebDriver driver, String month, String nextButton, String caldays, int duration) {
 		try {
 			Calendar currentCalDate = Calendar.getInstance();
-			SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMMM yyyy");
+			SimpleDateFormat dateFormat = new SimpleDateFormat("d-MMMM-yyyy");
 			System.out.println(dateFormat.format(currentCalDate.getTime()));
 			currentCalDate.add(Calendar.DAY_OF_MONTH, duration);  
 			String newDate = dateFormat.format(currentCalDate.getTime());  
@@ -1300,11 +1322,13 @@ public class Keywords extends ATUReports implements OR {
 			String[] value1 = splitXpath(month);
 			String[] value2 = splitXpath(nextButton);
 			String[] value3 = splitXpath(caldays);
+			
 
 			month = driver.findElement(By.xpath(value1[1])).getText();
 			while (!month.equalsIgnoreCase(month_year)) {
 				driver.findElement(By.xpath(value2[1])).click();
 				String month2 = driver.findElement(By.xpath(value1[1])).getText();
+				System.out.println(month2);
 				month = month2;
 				Thread.sleep(1000);
 			}
@@ -1314,6 +1338,7 @@ public class Keywords extends ATUReports implements OR {
 				System.out.println(d.getText());
 				if ((d.getText()).equals(day)) {
 					d.click();
+					Thread.sleep(1000);
 				}
 			}
 		}
