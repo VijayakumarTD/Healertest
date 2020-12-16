@@ -59,41 +59,130 @@ public class Testcases extends Config {
 	
 	
 	
+	
+
 	@Test
-	public void TC001_HealerProcess() throws InterruptedException {
+	public void TC001_HealerLogin() throws InterruptedException {
 		
-		healtest.healerActions(driver, healerURL);
+		healtest.healerLogin(driver, healerURL);
 		
 	
 	}
-		
+	
+	@Test
+	public void TC002_FirstLocation() {
+		healtest.firstLocation(driver);
+	}
+	
+	@Test
+	public void TC003_YogaService() {
+		healtest.first_ClassService(driver);
+	}
+	
+	@Test
+	public void TC004_PersonalYoga() {
+		healtest.first_GeneralService(driver);
+	}
+	
+	@Test
+	public void TC005_YogaTherapy() {
+		healtest.first_HomeService(driver);
+	}
+	
+	@Test
+	public void TC006_RetreatService() {
+		healtest.first_RetreatService(driver);
+	}
+	
+	@Test
+	public void TC007_SecondLocation() {
+		healtest.secondLocation(driver);
+	}
+	
+	
 	
 	
 	@Test
-	public void TC002_AdminPage() throws InterruptedException {
+	public void TC008_Abhayanga() {
+		healtest.second_HomeService(driver);
+	}
+	
+	@Test
+	public void TC009_Urdvartana() {
+		healtest.second_GeneralService(driver);
+	}
+	
+	@Test
+	public void TC010_JanuVasti() {
+		healtest.second_ClassService(driver);
+	}
+	
+	@Test
+	public void TC011_RetreatService() {
+		healtest.second_RetreatService(driver);
+	}
+	
+	
+	@Test
+	public void TC012_HealerLogout() {
+		healtest.Logout(driver);
+	}
+	
+	
+	@Test
+	public void TC013_AdminPage() throws InterruptedException {
 		admintest.healerAccountVerify(driver, adminURL);
 	}
 	
 	
-	
-	
 	@Test
-	public void TC003_HealerVerification() throws InterruptedException {
+	public void TC014_HealerVerification() throws InterruptedException {
 		healtest.healerIdVerify(driver, healerURL);
 	}
 	
 	
 	
+	
 	@Test 
-	public void TC004_CustomerProcess() throws InterruptedException {
+	public void TC015_FirstCustomer() throws InterruptedException {
 	customertest.first_Customer(driver, clientURL);
-	customertest.second_Customer(driver, clientURL);	
-	customertest.firstcancellation(driver, clientURL);
-	customertest.secondCancellation(driver, clientURL);
+	
+	}
+	
+	
+	@Test
+	public void TC016_SecondCustomer() throws InterruptedException {
+		customertest.second_Customer(driver, clientURL);	
+	}
+	
+
+
+	
+	@Test
+	public void TC017_FirstCustomerCancellation() throws InterruptedException {
+		customertest.firstCancellation2(driver, clientURL);	
+	}
+	
+	
+	
+	@Test
+	public void TC018_SecondCustomerCancellation() throws InterruptedException {
+		customertest.secondCancellation2(driver, clientURL);	
+	}
+
+	
+	@Test
+	public void TC019_FirstRefund() throws InterruptedException {
+		customertest.first_RequestRefund(driver, clientURL);	
 	}
 	
 	
 		
+	@Test
+	public void TC020_SecondRefund() throws InterruptedException {
+		customertest.Second_RequestRefund(driver, clientURL);	
+	}
+	
 
 	@AfterTest
 	public void teardown() throws Exception {

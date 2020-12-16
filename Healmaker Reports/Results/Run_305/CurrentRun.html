@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Current Run Reports</title>
+
+        <link rel="stylesheet" type="text/css" href="../../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../../HTML_Design_Files/CSS/jquery.jqplot.css" />
+
+        <script type="text/javascript" src="../../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script language="javascript" type="text/javascript" src="../../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+        <script language="javascript" type="text/javascript" src="../../HTML_Design_Files/JS/jqplot.pieRenderer.min.js"></script>
+        <script type="text/javascript" src="pieChart.js"></script>
+
+<script language="javascript" type="text/javascript">$(document).ready(function() { $(".video").hide();$("#showmenu").show(); $('#showmenu').click(function(){ $('.video').toggle("slide"); }); });</script><style>#showmenu{text-align:center; padding-top:350px;color: #585858; font-size: 14px;}#video{height: 550px;    margin-top: 5px;    width: 97%;    border-style: solid;    border-width: 1px;    border-color: #21ABCD;        -moz-box-shadow: 0 0 10px #CCCCCC;    -ms-box-shadow: 0 0 10px #CCCCCC;    -webkit-box-shadow: 0 0 10px #CCCCCC;    box-shadow: 0 0 10px #CCCCCC;    zoom: 1;    filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=0),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=90),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=180),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=270);    background-color: white;}</style><script language="javascript" type="text/javascript">
+$(document).ready(function() {
+	$('#tcFilter').on('change',function(){
+    if($(this).val()=='pass'){
+        $('.pass').show();
+		$('.fail').hide();
+		$('.skip').hide();
+		$('.config').hide();
+    }
+	if($(this).val()=='fail'){
+        $('.pass').hide();
+		$('.fail').show();
+		$('.skip').hide();
+		$('.config').hide();
+    }
+	
+	if($(this).val()=='skip'){
+        $('.pass').hide();
+		$('.fail').hide();
+		$('.skip').show();
+		$('.config').hide();
+    }
+	
+if($(this).val()=='tests'){ $('.pass').show(); $('.fail').show(); $('.skip').show(); $('.config').hide(); }	if($(this).val()=='config'){
+        $('.pass').hide();
+		$('.fail').hide();
+		$('.skip').hide();
+		$('.config').show();
+    }
+	
+	if($(this).val()=='all'){
+        $('.pass').show();
+		$('.fail').show();
+		$('.skip').show();
+		$('.config').show();
+    }
+  });
+});       
+</script>
+    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../../HTML_Design_Files/IMG/TrackDfect.jpg" alt="Logo" height="70" width="140" /> <br/></td>
+                <td id="headertext">
+                    HEALMAKER Reports<div style="padding-right:20px;float:right"><img src="../../HTML_Design_Files/IMG/TrackDfect.png" height="70" width="140" /> </i></div></td>
+
+            </tr>
+
+            <tr id="container">
+                <td id="menu">
+                    <ul> 
+
+ <li class="menuStyle"><a href="../../index.html" >Index</a></li><li style="padding-top: 4px;"><a href="../ConsolidatedPage.html" >Consolidated Page</a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">
+                    <div class="info">
+        Time Taken for Executing below Test Cases: <b>292 Sec</b> <br/>
+                        Current Run Number: <b>Run 305</b>
+<br/>                        <div class="chartStyle summary" style="width: 32%;background-color: #3B9C9C;">
+                            <b>Summary</b><br/><br/>
+                            <table>
+                            <tr>
+                                <td>Execution Date</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>15-Dec-2020 06:03:04</td>
+                            </tr>
+                            <tr>
+                                <td>Total Test Cases</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Passed</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>0</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Failed</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>18</td>
+                            </tr>
+
+                            <tr>
+                                <td>Skipped</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>0</td>
+                            </tr>
+
+ </table> 
+                        </div>                        <div class="chartStyle" style="text-align: left;margin-left: 30px;float: left;width: 60%;">                        
+                            <div id="chart" style="height:300px;color:black;"></div>
+                        </div>
+                    </div>
+                    <div>
+
+<div style="float:left;  color: #585858; font-size: 14px;">	<select id="tcFilter" class="filter">
+						<option  class="filterOption" value="pass">Passed Test Cases</option>
+						<option class="filterOption" value="fail">Failed Test Cases</option>
+						<option class="filterOption" value="skip">Skipped Test Cases</option>
+					</select>	Filter The Methods Based on Selection</div>
+                        <table id="tableStyle" class="chartStyle" style="height:50px; float: left">
+                            <tr>
+                                <th>Suite Name</th>
+                                <th>Module Name</th>
+                   <th>No Of Test Case</th>
+                                                               <th>Test Case Name/ ID</th>
+<th>Iteration</th>                                <th>Time</th>
+                                <th style="width: 7%">Status</th>
+                            </tr>
+
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_01_YogaService_Iteration1\TC002_01_YogaService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_01_YogaService_Iteration1\TC002_01_YogaService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_01_YogaService_Iteration1\TC002_01_YogaService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_01_YogaService_Iteration1\TC002_01_YogaService.html">TC002_01_YogaService</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_01_YogaService_Iteration1\TC002_01_YogaService.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_01_YogaService_Iteration1\TC002_01_YogaService.html">5 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_02_PersonalYoga_Iteration1\TC002_02_PersonalYoga.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_02_PersonalYoga_Iteration1\TC002_02_PersonalYoga.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_02_PersonalYoga_Iteration1\TC002_02_PersonalYoga.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_02_PersonalYoga_Iteration1\TC002_02_PersonalYoga.html">TC002_02_PersonalYoga</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_02_PersonalYoga_Iteration1\TC002_02_PersonalYoga.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_02_PersonalYoga_Iteration1\TC002_02_PersonalYoga.html">5 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_03_YogaTherapy_Iteration1\TC002_03_YogaTherapy.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_03_YogaTherapy_Iteration1\TC002_03_YogaTherapy.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_03_YogaTherapy_Iteration1\TC002_03_YogaTherapy.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_03_YogaTherapy_Iteration1\TC002_03_YogaTherapy.html">TC002_03_YogaTherapy</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_03_YogaTherapy_Iteration1\TC002_03_YogaTherapy.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_03_YogaTherapy_Iteration1\TC002_03_YogaTherapy.html">3 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_04_RetreatService_Iteration1\TC002_04_RetreatService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_04_RetreatService_Iteration1\TC002_04_RetreatService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_04_RetreatService_Iteration1\TC002_04_RetreatService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_04_RetreatService_Iteration1\TC002_04_RetreatService.html">TC002_04_RetreatService</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_04_RetreatService_Iteration1\TC002_04_RetreatService.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC002_04_RetreatService_Iteration1\TC002_04_RetreatService.html">5 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_01_Abhayanga_Iteration1\TC003_01_Abhayanga.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_01_Abhayanga_Iteration1\TC003_01_Abhayanga.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_01_Abhayanga_Iteration1\TC003_01_Abhayanga.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_01_Abhayanga_Iteration1\TC003_01_Abhayanga.html">TC003_01_Abhayanga</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_01_Abhayanga_Iteration1\TC003_01_Abhayanga.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_01_Abhayanga_Iteration1\TC003_01_Abhayanga.html">25 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_02_Urdvartana_Iteration1\TC003_02_Urdvartana.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_02_Urdvartana_Iteration1\TC003_02_Urdvartana.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_02_Urdvartana_Iteration1\TC003_02_Urdvartana.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_02_Urdvartana_Iteration1\TC003_02_Urdvartana.html">TC003_02_Urdvartana</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_02_Urdvartana_Iteration1\TC003_02_Urdvartana.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_02_Urdvartana_Iteration1\TC003_02_Urdvartana.html">28 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_03_JanuVasti_Iteration1\TC003_03_JanuVasti.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_03_JanuVasti_Iteration1\TC003_03_JanuVasti.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_03_JanuVasti_Iteration1\TC003_03_JanuVasti.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_03_JanuVasti_Iteration1\TC003_03_JanuVasti.html">TC003_03_JanuVasti</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_03_JanuVasti_Iteration1\TC003_03_JanuVasti.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_03_JanuVasti_Iteration1\TC003_03_JanuVasti.html">31 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_04_RetreatService_Iteration1\TC003_04_RetreatService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_04_RetreatService_Iteration1\TC003_04_RetreatService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_04_RetreatService_Iteration1\TC003_04_RetreatService.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_04_RetreatService_Iteration1\TC003_04_RetreatService.html">TC003_04_RetreatService</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_04_RetreatService_Iteration1\TC003_04_RetreatService.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_04_RetreatService_Iteration1\TC003_04_RetreatService.html">29 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_SecondLocation_Iteration1\TC003_SecondLocation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_SecondLocation_Iteration1\TC003_SecondLocation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_SecondLocation_Iteration1\TC003_SecondLocation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_SecondLocation_Iteration1\TC003_SecondLocation.html">TC003_SecondLocation</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_SecondLocation_Iteration1\TC003_SecondLocation.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC003_SecondLocation_Iteration1\TC003_SecondLocation.html">24 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC004_HealerLogout_Iteration1\TC004_HealerLogout.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC004_HealerLogout_Iteration1\TC004_HealerLogout.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC004_HealerLogout_Iteration1\TC004_HealerLogout.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC004_HealerLogout_Iteration1\TC004_HealerLogout.html">TC004_HealerLogout</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC004_HealerLogout_Iteration1\TC004_HealerLogout.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC004_HealerLogout_Iteration1\TC004_HealerLogout.html">24 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC005_AdminPage_Iteration1\TC005_AdminPage.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC005_AdminPage_Iteration1\TC005_AdminPage.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC005_AdminPage_Iteration1\TC005_AdminPage.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC005_AdminPage_Iteration1\TC005_AdminPage.html">TC005_AdminPage</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC005_AdminPage_Iteration1\TC005_AdminPage.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC005_AdminPage_Iteration1\TC005_AdminPage.html">12 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC006_HealerVerification_Iteration1\TC006_HealerVerification.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC006_HealerVerification_Iteration1\TC006_HealerVerification.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC006_HealerVerification_Iteration1\TC006_HealerVerification.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC006_HealerVerification_Iteration1\TC006_HealerVerification.html">TC006_HealerVerification</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC006_HealerVerification_Iteration1\TC006_HealerVerification.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC006_HealerVerification_Iteration1\TC006_HealerVerification.html">12 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC007_FirstCustomer_Iteration1\TC007_FirstCustomer.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC007_FirstCustomer_Iteration1\TC007_FirstCustomer.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC007_FirstCustomer_Iteration1\TC007_FirstCustomer.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC007_FirstCustomer_Iteration1\TC007_FirstCustomer.html">TC007_FirstCustomer</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC007_FirstCustomer_Iteration1\TC007_FirstCustomer.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC007_FirstCustomer_Iteration1\TC007_FirstCustomer.html">13 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC008_SecondCustomer_Iteration1\TC008_SecondCustomer.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC008_SecondCustomer_Iteration1\TC008_SecondCustomer.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC008_SecondCustomer_Iteration1\TC008_SecondCustomer.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC008_SecondCustomer_Iteration1\TC008_SecondCustomer.html">TC008_SecondCustomer</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC008_SecondCustomer_Iteration1\TC008_SecondCustomer.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC008_SecondCustomer_Iteration1\TC008_SecondCustomer.html">13 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC009_FirstCustomerCancellation_Iteration1\TC009_FirstCustomerCancellation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC009_FirstCustomerCancellation_Iteration1\TC009_FirstCustomerCancellation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC009_FirstCustomerCancellation_Iteration1\TC009_FirstCustomerCancellation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC009_FirstCustomerCancellation_Iteration1\TC009_FirstCustomerCancellation.html">TC009_FirstCustomerCancellation</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC009_FirstCustomerCancellation_Iteration1\TC009_FirstCustomerCancellation.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC009_FirstCustomerCancellation_Iteration1\TC009_FirstCustomerCancellation.html">12 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC010_SecondCustomerCancellation_Iteration1\TC010_SecondCustomerCancellation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC010_SecondCustomerCancellation_Iteration1\TC010_SecondCustomerCancellation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC010_SecondCustomerCancellation_Iteration1\TC010_SecondCustomerCancellation.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC010_SecondCustomerCancellation_Iteration1\TC010_SecondCustomerCancellation.html">TC010_SecondCustomerCancellation</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC010_SecondCustomerCancellation_Iteration1\TC010_SecondCustomerCancellation.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC010_SecondCustomerCancellation_Iteration1\TC010_SecondCustomerCancellation.html">12 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC011_FirstRefund_Iteration1\TC011_FirstRefund.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC011_FirstRefund_Iteration1\TC011_FirstRefund.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC011_FirstRefund_Iteration1\TC011_FirstRefund.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC011_FirstRefund_Iteration1\TC011_FirstRefund.html">TC011_FirstRefund</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC011_FirstRefund_Iteration1\TC011_FirstRefund.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC011_FirstRefund_Iteration1\TC011_FirstRefund.html">12 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC012_SecondRefund_Iteration1\TC012_SecondRefund.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC012_SecondRefund_Iteration1\TC012_SecondRefund.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC012_SecondRefund_Iteration1\TC012_SecondRefund.html"></a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC012_SecondRefund_Iteration1\TC012_SecondRefund.html">TC012_SecondRefund</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC012_SecondRefund_Iteration1\TC012_SecondRefund.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\TC012_SecondRefund_Iteration1\TC012_SecondRefund.html">12 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>            <tr id="footer">
+<td colspan="2">
+&nbsp;
+TrackDfect Reports&nbsp;
+ Reports by: <a href="http://www.trackdfect.com/">TrackDfect.com</a>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,4204 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pie Charts</title>
+
+        <link rel="stylesheet" type="text/css" href="../../../../../../../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../HTML_Design_Files/CSS/jquery.jqplot.css" />
+
+        <script type="text/javascript" src="../../../../../../../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script language="javascript" type="text/javascript" src="../../../../../../../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+        <script language="javascript" type="text/javascript" src="../../../../../../../HTML_Design_Files/JS/jqplot.pieRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript">$(document).ready(function() { $(".exception").hide(); $("#showmenu").show(); $('#showmenu').click(function() { $('.exception').toggle("slide"); }); });        </script>    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../../../../../../../HTML_Design_Files/IMG/TrackDfect.jpg" alt="Logo" height="80" width="140" /> <br/></td>
+                <td id="headertext">
+           Healmaker Reports         
+<div style="padding-right:20px;float:right"><img src="../../../../../../../HTML_Design_Files/IMG/TrackDfect.png" height="70" width="140" /> </i></div>                </td>
+            </tr>
+
+            <tr id="container">
+                <td id="menu">
+                    <ul> 
+
+ <li class="menuStyle"><a href="../../../../../../../index.html" >Index</a></li><li style="padding-top: 4px;"><a href="../../../../../../ConsolidatedPage.html" >Consolidated Page</a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">   
+                    <div class="info">
+       TestCase Name: <b>TC001_HealerProcess  :  Iteration 1</b><br/>                        Time Taken for Executing: <b>1112 Sec</b> <br/>
+                        Current Run Number: <b>Run 275</b></br>
+                    </div>
+<div class="chartStyle summary" style="background-color:#dbae0f;width: 46%; height: 200px;">          
+                        <b>Execution Platform Details</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>O.S</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Windows 10, amd64Bit, v10.0</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>1.8.0_201</td>
+                            </tr>
+
+                            <tr>
+                                <td>Hostname</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>DESKTOP-E639F34</td>
+                            </tr>
+
+   <td>Selenium</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>3.10.0</td>
+                         <tr>
+                                                        </table>  
+                    </div>
+                   
+ <div class="chartStyle summary" style="background-color:#03b78a; margin-left: 20px; height: 200px;width: 46%; ">
+                        <b>Summary</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>Status</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Passed</td>
+                            </tr>
+                            <tr>
+                                <td>Execution Date</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>08-Dec-2020 03:21:52</td>
+                            </tr>
+                            
+
+                            <tr>
+                                <td>Browser</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Chrome</td>
+                            </tr>
+ 				<td>BrowserVersion</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>65.0.3325.146 (Official Build) (64-bit)</td>
+                            </tr>
+                        </table> 
+                    </div>
+   <div>
+                        <table class="chartStyle" id="tableStyle" style="height:50px; float: left">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Step Description</th>
+                                <th>Input Value</th>
+                    <th>Actual Value</th>
+                   <th>Time</th>
+                                <th>Line No</th>
+                                <th>Status</th>
+                                <th>Screen shot</th>
+                            </tr>
+                           
+
+<tr><td>1</td>
+<td>Wait for the Element Login button</td>
+<td></td>
+<td></td>
+<td>1607375774 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>2</td>
+<td>Click on Login button</td>
+<td></td>
+<td></td>
+<td>204 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>3</td>
+<td>Type on Email Address</td>
+<td>trackaccount26@yopmail.com</td>
+<td></td>
+<td>1 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>4</td>
+<td>Type on Password</td>
+<td>Track@123</td>
+<td></td>
+<td>154 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>5</td>
+<td>Scrolled to Login</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>6</td>
+<td>Click on Login</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>7</td>
+<td>Element 'Main Location' is verified </td>
+<td></td>
+<td></td>
+<td>7 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>8</td>
+<td>Wait for the Element Location Name</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>9</td>
+<td>Type on Location Name</td>
+<td>Test Yoga Name</td>
+<td></td>
+<td>558 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>10</td>
+<td>Click on Check Display my location</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>11</td>
+<td>Scrolled to Address 1</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>12</td>
+<td>Type on Address 1</td>
+<td>1/22, Amman Kovil St, Santhosapuram, Medavakkam</td>
+<td></td>
+<td>1 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>13</td>
+<td>Element 'Address autoselect' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>14</td>
+<td>Click on Address autoselect</td>
+<td></td>
+<td></td>
+<td>195 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>15</td>
+<td>Scrolled to India </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>16</td>
+<td>Element 'India ' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>17</td>
+<td>Scrolled to the bottom </td>
+<td></td>
+<td></td>
+<td>38 Milli Sec</td>
+<td>452</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>18</td>
+<td>Click on State</td>
+<td></td>
+<td></td>
+<td>179 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>19</td>
+<td>Click on TamilNadu</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>20</td>
+<td>Element 'TamilNadu' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>21</td>
+<td>Click on City</td>
+<td></td>
+<td></td>
+<td>450 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>22</td>
+<td>Click on Kanchipuram</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>23</td>
+<td>Element 'Kanchipuram' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>24</td>
+<td>Type on Zip Code</td>
+<td>600100</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>25</td>
+<td>Scrolled to the bottom </td>
+<td></td>
+<td></td>
+<td>25 Milli Sec</td>
+<td>452</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>26</td>
+<td>Wait for the Element Business</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>27</td>
+<td>Click on Business</td>
+<td></td>
+<td></td>
+<td>287 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>28</td>
+<td>Click on Picture Location 1</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>29</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>30</td>
+<td>Click on Picture Location 1</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>31</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>32</td>
+<td>Element 'back' is verified </td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>33</td>
+<td>Element 'Save & Continue' is verified </td>
+<td></td>
+<td></td>
+<td>87 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>34</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>88 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>35</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>399 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>36</td>
+<td>Wait for the Element Service Category</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>37</td>
+<td>Click on Service Category</td>
+<td></td>
+<td></td>
+<td>95 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>38</td>
+<td>Wait for the Element Yoga</td>
+<td></td>
+<td></td>
+<td>467 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>39</td>
+<td>Click on Yoga</td>
+<td></td>
+<td></td>
+<td>100 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>40</td>
+<td>Click on Yoga Class</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>41</td>
+<td>Click on Personal Yoga Session</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>42</td>
+<td>Click on Yoga Therapy</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>43</td>
+<td>Wait for the Element Select</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>44</td>
+<td>Click on Select</td>
+<td></td>
+<td></td>
+<td>141 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>45</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>46</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>213 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>47</td>
+<td>Scrolled to Yoga class description</td>
+<td></td>
+<td></td>
+<td>8 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>48</td>
+<td>Wait for the Element Yoga class description</td>
+<td></td>
+<td></td>
+<td>54 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>49</td>
+<td>Click on Yoga class description</td>
+<td></td>
+<td></td>
+<td>424 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>50</td>
+<td>Wait for the Element Be specific your name</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>51</td>
+<td>Clear and Type on Be specific your name</td>
+<td>Check Yoga Class Service</td>
+<td></td>
+<td>500 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>52</td>
+<td>Scrolled to Service describe</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>53</td>
+<td>Type on Service describe</td>
+<td>Test Yoga Service Class</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>54</td>
+<td>Wait for the Element Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>55</td>
+<td>Click on Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>56</td>
+<td>Type on Select english</td>
+<td>English</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>57</td>
+<td>Click on Service photo 1</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>58</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>59</td>
+<td>Click on Service photo 2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>60</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>61</td>
+<td>Click on Service photo 3</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>62</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>63</td>
+<td>Scrolled to qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>64</td>
+<td>Wait for the Element qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>65</td>
+<td>Type on qualification</td>
+<td>3+ years</td>
+<td></td>
+<td>246 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>66</td>
+<td>Click on level of Expertise</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>67</td>
+<td>Wait for the Element Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>68</td>
+<td>Click on Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>163 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>69</td>
+<td>Scrolled to Pricing</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>70</td>
+<td>Element 'Pricing' is verified </td>
+<td></td>
+<td></td>
+<td>80 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>71</td>
+<td>Click on Duration of service</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>72</td>
+<td>Wait for the Element Select 30</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>73</td>
+<td>Click on Select 30</td>
+<td></td>
+<td></td>
+<td>121 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>74</td>
+<td>Type on Per client price</td>
+<td>30</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>75</td>
+<td>Type on Maximum Register</td>
+<td>5</td>
+<td></td>
+<td>1 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>76</td>
+<td>Scrolled to Strict</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>77</td>
+<td>Element 'Strict' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>78</td>
+<td>Click on Strict</td>
+<td></td>
+<td></td>
+<td>196 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>79</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>80</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>79 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>81</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>237 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>82</td>
+<td>Wait for the Element Days </td>
+<td></td>
+<td></td>
+<td>8 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>83</td>
+<td>Click on All checkbox</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>84</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>7</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>85</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>30</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>86</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>PM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>87</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>8</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>88</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>00</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>89</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>PM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>90</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>91</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>92</td>
+<td>Element ' Yoga Complete' is verified </td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>93</td>
+<td>Scrolled to Personal Yoga Description</td>
+<td></td>
+<td></td>
+<td>9 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>94</td>
+<td>Wait for the Element Personal Yoga Description</td>
+<td></td>
+<td></td>
+<td>88 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>95</td>
+<td>Click on Personal Yoga Description</td>
+<td></td>
+<td></td>
+<td>450 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>96</td>
+<td>Wait for the Element Be specific your name</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>97</td>
+<td>Clear and Type on Be specific your name</td>
+<td>Check Personal Yoga Service</td>
+<td></td>
+<td>391 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>98</td>
+<td>Scrolled to Service describe</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>99</td>
+<td>Type on Service describe</td>
+<td>Test Personal Yoga General</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>100</td>
+<td>Wait for the Element Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>101</td>
+<td>Click on Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>102</td>
+<td>Type on Select english</td>
+<td>English</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>103</td>
+<td>Click on Service photo 1</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>104</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>105</td>
+<td>Click on Service photo 2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>106</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>107</td>
+<td>Click on Service photo 3</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>108</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>109</td>
+<td>Scrolled to qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>110</td>
+<td>Wait for the Element qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>111</td>
+<td>Type on qualification</td>
+<td>4+years</td>
+<td></td>
+<td>229 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>112</td>
+<td>Click on level of Expertise</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>113</td>
+<td>Wait for the Element Expert, 3+ years of experience</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>114</td>
+<td>Click on Expert, 3+ years of experience</td>
+<td></td>
+<td></td>
+<td>142 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>115</td>
+<td>Scrolled to Pricing</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>116</td>
+<td>Element 'Pricing' is verified </td>
+<td></td>
+<td></td>
+<td>59 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>117</td>
+<td>Click on Duration of service</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>118</td>
+<td>Wait for the Element Select 30</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>119</td>
+<td>Click on Select 30</td>
+<td></td>
+<td></td>
+<td>134 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>120</td>
+<td>Type on Enter Price</td>
+<td>50</td>
+<td></td>
+<td>4 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>121</td>
+<td>Wait for the Element Price add</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>122</td>
+<td>Click on Price add</td>
+<td></td>
+<td></td>
+<td>309 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>123</td>
+<td>Scrolled to Moderate</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>124</td>
+<td>Element 'Moderate' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>125</td>
+<td>Click on Moderate</td>
+<td></td>
+<td></td>
+<td>236 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>126</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>127</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>75 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>128</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>362 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>129</td>
+<td>Wait for the Element Days </td>
+<td></td>
+<td></td>
+<td>7 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>130</td>
+<td>Click on All checkbox</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>131</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>3</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>132</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>20</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>133</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>AM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>134</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>3</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>135</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>50</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>136</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>AM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>137</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>138</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>139</td>
+<td>Wait for the Element  Personal Yoga Complete</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>140</td>
+<td>Element ' Personal Yoga Complete' is verified </td>
+<td></td>
+<td></td>
+<td>50 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>141</td>
+<td>Scrolled to Yoga Therapy Description</td>
+<td></td>
+<td></td>
+<td>7 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>142</td>
+<td>Wait for the Element Yoga Therapy Description</td>
+<td></td>
+<td></td>
+<td>93 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>143</td>
+<td>Click on Yoga Therapy Description</td>
+<td></td>
+<td></td>
+<td>466 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>144</td>
+<td>Wait for the Element Be specific your name</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>145</td>
+<td>Clear and Type on Be specific your name</td>
+<td>Check Yoga Therapy flow</td>
+<td></td>
+<td>295 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>146</td>
+<td>Scrolled to Service describe</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>147</td>
+<td>Type on Service describe</td>
+<td>TestYoga Therapy Home</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>148</td>
+<td>Wait for the Element Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>149</td>
+<td>Click on Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>150</td>
+<td>Type on Select english</td>
+<td>English</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>151</td>
+<td>Click on Service photo 1</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>152</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>153</td>
+<td>Click on Service photo 2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>154</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>155</td>
+<td>Click on Service photo 3</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>156</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>157</td>
+<td>Scrolled to qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>158</td>
+<td>Wait for the Element qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>159</td>
+<td>Type on qualification</td>
+<td>4+ Years</td>
+<td></td>
+<td>242 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>160</td>
+<td>Click on level of Expertise</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>161</td>
+<td>Wait for the Element Expert, 3+ years of experience</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>162</td>
+<td>Click on Expert, 3+ years of experience</td>
+<td></td>
+<td></td>
+<td>104 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>163</td>
+<td>Scrolled to Pricing</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>164</td>
+<td>Element 'Pricing' is verified </td>
+<td></td>
+<td></td>
+<td>76 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>165</td>
+<td>Click on Duration of service</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>166</td>
+<td>Wait for the Element Select 30</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>167</td>
+<td>Click on Select 30</td>
+<td></td>
+<td></td>
+<td>120 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>168</td>
+<td>Type on Enter Price</td>
+<td>70</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>169</td>
+<td>Wait for the Element Price add</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>170</td>
+<td>Click on Price add</td>
+<td></td>
+<td></td>
+<td>271 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>171</td>
+<td>Scrolled to Relaxed</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>172</td>
+<td>Element 'Relaxed' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>173</td>
+<td>Click on Relaxed</td>
+<td></td>
+<td></td>
+<td>170 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>174</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>175</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>74 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>176</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>442 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>177</td>
+<td>Wait for the Element Days </td>
+<td></td>
+<td></td>
+<td>7 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>178</td>
+<td>Click on All checkbox</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>179</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>8</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>180</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>30</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>181</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>PM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>182</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>9</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>183</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>00</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>184</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>PM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>185</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>186</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>187</td>
+<td>Wait for the Element Yoga Therapy Complete</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>188</td>
+<td>Element 'Yoga Therapy Complete' is verified </td>
+<td></td>
+<td></td>
+<td>50 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>189</td>
+<td>Scrolled to Add retreat</td>
+<td></td>
+<td></td>
+<td>10 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>190</td>
+<td>Wait for the Element Add retreat</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>191</td>
+<td>Click on Add retreat</td>
+<td></td>
+<td></td>
+<td>416 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>192</td>
+<td>Type on Retreat Name</td>
+<td>Test Retreat Service one</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>193</td>
+<td>Wait for the Element Retreat Checkbox</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>194</td>
+<td>Click on Retreat Checkbox</td>
+<td></td>
+<td></td>
+<td>209 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>195</td>
+<td>Scrolled to Retreat Category</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>196</td>
+<td>Wait for the Element Retreat Category</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>197</td>
+<td>Click on Retreat Category</td>
+<td></td>
+<td></td>
+<td>200 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>198</td>
+<td>Click on Yoga and Yoga Training</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>199</td>
+<td>Type on Describe retreat service</td>
+<td>Retreat based service</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>200</td>
+<td>Click on Select Language</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>201</td>
+<td>Type on Select english</td>
+<td>English</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>202</td>
+<td>Click on Service photo 1</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>203</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>204</td>
+<td>Click on Service photo 2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>205</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>206</td>
+<td>Click on Service photo 3</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>207</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>208</td>
+<td>Scrolled to Qualification Retreat</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>209</td>
+<td>Wait for the Element Certification</td>
+<td></td>
+<td></td>
+<td>71 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>210</td>
+<td>Click on Certification</td>
+<td></td>
+<td></td>
+<td>158 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>211</td>
+<td>Click on Yes</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>212</td>
+<td>Type on Describe yourself</td>
+<td>having 4+ year experience</td>
+<td></td>
+<td>4 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>213</td>
+<td>Click on level of Expertise</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>214</td>
+<td>Wait for the Element Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>215</td>
+<td>Click on Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>133 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>216</td>
+<td>Scrolled to From Date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>217</td>
+<td>Click on From Date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>218</td>
+<td>Wait for the Element Todays date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>219</td>
+<td>Click on Todays date</td>
+<td></td>
+<td></td>
+<td>233 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>220</td>
+<td>Click on To Date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>221</td>
+<td>Wait for the Element next date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>222</td>
+<td>Click on next date</td>
+<td></td>
+<td></td>
+<td>174 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>223</td>
+<td>Wait for the Element Add Day Agenda</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>224</td>
+<td>Click on Add Day Agenda</td>
+<td></td>
+<td></td>
+<td>216 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>225</td>
+<td>Wait for the Element day1</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>226</td>
+<td>Type on day1</td>
+<td>2300</td>
+<td></td>
+<td>267 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>227</td>
+<td>Wait for the Element Activity</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>228</td>
+<td>Type on Activity</td>
+<td>Retreat Activity</td>
+<td></td>
+<td>324 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>229</td>
+<td>Wait for the Element Where</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>230</td>
+<td>Type on Where</td>
+<td>Chennai</td>
+<td></td>
+<td>243 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>231</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>232</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>84 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>233</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>457 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>234</td>
+<td>Wait for the Element Number of People</td>
+<td></td>
+<td></td>
+<td>13 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>235</td>
+<td>Clear and Type on Number of People</td>
+<td>1</td>
+<td></td>
+<td>140 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>236</td>
+<td>Wait for the Element Maximum number of Guest</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>237</td>
+<td>Clear and Type on Maximum number of Guest</td>
+<td>1</td>
+<td></td>
+<td>276 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>238</td>
+<td>Wait for the Element Optional</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>239</td>
+<td>Click on Optional</td>
+<td></td>
+<td></td>
+<td>139 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>240</td>
+<td>Click on Add Package</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>241</td>
+<td>Wait for the Element Package Name</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>242</td>
+<td>Type on Package Name</td>
+<td>Test package</td>
+<td></td>
+<td>303 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>243</td>
+<td>Wait for the Element Package Feature</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>244</td>
+<td>Type on Package Feature</td>
+<td>Test package features</td>
+<td></td>
+<td>367 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>245</td>
+<td>Wait for the Element one Person Registration</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>246</td>
+<td>Type on one Person Registration</td>
+<td>20</td>
+<td></td>
+<td>141 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>247</td>
+<td>Wait for the Element Save Package</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>248</td>
+<td>Click on Save Package</td>
+<td></td>
+<td></td>
+<td>246 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>249</td>
+<td>Scrolled to Moderate</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>250</td>
+<td>Element 'Moderate' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>251</td>
+<td>Click on Moderate</td>
+<td></td>
+<td></td>
+<td>212 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>252</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>253</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>88 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>254</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>253 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>255</td>
+<td>Wait for the Element Retreat Complete</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>256</td>
+<td>Element 'Retreat Complete' is verified </td>
+<td></td>
+<td></td>
+<td>63 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>257</td>
+<td>Wait for the Element Add another location</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>258</td>
+<td>Scrolled to Add another location</td>
+<td></td>
+<td></td>
+<td>41 Milli Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>259</td>
+<td>Click on Add another location</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>260</td>
+<td>Element 'Other Location' is verified </td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>261</td>
+<td>Wait for the Element Location Name</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>262</td>
+<td>Type on Location Name</td>
+<td>Test Ayurveda Name</td>
+<td></td>
+<td>895 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>263</td>
+<td>Click on Check Display my location</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>264</td>
+<td>Scrolled to Address 1</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>265</td>
+<td>Type on Address 1</td>
+<td>Mandaveli St, Thandurai, Avadi, Tamil Nadu 600072, India</td>
+<td></td>
+<td>1 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>266</td>
+<td>Element 'Address autoselect' is verified </td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>267</td>
+<td>Click on Address autoselect</td>
+<td></td>
+<td></td>
+<td>90 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>268</td>
+<td>Scrolled to Zip Code</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>269</td>
+<td>Type on Zip Code</td>
+<td>600072</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>270</td>
+<td>Scrolled to the bottom </td>
+<td></td>
+<td></td>
+<td>16 Milli Sec</td>
+<td>452</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>271</td>
+<td>Wait for the Element Home</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>272</td>
+<td>Click on Home</td>
+<td></td>
+<td></td>
+<td>166 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>273</td>
+<td>Click on Picture Location 1</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>274</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>275</td>
+<td>Click on Picture Location 1</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>276</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>277</td>
+<td>Wait for the Element back</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>278</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>84 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>279</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>57 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>280</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>355 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>281</td>
+<td>Wait for the Element Service Category</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>282</td>
+<td>Click on Service Category</td>
+<td></td>
+<td></td>
+<td>181 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>283</td>
+<td>Wait for the Element Ayurveda</td>
+<td></td>
+<td></td>
+<td>638 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>284</td>
+<td>Click on Ayurveda</td>
+<td></td>
+<td></td>
+<td>137 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>285</td>
+<td>Click on Abhyanga</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>286</td>
+<td>Click on Urdvartana</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>287</td>
+<td>Click on Januvasti</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>288</td>
+<td>Wait for the Element Select</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>289</td>
+<td>Click on Select</td>
+<td></td>
+<td></td>
+<td>200 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>290</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>291</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>213 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>292</td>
+<td>Scrolled to Abhyanga Service</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>293</td>
+<td>Element 'Abhyanga Service' is verified </td>
+<td></td>
+<td></td>
+<td>29 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>294</td>
+<td>Click on Abhyanga Service</td>
+<td></td>
+<td></td>
+<td>292 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>295</td>
+<td>Wait for the Element Be specific your name</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>296</td>
+<td>Clear and Type on Be specific your name</td>
+<td>Check Abhyanga Service flow</td>
+<td></td>
+<td>412 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>297</td>
+<td>Scrolled to Service describe</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>298</td>
+<td>Type on Service describe</td>
+<td>Test Abhyanga service</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>299</td>
+<td>Wait for the Element Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>300</td>
+<td>Click on Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>301</td>
+<td>Type on Select english</td>
+<td>English</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>302</td>
+<td>Click on Service photo 1</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>303</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>304</td>
+<td>Click on Service photo 2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>305</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>306</td>
+<td>Click on Service photo 3</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>307</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>308</td>
+<td>Scrolled to qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>309</td>
+<td>Wait for the Element qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>310</td>
+<td>Type on qualification</td>
+<td>1+ years</td>
+<td></td>
+<td>316 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>311</td>
+<td>Click on level of Expertise</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>312</td>
+<td>Wait for the Element Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>313</td>
+<td>Click on Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>141 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>314</td>
+<td>Scrolled to Pricing</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>315</td>
+<td>Element 'Pricing' is verified </td>
+<td></td>
+<td></td>
+<td>74 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>316</td>
+<td>Click on Duration of service</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>317</td>
+<td>Wait for the Element Select 30</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>318</td>
+<td>Click on Select 30</td>
+<td></td>
+<td></td>
+<td>129 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>319</td>
+<td>Type on Enter Price</td>
+<td>50</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>320</td>
+<td>Wait for the Element Price add</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>321</td>
+<td>Click on Price add</td>
+<td></td>
+<td></td>
+<td>125 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>322</td>
+<td>Scrolled to Strict</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>323</td>
+<td>Element 'Strict' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>324</td>
+<td>Click on Strict</td>
+<td></td>
+<td></td>
+<td>212 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>325</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>326</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>80 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>327</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>366 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>328</td>
+<td>Wait for the Element Days </td>
+<td></td>
+<td></td>
+<td>11 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>329</td>
+<td>Click on All checkbox</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>330</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>3</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>331</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>20</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>332</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>AM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>333</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>3</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>334</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>50</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>335</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>AM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>336</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>337</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>338</td>
+<td>Element 'Abhyanga Complete' is verified </td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>339</td>
+<td>Scrolled to Urdvartana Service</td>
+<td></td>
+<td></td>
+<td>9 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>340</td>
+<td>Element 'Urdvartana Service' is verified </td>
+<td></td>
+<td></td>
+<td>66 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>341</td>
+<td>Click on Urdvartana Service</td>
+<td></td>
+<td></td>
+<td>497 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>342</td>
+<td>Wait for the Element Be specific your name</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>343</td>
+<td>Clear and Type on Be specific your name</td>
+<td>Check Urdvartana Service flow</td>
+<td></td>
+<td>428 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>344</td>
+<td>Scrolled to Service describe</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>345</td>
+<td>Type on Service describe</td>
+<td>Test Urdvartana Service</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>346</td>
+<td>Wait for the Element Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>347</td>
+<td>Click on Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>348</td>
+<td>Type on Select english</td>
+<td>English</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>349</td>
+<td>Click on Service photo 1</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>350</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>351</td>
+<td>Click on Service photo 2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>352</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>353</td>
+<td>Click on Service photo 3</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>354</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>355</td>
+<td>Scrolled to qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>356</td>
+<td>Wait for the Element qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>357</td>
+<td>Type on qualification</td>
+<td>1+ years</td>
+<td></td>
+<td>295 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>358</td>
+<td>Click on level of Expertise</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>359</td>
+<td>Wait for the Element Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>360</td>
+<td>Click on Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>145 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>361</td>
+<td>Scrolled to Pricing</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>362</td>
+<td>Element 'Pricing' is verified </td>
+<td></td>
+<td></td>
+<td>100 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>363</td>
+<td>Click on Duration of service</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>364</td>
+<td>Wait for the Element Select 30</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>365</td>
+<td>Click on Select 30</td>
+<td></td>
+<td></td>
+<td>130 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>366</td>
+<td>The value ' 30 ' is retrieved from the element ' Select 30'</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>421</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>367</td>
+<td>Wait for the Element Select 30</td>
+<td></td>
+<td></td>
+<td>66 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>368</td>
+<td>Click on Select 30</td>
+<td></td>
+<td></td>
+<td>75 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>369</td>
+<td>Type on Enter Price</td>
+<td>50</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>370</td>
+<td>Wait for the Element Price add</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>371</td>
+<td>Click on Price add</td>
+<td></td>
+<td></td>
+<td>125 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>372</td>
+<td>Scrolled to Relaxed</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>373</td>
+<td>Element 'Relaxed' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>374</td>
+<td>Click on Relaxed</td>
+<td></td>
+<td></td>
+<td>217 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>375</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>376</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>84 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>377</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>312 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>378</td>
+<td>Wait for the Element Days </td>
+<td></td>
+<td></td>
+<td>12 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>379</td>
+<td>Click on All checkbox</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>380</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>9</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>381</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>00</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>382</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>PM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>383</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>9</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>384</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>30</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>385</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>PM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>386</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>387</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>388</td>
+<td>Wait for the Element Uradvartana Complete</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>389</td>
+<td>Element 'Uradvartana Complete' is verified </td>
+<td></td>
+<td></td>
+<td>91 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>390</td>
+<td>Scrolled to Janu vasti Service</td>
+<td></td>
+<td></td>
+<td>8 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>391</td>
+<td>Element 'Janu vasti Service' is verified </td>
+<td></td>
+<td></td>
+<td>91 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>392</td>
+<td>Click on Janu vasti Service</td>
+<td></td>
+<td></td>
+<td>737 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>393</td>
+<td>Wait for the Element Be specific your name</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>394</td>
+<td>Clear and Type on Be specific your name</td>
+<td>Check Januvasti Service Flow</td>
+<td></td>
+<td>404 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>395</td>
+<td>Scrolled to Service describe</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>396</td>
+<td>Type on Service describe</td>
+<td>Test Janu Vasti service</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>397</td>
+<td>Wait for the Element Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>398</td>
+<td>Click on Select Language</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>399</td>
+<td>Type on Select english</td>
+<td>English</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>400</td>
+<td>Click on Service photo 1</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>401</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>402</td>
+<td>Click on Service photo 2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>403</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>404</td>
+<td>Click on Service photo 3</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>405</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>406</td>
+<td>Scrolled to qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>407</td>
+<td>Wait for the Element qualification</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>408</td>
+<td>Type on qualification</td>
+<td>1+ years</td>
+<td></td>
+<td>262 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>409</td>
+<td>Click on level of Expertise</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>410</td>
+<td>Wait for the Element Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>411</td>
+<td>Click on Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>92 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>412</td>
+<td>Scrolled to Pricing</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>413</td>
+<td>Element 'Pricing' is verified </td>
+<td></td>
+<td></td>
+<td>63 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>414</td>
+<td>Click on Duration of service</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>415</td>
+<td>Wait for the Element Select 30</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>416</td>
+<td>Click on Select 30</td>
+<td></td>
+<td></td>
+<td>184 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>417</td>
+<td>Type on Enter Price</td>
+<td>50</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>418</td>
+<td>Wait for the Element Price add</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>419</td>
+<td>Click on Price add</td>
+<td></td>
+<td></td>
+<td>179 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>420</td>
+<td>Scrolled to Moderate</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>421</td>
+<td>Element 'Moderate' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>422</td>
+<td>Click on Moderate</td>
+<td></td>
+<td></td>
+<td>213 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>423</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>424</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>79 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>425</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>317 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>426</td>
+<td>Wait for the Element Days </td>
+<td></td>
+<td></td>
+<td>7 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>427</td>
+<td>Click on All checkbox</td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>428</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>9</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>429</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>30</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>430</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>PM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>431</td>
+<td>Select the Dropdown by Value select Hours </td>
+<td>10</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>432</td>
+<td>Select the Dropdown by Value select Minutes </td>
+<td>00</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>433</td>
+<td>Select the Dropdown by Value select Time AM/PM </td>
+<td>PM</td>
+<td></td>
+<td>2 Sec</td>
+<td>355</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>434</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>435</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>436</td>
+<td>Wait for the Element Janu Vasti Complete</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>437</td>
+<td>Element 'Janu Vasti Complete' is verified </td>
+<td></td>
+<td></td>
+<td>46 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>438</td>
+<td>Scrolled to Add retreat</td>
+<td></td>
+<td></td>
+<td>8 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>439</td>
+<td>Wait for the Element Add retreat</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>440</td>
+<td>Click on Add retreat</td>
+<td></td>
+<td></td>
+<td>587 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>441</td>
+<td>Type on Retreat Name</td>
+<td>Test Retreat Second Service</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>442</td>
+<td>Wait for the Element Retreat Checkbox</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>443</td>
+<td>Click on Retreat Checkbox</td>
+<td></td>
+<td></td>
+<td>130 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>444</td>
+<td>Scrolled to Retreat Category</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>445</td>
+<td>Wait for the Element Retreat Category</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>446</td>
+<td>Click on Retreat Category</td>
+<td></td>
+<td></td>
+<td>233 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>447</td>
+<td>Click on Yoga and Yoga Training</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>448</td>
+<td>Type on Describe retreat service</td>
+<td>Retreat based service</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>449</td>
+<td>Click on Select Language</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>450</td>
+<td>Type on Select english</td>
+<td>English</td>
+<td></td>
+<td>2 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>451</td>
+<td>Click on Service photo 1</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>452</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>453</td>
+<td>Click on Service photo 2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>454</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>455</td>
+<td>Click on Service photo 3</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>456</td>
+<td>Click on Crop</td>
+<td></td>
+<td></td>
+<td>5 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>457</td>
+<td>Scrolled to Qualification Retreat</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>458</td>
+<td>Wait for the Element Certification</td>
+<td></td>
+<td></td>
+<td>71 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>459</td>
+<td>Click on Certification</td>
+<td></td>
+<td></td>
+<td>158 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>460</td>
+<td>Click on Yes</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>461</td>
+<td>Type on Describe yourself</td>
+<td>having 4+ year experience</td>
+<td></td>
+<td>4 Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>462</td>
+<td>Click on level of Expertise</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>463</td>
+<td>Wait for the Element Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>464</td>
+<td>Click on Certified, 1+ years of experience</td>
+<td></td>
+<td></td>
+<td>151 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>465</td>
+<td>Scrolled to From Date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>466</td>
+<td>Click on From Date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>467</td>
+<td>Wait for the Element next date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>468</td>
+<td>Click on next date</td>
+<td></td>
+<td></td>
+<td>224 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>469</td>
+<td>Click on To Date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>470</td>
+<td>Wait for the Element Todays date</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>471</td>
+<td>Click on Todays date</td>
+<td></td>
+<td></td>
+<td>187 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>472</td>
+<td>Wait for the Element Add Day Agenda</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>473</td>
+<td>Click on Add Day Agenda</td>
+<td></td>
+<td></td>
+<td>229 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>474</td>
+<td>Wait for the Element day1</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>475</td>
+<td>Type on day1</td>
+<td>2300</td>
+<td></td>
+<td>237 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>476</td>
+<td>Wait for the Element Activity</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>477</td>
+<td>Type on Activity</td>
+<td>Retreat Activity</td>
+<td></td>
+<td>267 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>478</td>
+<td>Wait for the Element Where</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>479</td>
+<td>Type on Where</td>
+<td>Chennai</td>
+<td></td>
+<td>284 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>480</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>481</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>96 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>482</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>308 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>483</td>
+<td>Wait for the Element Number of People</td>
+<td></td>
+<td></td>
+<td>11 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>484</td>
+<td>Clear and Type on Number of People</td>
+<td>1</td>
+<td></td>
+<td>150 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>485</td>
+<td>Wait for the Element Maximum number of Guest</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>486</td>
+<td>Clear and Type on Maximum number of Guest</td>
+<td>1</td>
+<td></td>
+<td>197 Milli Sec</td>
+<td>217</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>487</td>
+<td>Wait for the Element Optional</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>488</td>
+<td>Click on Optional</td>
+<td></td>
+<td></td>
+<td>249 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>489</td>
+<td>Click on Add Package</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>490</td>
+<td>Wait for the Element Package Name</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>491</td>
+<td>Type on Package Name</td>
+<td>Test package</td>
+<td></td>
+<td>295 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>492</td>
+<td>Wait for the Element Package Feature</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>493</td>
+<td>Type on Package Feature</td>
+<td>Test package features</td>
+<td></td>
+<td>253 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>494</td>
+<td>Wait for the Element one Person Registration</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>495</td>
+<td>Type on one Person Registration</td>
+<td>20</td>
+<td></td>
+<td>150 Milli Sec</td>
+<td>270</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>496</td>
+<td>Wait for the Element Save Package</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>497</td>
+<td>Click on Save Package</td>
+<td></td>
+<td></td>
+<td>160 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>498</td>
+<td>Scrolled to Relaxed</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>499</td>
+<td>Element 'Relaxed' is verified </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>500</td>
+<td>Click on Relaxed</td>
+<td></td>
+<td></td>
+<td>137 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>501</td>
+<td>Scrolled to Save & Continue</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>502</td>
+<td>Wait for the Element Save & Continue</td>
+<td></td>
+<td></td>
+<td>109 Milli Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>503</td>
+<td>Click on Save & Continue</td>
+<td></td>
+<td></td>
+<td>420 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>504</td>
+<td>Wait for the Element Retreat Complete</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>505</td>
+<td>Element 'Retreat Complete' is verified </td>
+<td></td>
+<td></td>
+<td>79 Milli Sec</td>
+<td>476</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>506</td>
+<td>Wait for the Element Settings</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>507</td>
+<td>Scrolled to Settings</td>
+<td></td>
+<td></td>
+<td>62 Milli Sec</td>
+<td>536</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>508</td>
+<td>Click on Settings</td>
+<td></td>
+<td></td>
+<td>159 Milli Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>509</td>
+<td>Wait for the Element logout</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>139</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>510</td>
+<td>Click on logout</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>158</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr>
+                        </table>  
+                    </div>
+
+                </td>
+            </tr>            <tr id="footer">
+<td colspan="2">
+&nbsp;
+TrackDfect Reports&nbsp;
+ Reports by: <a href="http://www.trackdfect.com/">TrackDfect.com</a>
+</td>
+</tr>
+</table>
+</body>
+</html>

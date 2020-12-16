@@ -18,10 +18,6 @@ public class CustomerActions extends Keywords {
 	//First customer login and add the yoga sessions through search button
 	
 	
-	
-	
-	
-	
 
 	public void first_Customer(WebDriver driver,String URL) {
 		
@@ -46,13 +42,27 @@ public class CustomerActions extends Keywords {
 		deleteAllCookies(driver);		
 		acceptAlert(driver);
 		
-		
-		boolean login = reusableActions.loginMethod(driver, emailId, password);
+		wait(driver, "5");
+		if (isDisplayed(driver, settings)) {
 			
+			boolean logout = reusableActions.Logout(driver);
+			wait(driver,"2");
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+			
+		}else {
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}
 		
 		
-		waitForElement(driver, noBooking);
-		wait(driver,"2");
+	//	waitForElement(driver, noBooking);
+	//	wait(driver,"2");
+		
 		
 			
 		waitForElement(driver, iHealerLogo);
@@ -73,6 +83,12 @@ public class CustomerActions extends Keywords {
 		
 		waitForElement(driver, setLocation);
 		click(driver, setLocation);
+		wait(driver,"2");
+		
+		waitForElement(driver, whatService);
+		wait(driver,"4");
+		
+		scrollUsingElement(driver,whatService);
 		wait(driver,"2");
 		
 		waitForElement(driver, whatService);
@@ -110,12 +126,11 @@ public class CustomerActions extends Keywords {
 		
 		waitForElement(driver, availableHealers);
 		verifyElementIsPresent(driver, availableHealers);
-		
+		wait(driver,"5");
 		
 		waitForElement(driver, timeButton);
 		click(driver, timeButton);
 		wait(driver,"2");
-		
 		
 		
 		//Confirm order
@@ -182,11 +197,17 @@ public class CustomerActions extends Keywords {
 		getText(driver,bookingId);
 		wait(driver,"2");
 		
+	
+		
+
+	
+
 		//adding second service
 		
 		waitForElement(driver, iHealerLogo);
 		click(driver, iHealerLogo);
 		wait(driver,"2");
+		
 		
 		waitForElement(driver, healerLocation);
 		click(driver, healerLocation);
@@ -204,15 +225,18 @@ public class CustomerActions extends Keywords {
 		click(driver, setLocation);
 		wait(driver,"2");
 		
+		waitForElement(driver, whatService);
+		wait(driver,"4");
+		
+		
+		
+		scrollUsingElement(driver, whatService);
+		wait(driver,"2");
 		
 		waitForElement(driver, whatService);
 		click(driver, whatService);
 		wait(driver,"2");
-		
-		waitForElement(driver,sendWhat);
-		clearAndType(driver, sendWhat, "Yoga");
-		wait(driver,"2");
-		
+				
 		waitForElement(driver, whatYoga);
 		click(driver, whatYoga);
 		wait(driver,"2");
@@ -311,25 +335,31 @@ public class CustomerActions extends Keywords {
 		
 		waitForElement(driver, bookingId);
 		getText(driver,bookingId);
+		wait(driver,"4");
+		
+	
+		
+	/*	
+		//Retreat Service
+		wait(driver,"2");
+		driver.navigate().refresh();
+		wait(driver,"2");
+		acceptAlert(driver);
 		wait(driver,"2");
 		
-		
-		
-		
-		
-		//Retreat Service
+		*/
 		
 		waitForElement(driver, iHealerLogo);
 		click(driver, iHealerLogo);
-		wait(driver,"2");
+		wait(driver,"3");
 		
 		waitForElement(driver, retreatLocation);
 		click(driver, retreatLocation);
-		wait(driver,"2");
+		wait(driver,"4");
 		
 		waitForElement(driver,retreatMapLocation);
 		clearAndType(driver, retreatMapLocation, HealerLocation);
-		wait(driver,"2");
+		wait(driver,"4");
 		
 		enter(driver);
 		wait(driver,"2");
@@ -338,6 +368,13 @@ public class CustomerActions extends Keywords {
 		waitForElement(driver, setLocation);
 		click(driver, setLocation);
 		wait(driver,"4");
+	
+		
+		
+		waitForElement(driver, whatService);
+		wait(driver,"2");
+		scrollUsingElement(driver, whatService);
+		wait(driver,"2");
 		
 				
 		waitForElement(driver, whatService);
@@ -448,20 +485,16 @@ public class CustomerActions extends Keywords {
 		
 		waitForElement(driver, confirmBooking);
 		click(driver, confirmBooking);
-		wait(driver,"2");
+		wait(driver,"3");
 		
 		waitForElement(driver, thankBooking);
 		verifyElementIsPresent(driver, thankBooking);
-		wait(driver,"2");
+		wait(driver,"4");
 		
 		
 		waitForElement(driver, bookingsHeader);
 		click(driver, bookingsHeader);
-		wait(driver,"2");
-		
-		verifyElementIsPresent(driver, currentBooking1);
-		verifyElementIsPresent(driver, currentBooking2);
-		verifyElementIsPresent(driver, currentBooking3);
+		wait(driver,"5");
 		
 		wait(driver,"2");
 		
@@ -508,11 +541,27 @@ public class CustomerActions extends Keywords {
 		acceptAlert(driver);
 		
 	
+		wait(driver, "5");
+		if (isDisplayed(driver, settings)) {
+			
+			boolean logout = reusableActions.Logout(driver);
+			wait(driver,"2");
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}else {
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}
+		
 		
 		
 		waitForElement(driver, iHealerLogo);
 		click(driver, iHealerLogo);
-		wait(driver,"2");
+		wait(driver,"3");
 		
 		waitForElement(driver, healerLocation);
 		click(driver, healerLocation);
@@ -526,8 +575,15 @@ public class CustomerActions extends Keywords {
 		wait(driver,"2");
 		
 		
+		
 		waitForElement(driver, setLocation);
 		click(driver, setLocation);
+		wait(driver,"2");
+		
+		waitForElement(driver, whatService);
+		wait(driver,"2");
+		
+		scrollUsingElement(driver,whatService);	
 		wait(driver,"2");
 		
 		waitForElement(driver, whatService);
@@ -570,7 +626,7 @@ public class CustomerActions extends Keywords {
 		click(driver, timeButton);
 		wait(driver,"2");
 		
-		boolean login = reusableActions.loginMethod(driver, emailId, password);	
+		
 		
 		//Confirm order
 		
@@ -642,7 +698,7 @@ public class CustomerActions extends Keywords {
 		
 		waitForElement(driver, bookingId);
 		getText(driver,bookingId);
-		wait(driver,"2");
+		wait(driver,"4");
 		
 			
 		
@@ -654,6 +710,7 @@ public class CustomerActions extends Keywords {
 		click(driver, iHealerLogo);
 		wait(driver,"2");
 		
+		/*
 		waitForElement(driver, healerLocation);
 		click(driver, healerLocation);
 		wait(driver,"2");
@@ -669,7 +726,13 @@ public class CustomerActions extends Keywords {
 		waitForElement(driver, setLocation);
 		click(driver, setLocation);
 		wait(driver,"2");
+		*/
 		
+		waitForElement(driver, whatService);
+		wait(driver,"2");
+		
+		scrollUsingElement(driver, whatService);	
+		wait(driver,"2");
 		
 		waitForElement(driver, whatService);
 		click(driver, whatService);
@@ -706,23 +769,28 @@ public class CustomerActions extends Keywords {
 		
 		waitForElement(driver, availableHealers);
 		verifyElementIsPresent(driver, availableHealers);
+		wait(driver,"3");
 		
 		waitForElement(driver, timeButton);
 		click(driver, timeButton);
-		wait(driver,"2");
+		wait(driver,"3");
 		
 		//Confirm order
 		
 		waitForElement(driver, aboutSession);
 		click(driver, aboutSession);
-		wait(driver,"2");
+		wait(driver,"3");
 		
 		waitForElement(driver, serviceGuest);
 		click(driver, serviceGuest);
-		wait(driver,"2");
+		wait(driver,"3");
 		
 		waitForElement(driver, guestTextbox);
 		sendKeys(driver, guestTextbox, GuestName);
+		wait(driver,"3");
+		
+		waitForElement(driver, noteToProvide);
+		wait(driver,"2");
 		
 		scrollUsingElement(driver,noteToProvide);	
 		wait(driver,"2");
@@ -765,21 +833,23 @@ public class CustomerActions extends Keywords {
 		getText(driver,bookingId);
 		wait(driver,"4");
 		
-		//retreat service
+
 		
 		
 		
 	
 		waitForElement(driver, iHealerLogo);
 		click(driver, iHealerLogo);
+		wait(driver,"3");
+		
+		/*
+		
+		waitForElement(driver, healerLocation);
+		click(driver, healerLocation);
 		wait(driver,"2");
 		
-		waitForElement(driver, retreatLocation);
-		click(driver, retreatLocation);
-		wait(driver,"2");
-		
-		waitForElement(driver,retreatMapLocation);
-		clearAndType(driver, retreatMapLocation, HealerLocation);
+		waitForElement(driver,mapLocation);
+		clearAndType(driver, mapLocation, HealerLocation);
 		wait(driver,"2");
 		
 		enter(driver);
@@ -790,18 +860,16 @@ public class CustomerActions extends Keywords {
 		click(driver, setLocation);
 		wait(driver,"2");
 		
-		scrollUsingElement(driver, whatService);
-		wait(driver,"2");
+		*/
+		
 		
 		waitForElement(driver, whatService);
 		click(driver, whatService);
 		wait(driver,"2");
 		
-		
-		waitForElement(driver, yogaAndTraining);
-		click(driver, yogaAndTraining);
+		waitForElement(driver, whatAyurveda);
+		click(driver, whatAyurveda);
 		wait(driver,"2");
-		
 		
 		waitForElement(driver, todayCheck);
 		click(driver, todayCheck);
@@ -811,49 +879,13 @@ public class CustomerActions extends Keywords {
 		click(driver, searchNow);
 		wait(driver,"2");
 		
-		
-		waitForElement(driver, holisticCheckbox);
-		click(driver, holisticCheckbox);
+		waitForElement(driver, min30);
+		verifyElementIsPresent(driver, chooseService);
+		click(driver, chooseService);
 		wait(driver,"2");
 		
-		waitForElement(driver, continueButton);
-		click(driver, continueButton);
-		wait(driver,"2");
-		
-		
-		waitForElement(driver, userAccount);
-		getText(driver, userAccount);
-		wait(driver,"2");
-		
-		click(driver, userAccount);
-		wait(driver,"3");
-		
-		waitForElement(driver, locationDrop);
-		wait(driver,"2");
-		
-		scrollUsingElement(driver, locationDrop);
-		wait(driver,"2");
-		
-		click(driver, locationDrop);
-		wait(driver,"2");
-		
-		waitForElement(driver, ayurvedaDrop);
-		click(driver, ayurvedaDrop);
-		wait(driver,"3");
-		
-		
-		waitForElement(driver,scrollServices);
-		wait(driver,"2");
-		
-		scrollUsingElement(driver,scrollServices);
-		wait(driver,"2");
-		
-		scrollUsingElement(driver,selectJanuvasti);
-		wait(driver,"2");
-		
-			
-		waitForElement(driver, selectJanuvasti);
-		click(driver, selectJanuvasti);
+		waitForElement(driver, serviceJanuvasti);
+		click(driver, serviceJanuvasti);
 		wait(driver,"2");
 		
 		waitForElement(driver, min30);
@@ -864,19 +896,21 @@ public class CustomerActions extends Keywords {
 		click(driver, searchButton);
 		wait(driver,"2");
 		
-		waitForElement(driver, continueBooking);
-		wait(driver,"2");
-		click(driver, continueBooking);
-		wait(driver,"2");
+		waitForElement(driver, availableHealers);
+		verifyElementIsPresent(driver, availableHealers);
+		wait(driver,"3");
+		
+		waitForElement(driver, timeButton);
+		click(driver, timeButton);
+		wait(driver,"4");
 		
 		
-		waitForElement(driver, proceedPayment);
-		click(driver,proceedPayment);
-		wait(driver,"2");
+		
 		
 		waitForElement(driver, aboutSession);
 		click(driver, aboutSession);
 		wait(driver,"2");
+		
 		
 		waitForElement(driver, savedguests);
 		click(driver, savedguests);
@@ -926,20 +960,663 @@ public class CustomerActions extends Keywords {
 		
 		waitForElement(driver, bookingsHeader);
 		click(driver, bookingsHeader);
+		wait(driver,"5");
+		
+		
+		waitForElement(driver, currentBooking1);
 		wait(driver,"2");
 		
+	//	verifyElementIsPresent(driver, currentBooking1);
+	//	verifyElementIsPresent(driver, currentBooking2);
+	//	verifyElementIsPresent(driver, currentBooking3);
 		
 		
-		
-		verifyElementIsPresent(driver, currentBooking1);
-		verifyElementIsPresent(driver, currentBooking2);
-		verifyElementIsPresent(driver, currentBooking3);
 		
 		boolean logout = reusableActions.Logout(driver);	
 
 		
 
 	}
+	
+	
+	
+	
+	
+	public void firstCancellation2(WebDriver driver,String URL) {
+		
+		String	emailId = Utils.getDataFromTestData("First_Cancellation","EmailId");
+		String password = Utils.getDataFromTestData("First_Cancellation","Password");
+		String DescribeSituation= Utils.getDataFromTestData("First_Cancellation","DescribeSituation");
+		
+		
+		
+		navigateUrl(driver, URL);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
+		
+		wait(driver, "5");
+		if (isDisplayed(driver, settings)) {
+			
+			boolean logout = reusableActions.Logout(driver);
+			wait(driver,"2");
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}else {
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}
+		
+		
+		
+		
+		
+		wait(driver,"2");
+		scrollUsingElement(driver, cancelYogaClass);
+		wait(driver,"2");
+		
+		waitForElement(driver, cancelYogaClass);
+		click(driver, cancelYogaClass);
+		wait(driver,"2");
+		
+		waitForElement(driver, cancellationReason);
+		click(driver, cancellationReason);
+		wait(driver,"2");
+		
+		waitForElement(driver, cancellation1);
+		click(driver, cancellation1);
+		wait(driver,"2");
+		
+		waitForElement(driver, describeSituation);
+		sendKeys(driver, describeSituation, DescribeSituation);
+		wait(driver,"2");
+		
+		waitForElement(driver, policyType);
+		String policy = getText(driver, policyType);
+		wait(driver,"2");
+		
+		
+		
+		//paid amount
+		
+		waitForElement(driver,paidAmount);
+		String paid = getText(driver,paidAmount);
+		wait(driver,"2");
+		
+		String strNew = paid.replace("$", "");
+		System.out.println(strNew);
+		
+		
+	
+		double verifypaid = Double.valueOf(strNew);
+		System.out.println(verifypaid);
+		
+	
+		//Refund Percentage
+		
+		waitForElement(driver,refundPerAmount);
+		String refundPercentage = getText(driver,refundPerAmount);
+		wait(driver,"2");
+		
+		String strNew1 = refundPercentage.replace("%", "");
+		System.out.println(strNew1);
+	
+		double verifyPercent = Double.valueOf(strNew1);
+		System.out.println(verifyPercent);
+		
+		
+		//Refund Amount
+		
+		waitForElement(driver,refundAmount);
+		String refund = getText(driver,refundAmount);
+		wait(driver,"2");
+		
+		String strNew2 = refund.replace("$", "");
+		System.out.println(strNew2);
+	
+		double VerifyRefund = Double.valueOf(strNew2);
+		System.out.println(VerifyRefund);
+		
+		
+		
+		if (100.0==verifyPercent) {
+			
+			
+			assertEquals(VerifyRefund, verifypaid,0);
+			add(driver, "Percentage "+ refundPercentage +" Policy Type "+ policy, LogAs.PASSED, true,policy);
+			
+		}else if (50.0==verifyPercent) {
+			
+			double five = verifypaid/2;
+			
+			assertEquals(VerifyRefund,five,0);
+			add(driver, " Percentage "+ refundPercentage +" Policy Type "+ policy, LogAs.PASSED, true,policy);
+			
+		}else if (75.0 == verifyPercent) {
+			double five1 = verifypaid * 0.75;
+			
+			assertEquals(VerifyRefund,five1,0);
+			add(driver, "Percentage "+ refundPercentage +" Policy Type "+ policy, LogAs.PASSED, true,policy);
+			
+		}
+		
+	
+		
+		
+		waitForElement(driver, cancelBookCan);
+        click(driver, cancelBookCan);
+		wait(driver,"3");
+		
+		waitForElement(driver, closePopup);
+		click(driver, closePopup);
+		wait(driver,"3");
+			
+		
+		waitForElement(driver, retreatCancel);
+		wait(driver,"2");
+		
+		scrollUsingElement(driver, retreatCancel);
+		wait(driver,"2");
+		
+		waitForElement(driver, retreatCancel);
+		click(driver, retreatCancel);
+		wait(driver,"2");
+		
+		
+		
+	
+		
+		waitForElement(driver, cancellationReason);
+		click(driver, cancellationReason);
+		wait(driver,"2");
+		
+		waitForElement(driver,cancellation1);
+		click(driver, cancellation1);
+		wait(driver,"3");
+		
+		waitForElement(driver, describeSituation1);
+		sendKeys(driver, describeSituation1, DescribeSituation);
+		wait(driver,"2");
+		
+		waitForElement(driver, policyType);
+		String policy1 = getText(driver, policyType);
+		wait(driver,"2");
+		
+		
+		
+		//paid amount
+		
+		waitForElement(driver,paidAmount);
+		String paid1 = getText(driver,paidAmount);
+		wait(driver,"2");
+		
+		String strNew111 = paid1.replace("$", "");
+		System.out.println(strNew111);
+		
+		
+	
+		double verifypaid1 = Double.valueOf(strNew111);
+		System.out.println(verifypaid1);
+		
+	
+		//Refund Percentage
+		
+		waitForElement(driver,refundPerAmount);
+		String refundPercentage1 = getText(driver,refundPerAmount);
+		wait(driver,"2");
+		
+		String strNew222 = refundPercentage1.replace("%", "");
+		System.out.println(strNew222);
+	
+		double verifyPercent1 = Double.valueOf(strNew222);
+		System.out.println(verifyPercent1);
+		
+		
+		//Refund Amount
+		
+		waitForElement(driver,refundAmount);
+		String refund111 = getText(driver,refundAmount);
+		wait(driver,"2");
+		
+		String strNew333 = refund111.replace("$", "");
+		System.out.println(strNew333);
+	
+		double VerifyRefund1111 = Double.valueOf(strNew333);
+		System.out.println(VerifyRefund1111);
+		
+		
+		
+		if (100.0==verifyPercent1) {
+			
+			
+			assertEquals(VerifyRefund1111, verifypaid1,0);
+			add(driver, "Percentage "+ refundPercentage1 +"Policy Type"+ policy1, LogAs.PASSED, true,policy1);
+			
+		}else if (50.0==verifyPercent1) {
+			
+			double five = verifypaid1/2;
+			
+			assertEquals(VerifyRefund1111,five,0);
+			add(driver, "Percentage "+ refundPercentage1 +"Policy Type"+ policy1, LogAs.PASSED, true,policy1);
+			
+		}else if (75.0 == verifyPercent1) {
+			double five1 = verifypaid1 * 0.75;
+			
+			assertEquals(VerifyRefund1111,five1,0);
+			add(driver, "Percentage "+ refundPercentage1 +"Policy Type"+ policy1, LogAs.PASSED, true,policy1);
+			
+		}
+			
+		
+		
+		waitForElement(driver, cancelBookCan);
+        click(driver, cancelBookCan);
+		wait(driver,"3");
+		
+		waitForElement(driver, closePopup);
+		click(driver, closePopup);
+		wait(driver,"4");
+		
+		
+		
+		boolean logout = reusableActions.Logout(driver);	
+		wait(driver,"4");
+	
+		
+		
+		
+	}
+	
+	
+	
+	
+	public void secondCancellation2(WebDriver driver,String URL) {
+		
+		String	emailId = Utils.getDataFromTestData("Second_Cancellation","EmailId");
+		String password = Utils.getDataFromTestData("Second_Cancellation","Password");
+		
+		String DescribeSituation= Utils.getDataFromTestData("Second_Cancellation","DescribeSituation");
+		
+		navigateUrl(driver, URL);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
+		
+		wait(driver, "5");
+		if (isDisplayed(driver, settings)) {
+			
+			boolean logout = reusableActions.Logout(driver);
+			wait(driver,"2");
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}else {
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}
+		
+		
+		
+		
+		wait(driver,"2");
+		scrollUsingElement(driver, cancelUrdavartana);
+		wait(driver,"2");
+		
+		waitForElement(driver, cancelUrdavartana);
+		click(driver, cancelUrdavartana);
+		wait(driver,"2");
+		
+		waitForElement(driver, cancellationReason);
+		click(driver, cancellationReason);
+		wait(driver,"2");
+		
+		waitForElement(driver, cancellation1);
+		click(driver, cancellation1);
+		wait(driver,"5");
+		
+		waitForElement(driver, describeSituation);
+		sendKeys(driver, describeSituation, DescribeSituation);
+		wait(driver,"3");
+		
+		waitForElement(driver, policyType);
+		String policy = getText(driver, policyType);
+		wait(driver,"2");
+		
+		waitForElement(driver,paidAmount);
+		String paid = getText(driver,paidAmount);
+		wait(driver,"2");
+		
+		String strNew = paid.replace("$", "");
+		System.out.println(strNew);
+		
+		
+	
+		double verifypaid = Double.valueOf(strNew);
+		System.out.println(verifypaid);
+		
+	
+		//Refund Percentage
+		
+		waitForElement(driver,refundPerAmount);
+		String refundPercentage = getText(driver,refundPerAmount);
+		wait(driver,"2");
+		
+		String strNew1 = refundPercentage.replace("%", "");
+		System.out.println(strNew1);
+	
+		double verifyPercent = Double.valueOf(strNew1);
+		System.out.println(verifyPercent);
+		
+		
+		//Refund Amount
+		
+		waitForElement(driver,refundAmount);
+		String refund = getText(driver,refundAmount);
+		wait(driver,"2");
+		
+		String strNew2 = refund.replace("$", "");
+		System.out.println(strNew2);
+	
+		double VerifyRefund = Double.valueOf(strNew2);
+		System.out.println(VerifyRefund);
+		
+		
+		
+		if (100.0==verifyPercent) {
+			
+			
+			assertEquals(VerifyRefund, verifypaid,0);
+			add(driver, "Percentage "+ refundPercentage +" Policy Type "+ policy, LogAs.PASSED, true,policy);
+			
+		}else if (50.0==verifyPercent) {
+			
+			double five = verifypaid/2;
+			
+			assertEquals(VerifyRefund,five,0);
+			add(driver, " Percentage "+ refundPercentage +" Policy Type "+ policy, LogAs.PASSED, true,policy);
+			
+		}else if (75.0 == verifyPercent) {
+			double five1 = verifypaid * 0.75;
+			
+			assertEquals(VerifyRefund,five1,0);
+			add(driver, "Percentage "+ refundPercentage +" Policy Type "+ policy, LogAs.PASSED, true,policy);
+			
+		}
+		
+	
+		
+		
+		waitForElement(driver, cancelBookCan);
+        click(driver, cancelBookCan);
+		wait(driver,"4");
+		
+		waitForElement(driver, closePopup);
+		click(driver, closePopup);
+		wait(driver,"4");
+		
+	
+
+			
+		wait(driver,"4");
+		scrollUsingElement(driver, cancelJanuVasti);
+		wait(driver,"2");
+		waitForElement(driver, cancelJanuVasti);
+		click(driver, cancelJanuVasti);
+		wait(driver,"2");
+		
+		waitForElement(driver, cancellationReason);
+		click(driver, cancellationReason);
+		wait(driver,"3");
+		
+		waitForElement(driver, cancellation1);
+		click(driver,cancellation1);
+		wait(driver,"2");
+	
+		
+		waitForElement(driver, describeSituation1);
+		sendKeys(driver, describeSituation1, DescribeSituation);
+		wait(driver,"2");
+		
+		waitForElement(driver, policyType);
+		String policy1 = getText(driver, policyType);
+		wait(driver,"2");
+		
+		
+		
+		//paid amount
+		
+		waitForElement(driver,paidAmount);
+		String paid1 = getText(driver,paidAmount);
+		wait(driver,"2");
+		
+		String strNew21 = paid1.replace("$", "");
+		System.out.println(strNew21);
+		
+		
+	
+		double verifypaid1 = Double.valueOf(strNew21);
+		System.out.println(verifypaid1);
+		
+	
+		//Refund Percentage
+		
+		waitForElement(driver,refundPerAmount);
+		String refundPercentage1 = getText(driver,refundPerAmount);
+		wait(driver,"2");
+		
+		String strNew11 = refundPercentage1.replace("%", "");
+		System.out.println(strNew11);
+	
+		double verifyPercent1 = Double.valueOf(strNew11);
+		System.out.println(verifyPercent1);
+		
+		
+		//Refund Amount
+		
+		waitForElement(driver,refundAmount);
+		String refund1 = getText(driver,refundAmount);
+		wait(driver,"2");
+		
+		String strNew22= refund1.replace("$", "");
+		System.out.println(strNew22);
+	
+		double VerifyRefund1 = Double.valueOf(strNew22);
+		System.out.println(VerifyRefund1);
+		
+		
+		
+		if (100.0==verifyPercent1) {
+			
+			
+			assertEquals(VerifyRefund1, verifypaid1,0);
+			add(driver, "Percentage "+ refundPercentage1 +"Policy Type"+ policy1, LogAs.PASSED, true,policy1);
+			
+		}else if (50.0==verifyPercent1) {
+			
+			double five = verifypaid1/2;
+			
+			assertEquals(VerifyRefund1,five,0);
+			add(driver, "Percentage "+ refundPercentage1 +"Policy Type"+ policy1, LogAs.PASSED, true,policy1);
+			
+		}else if (75.0 == verifyPercent1) {
+			double five1 = verifypaid1 * 0.75;
+			
+			assertEquals(VerifyRefund1,five1,0);
+			add(driver, "Percentage "+ refundPercentage1 +"Policy Type"+ policy1, LogAs.PASSED, true,policy1);
+			
+		}
+	
+		waitForElement(driver, cancelBookCan);
+        click(driver, cancelBookCan);
+		wait(driver,"3");
+		
+		waitForElement(driver, closePopup);
+		click(driver, closePopup);
+		wait(driver,"4");
+		
+		
+		
+		boolean logout22 = reusableActions.Logout(driver);	
+	
+		
+		
+		
+		
+		
+		
+	}
+	
+	//+30
+	
+	public void first_RequestRefund(WebDriver driver,String URL) {
+		
+		String	emailId = Utils.getDataFromTestData("First_Cancellation","EmailId");
+		String password = Utils.getDataFromTestData("First_Cancellation","Password");
+		String ProvideDetails = Utils.getDataFromTestData("First_Cancellation","ProvideDetails");
+		
+		
+		
+		navigateUrl(driver, URL);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
+		
+		wait(driver, "5");
+		if (isDisplayed(driver, settings)) {
+			
+			boolean logout = reusableActions.Logout(driver);
+			wait(driver,"2");
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}else {
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}
+		
+		
+		if (isDisplayed(driver, requestRefund)) {
+			
+		
+		scrollUsingElement(driver,requestRefund);
+		wait(driver,"2");
+		
+		
+		waitForElement(driver, requestRefund);
+		click(driver, requestRefund);
+		wait(driver,"3");
+		
+		waitForElement(driver, requestOption);
+		click(driver, requestOption);
+		wait(driver,"2");
+		
+		waitForElement(driver, unableAppoint);
+		click(driver, unableAppoint);
+		wait(driver,"3");
+		
+		waitForElement(driver, provideDetails);
+		sendKeys(driver, provideDetails, ProvideDetails);
+		wait(driver,"2");
+		
+		waitForElement(driver, refundRequest);
+		click(driver, refundRequest);
+		wait(driver,"4");
+		
+		waitForElement(driver, requestedRefund);
+		verifyElementIsPresent(driver,requestedRefund);	
+		wait(driver,"2");
+		
+		}else {
+			verifyElementIsNotPresent(driver, requestRefund);
+		}
+		
+		boolean logout = reusableActions.Logout(driver);
+		
+		
+		
+		
+		
+	}
+	
+	public void Second_RequestRefund(WebDriver driver,String URL) {
+		
+		String	emailId = Utils.getDataFromTestData("Second_Cancellation","EmailId");
+		String password = Utils.getDataFromTestData("Second_Cancellation","Password");
+		String ProvideDetails = Utils.getDataFromTestData("Second_Cancellation","ProvideDetails");
+		
+		
+		
+		navigateUrl(driver, URL);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
+		
+		wait(driver, "5");
+		if (isDisplayed(driver, settings)) {
+			
+			boolean logout = reusableActions.Logout(driver);
+			wait(driver,"2");
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+			
+		}else {
+			
+			boolean login = reusableActions.loginMethod(driver, emailId, password);
+			wait(driver,"2");
+			
+		}
+		
+		
+		if (isDisplayed(driver, requestRefund)) {
+		
+		scrollUsingElement(driver,requestRefund);
+		wait(driver,"2");
+		
+		
+		waitForElement(driver, requestRefund);
+		click(driver, requestRefund);
+		wait(driver,"3");
+		
+		waitForElement(driver, requestOption);
+		click(driver, requestOption);
+		wait(driver,"2");
+		
+		waitForElement(driver, unableAppoint);
+		click(driver, unableAppoint);
+		wait(driver,"3");
+		
+		waitForElement(driver, provideDetails);
+		sendKeys(driver, provideDetails, ProvideDetails);
+		wait(driver,"2");
+		
+		waitForElement(driver, refundRequest);
+		click(driver, refundRequest);
+		wait(driver,"4");
+		
+		waitForElement(driver, requestedRefund);
+		verifyElementIsPresent(driver,requestedRefund);	
+		wait(driver,"2");
+		
+		
+		}else {
+			verifyElementIsNotPresent(driver, requestRefund);
+		}
+		
+		
+		boolean logout = reusableActions.Logout(driver);
+		
+		
+		
+	}
+	
 	
 	
 	
@@ -1088,35 +1765,22 @@ public class CustomerActions extends Keywords {
 		
 		verifyElementIsPresent(driver, currentBooking1);
 		verifyElementIsPresent(driver, currentBooking2);
-		
+		wait(driver,"4");
 		
 		boolean logout = reusableActions.Logout(driver);	
+		wait(driver,"4");
+		
+		navigateUrl(driver, URL);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
 
 		
 		boolean login1 = reusableActions.loginMethod(driver, HealeremailId, Healerpassword);
-		
+		wait(driver,"4");
 		
 		waitForElement(driver, notificationtab);
 		click(driver, notificationtab);
-		wait(driver,"2");
-		
-		
-		scrollUsingElement(driver, yogaViewall);	
-		wait(driver,"2");
-		
-		waitForElement(driver, yogaViewall);
-		click(driver, yogaViewall);
-		wait(driver,"2");
-		
-		waitForElement(driver, verifyCancel);
-		verifyElementIsPresent(driver, verifyCancel);
-		wait(driver,"2");
-		
-		waitForElement(driver, backButton);
-		click(driver, backButton);
-		wait(driver,"3");
-		
-		
+		wait(driver,"4");		
 		
 		
 		scrollUsingElement(driver, personalDetails);	
@@ -1150,17 +1814,23 @@ public class CustomerActions extends Keywords {
 		
 		
 		boolean logout2 = reusableActions.Logout(driver);	
+		wait(driver,"3");
+		
+		navigateUrl(driver, URL);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
 		
 		
 		//Customer
 		
 		boolean login2 = reusableActions.loginMethod(driver, emailId, password);
+		wait(driver,"2");
 		
 		
 		
 		waitForElement(driver, notificationtab);
 		click(driver, notificationtab);
-		wait(driver,"2");
+		wait(driver,"4");
 		
 		waitForElement(driver, HealerRequest);
 		click(driver, HealerRequest);
@@ -1177,8 +1847,11 @@ public class CustomerActions extends Keywords {
 		
 		waitForElement(driver, yesPopup);
 		click(driver, yesPopup);
-		wait(driver,"2");
+		wait(driver,"4");
 		
+		
+		waitForElement(driver, receiptRefund);
+		wait(driver,"4");
 		
 		scrollUsingElement(driver, receiptRefund);	
 		wait(driver,"2");
@@ -1188,6 +1861,11 @@ public class CustomerActions extends Keywords {
 		String refund22 = getrefund22.replace("-$", "");
 		System.out.println(refund22);
 		
+		
+		waitForElement(driver,bookingsHeader);
+		wait(driver,"2");
+		
+		
 		scrollUsingElement(driver, bookingsHeader);	
 		wait(driver,"2");
 		
@@ -1196,6 +1874,7 @@ public class CustomerActions extends Keywords {
 		waitForElement(driver,bookingsHeader);
 		click(driver, bookingsHeader);
 		wait(driver,"2");
+		
 		
 		
 		waitForElement(driver, retreatCancel);
@@ -1283,8 +1962,7 @@ public class CustomerActions extends Keywords {
 			add(driver, "Percentage "+ refundPercentage1 +"Policy Type"+ policy1, LogAs.PASSED, true,policy1);
 			
 		}
-		
-	
+			
 		
 		
 		waitForElement(driver, cancelBookCan);
@@ -1297,7 +1975,7 @@ public class CustomerActions extends Keywords {
 		
 		
 		boolean logout3 = reusableActions.Logout(driver);	
-		
+		wait(driver,"4");
 		
 		
 	}
@@ -1312,12 +1990,29 @@ public class CustomerActions extends Keywords {
 		String Healerpassword = Utils.getDataFromTestData("Second_Cancellation","HealerPassword");
 		String DescribeSituation= Utils.getDataFromTestData("Second_Cancellation","DescribeSituation");
 
+	
 		
 		navigateUrl(driver, URL);
 		deleteAllCookies(driver);		
 		acceptAlert(driver);
 		
-		boolean login = reusableActions.loginMethod(driver, HealeremailId, Healerpassword);
+		
+		wait(driver, "5");
+		if (isDisplayed(driver, settings)) {
+			
+			boolean logout = reusableActions.Logout(driver);
+			wait(driver,"2");
+			
+			
+		}else {
+			
+			boolean login = reusableActions.loginMethod(driver, HealeremailId, Healerpassword);
+			wait(driver,"2");
+			
+		}
+		
+		
+	
 		
 		waitForElement(driver, notificationtab);
 		click(driver, notificationtab);
@@ -1408,9 +2103,15 @@ public class CustomerActions extends Keywords {
 		
 		boolean logout2 = reusableActions.Logout(driver);	
 		
+	
+		navigateUrl(driver, URL);
+		deleteAllCookies(driver);		
+		acceptAlert(driver);
+		
 		//customer
 		
 		boolean login22 = reusableActions.loginMethod(driver, emailId, password);
+		wait(driver,"4");
 		
 		
 		waitForElement(driver, notificationtab);

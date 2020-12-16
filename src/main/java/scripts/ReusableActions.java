@@ -69,7 +69,7 @@ public class ReusableActions extends Keywords {
 			wait(driver,"2");
 			waitForElement(driver, logOut);
 			click(driver, logOut);
-			wait(driver,"2");
+			wait(driver,"4");
 			
 			
 			

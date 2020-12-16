@@ -10,7 +10,6 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import commonMethods.Utils;
 
 public class Utils1 {
@@ -25,7 +24,7 @@ public class Utils1 {
 	{
 		String requiredCellVal = "";
 		try {
-			FileInputStream fis = new FileInputStream(testExecutionFile);
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"/data/TestExecution.xlsx");
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
 			XSSFSheet ws = wb.getSheet("Sheet1");
 
@@ -48,11 +47,14 @@ public class Utils1 {
 				{
 					XSSFCell cell = row.getCell(cellIndex);
 					String cellVal = cellToString(cell);
+					
+					
 					if (cellVal.equals(component)) 
 					{
 						//XSSFCell adjacentCell = row.getCell(cellIndex -3);
-						XSSFCell adjacentCell = row.getCell(cellIndex -1);
+						XSSFCell adjacentCell = row.getCell(cellIndex -3);
 						String adjacentCellVal = cellToString(adjacentCell);
+						
 						requiredCellVal = adjacentCellVal;
 						break;
 					}
@@ -70,7 +72,7 @@ public class Utils1 {
 	{
 		String requiredCellVal = "";
 		try {
-			FileInputStream fis = new FileInputStream(testExecutionFile);
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + Utils.getDataFromTestConfig("TestExeFile"));
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
 			XSSFSheet ws = wb.getSheet("Sheet1");
 
@@ -93,10 +95,11 @@ public class Utils1 {
 				{
 					XSSFCell cell = row.getCell(cellIndex);
 					String cellVal = cellToString(cell);
+			
 					if (cellVal.equals(component)) 
 					{
 						//XSSFCell adjacentCell = row.getCell(cellIndex -2);
-						XSSFCell adjacentCell = row.getCell(cellIndex -3);
+						XSSFCell adjacentCell = row.getCell(cellIndex -1);
 						String adjacentCellVal = cellToString(adjacentCell);
 						requiredCellVal = adjacentCellVal;
 						break;
@@ -110,11 +113,17 @@ public class Utils1 {
 		}
 		return requiredCellVal;
 	}
+	
+	
+	
+	
+	
+	
 	public static String getClassName(String component)
 	{
 		String requiredCellVal = "";
 		try {
-			FileInputStream fis = new FileInputStream(testExecutionFile);
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + Utils.getDataFromTestConfig("TestExeFile"));
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
 			XSSFSheet ws = wb.getSheet("Sheet1");
 
@@ -187,4 +196,6 @@ public class Utils1 {
 
 			return result.toString();
 	}
+	
+	
 }

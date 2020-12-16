@@ -10,9 +10,26 @@
     <classes>
       <class name="commonMethods.Testcases">
         <methods>
-          <include name="TC001_HealerProcess()"/>
-          <include name="TC002_AdminPage()"/>
-          <include name="TC003_HealerVerification()"/>
+          <include name="TC001_HealerLogin()"/>
+          <include name="TC002_FirstLocation()"/>
+          <include name="TC003_YogaService()"/>
+          <include name="TC004_PersonalYoga()"/>
+          <include name="TC005_YogaTherapy()"/>
+          <include name="TC006_RetreatService()"/>
+          <include name="TC007_SecondLocation()"/>
+          <include name="TC008_Abhayanga()"/>
+          <include name="TC009_Urdvartana()"/>
+          <include name="TC010_JanuVasti()"/>
+          <include name="TC011_RetreatService()"/>
+          <include name="TC012_HealerLogout()"/>
+          <include name="TC013_AdminPage()"/>
+          <include name="TC014_HealerVerification()"/>
+          <include name="TC015_FirstCustomer()"/>
+          <include name="TC016_SecondCustomer()"/>
+          <include name="TC017_FirstCustomerCancellation()"/>
+          <include name="TC018_SecondCustomerCancellation()"/>
+          <include name="TC019_FirstRefund()"/>
+          <include name="TC020_SecondRefund()"/>
         </methods>
       </class> <!-- commonMethods.Testcases -->
     </classes>

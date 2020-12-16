@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -3103,356 +3103,17 @@
     <line>
       <![CDATA[STEP1034]]>
     </line>
-    <line>
-      <![CDATA[STEP1035]]>
-    </line>
-    <line>
-      <![CDATA[STEP1036]]>
-    </line>
-    <line>
-      <![CDATA[STEP1037]]>
-    </line>
-    <line>
-      <![CDATA[STEP1038]]>
-    </line>
-    <line>
-      <![CDATA[STEP1039]]>
-    </line>
-    <line>
-      <![CDATA[STEP1040]]>
-    </line>
-    <line>
-      <![CDATA[STEP1041]]>
-    </line>
-    <line>
-      <![CDATA[STEP1042]]>
-    </line>
-    <line>
-      <![CDATA[STEP1043]]>
-    </line>
-    <line>
-      <![CDATA[STEP1044]]>
-    </line>
-    <line>
-      <![CDATA[STEP1045]]>
-    </line>
-    <line>
-      <![CDATA[STEP1046]]>
-    </line>
-    <line>
-      <![CDATA[STEP1047]]>
-    </line>
-    <line>
-      <![CDATA[STEP1048]]>
-    </line>
-    <line>
-      <![CDATA[STEP1049]]>
-    </line>
-    <line>
-      <![CDATA[STEP1050]]>
-    </line>
-    <line>
-      <![CDATA[STEP1051]]>
-    </line>
-    <line>
-      <![CDATA[STEP1052]]>
-    </line>
-    <line>
-      <![CDATA[STEP1053]]>
-    </line>
-    <line>
-      <![CDATA[STEP1054]]>
-    </line>
-    <line>
-      <![CDATA[STEP1055]]>
-    </line>
-    <line>
-      <![CDATA[STEP1056]]>
-    </line>
-    <line>
-      <![CDATA[STEP1057]]>
-    </line>
-    <line>
-      <![CDATA[STEP1058]]>
-    </line>
-    <line>
-      <![CDATA[STEP1059]]>
-    </line>
-    <line>
-      <![CDATA[STEP1060]]>
-    </line>
-    <line>
-      <![CDATA[STEP1061]]>
-    </line>
-    <line>
-      <![CDATA[STEP1062]]>
-    </line>
-    <line>
-      <![CDATA[STEP1063]]>
-    </line>
-    <line>
-      <![CDATA[STEP1064]]>
-    </line>
-    <line>
-      <![CDATA[STEP1065]]>
-    </line>
-    <line>
-      <![CDATA[STEP1066]]>
-    </line>
-    <line>
-      <![CDATA[STEP1067]]>
-    </line>
-    <line>
-      <![CDATA[STEP1068]]>
-    </line>
-    <line>
-      <![CDATA[STEP1069]]>
-    </line>
-    <line>
-      <![CDATA[STEP1070]]>
-    </line>
-    <line>
-      <![CDATA[STEP1071]]>
-    </line>
-    <line>
-      <![CDATA[STEP1072]]>
-    </line>
-    <line>
-      <![CDATA[STEP1073]]>
-    </line>
-    <line>
-      <![CDATA[STEP1074]]>
-    </line>
-    <line>
-      <![CDATA[STEP1075]]>
-    </line>
-    <line>
-      <![CDATA[STEP1076]]>
-    </line>
-    <line>
-      <![CDATA[STEP1077]]>
-    </line>
-    <line>
-      <![CDATA[STEP1078]]>
-    </line>
-    <line>
-      <![CDATA[STEP1079]]>
-    </line>
-    <line>
-      <![CDATA[STEP1080]]>
-    </line>
-    <line>
-      <![CDATA[STEP1081]]>
-    </line>
-    <line>
-      <![CDATA[STEP1082]]>
-    </line>
-    <line>
-      <![CDATA[STEP1083]]>
-    </line>
-    <line>
-      <![CDATA[STEP1084]]>
-    </line>
-    <line>
-      <![CDATA[STEP1085]]>
-    </line>
-    <line>
-      <![CDATA[STEP1086]]>
-    </line>
-    <line>
-      <![CDATA[STEP1087]]>
-    </line>
-    <line>
-      <![CDATA[STEP1088]]>
-    </line>
-    <line>
-      <![CDATA[STEP1089]]>
-    </line>
-    <line>
-      <![CDATA[STEP1090]]>
-    </line>
-    <line>
-      <![CDATA[STEP1091]]>
-    </line>
-    <line>
-      <![CDATA[STEP1092]]>
-    </line>
-    <line>
-      <![CDATA[STEP1093]]>
-    </line>
-    <line>
-      <![CDATA[STEP1094]]>
-    </line>
-    <line>
-      <![CDATA[STEP1095]]>
-    </line>
-    <line>
-      <![CDATA[STEP1096]]>
-    </line>
-    <line>
-      <![CDATA[STEP1097]]>
-    </line>
-    <line>
-      <![CDATA[STEP1098]]>
-    </line>
-    <line>
-      <![CDATA[STEP1099]]>
-    </line>
-    <line>
-      <![CDATA[STEP1100]]>
-    </line>
-    <line>
-      <![CDATA[STEP1101]]>
-    </line>
-    <line>
-      <![CDATA[STEP1102]]>
-    </line>
-    <line>
-      <![CDATA[STEP1103]]>
-    </line>
-    <line>
-      <![CDATA[STEP1104]]>
-    </line>
-    <line>
-      <![CDATA[STEP1105]]>
-    </line>
-    <line>
-      <![CDATA[STEP1106]]>
-    </line>
-    <line>
-      <![CDATA[STEP1107]]>
-    </line>
-    <line>
-      <![CDATA[STEP1108]]>
-    </line>
-    <line>
-      <![CDATA[STEP1109]]>
-    </line>
-    <line>
-      <![CDATA[STEP1110]]>
-    </line>
-    <line>
-      <![CDATA[STEP1111]]>
-    </line>
-    <line>
-      <![CDATA[STEP1112]]>
-    </line>
-    <line>
-      <![CDATA[STEP1113]]>
-    </line>
-    <line>
-      <![CDATA[STEP1114]]>
-    </line>
-    <line>
-      <![CDATA[STEP1115]]>
-    </line>
-    <line>
-      <![CDATA[STEP1116]]>
-    </line>
-    <line>
-      <![CDATA[STEP1117]]>
-    </line>
-    <line>
-      <![CDATA[STEP1118]]>
-    </line>
-    <line>
-      <![CDATA[STEP1119]]>
-    </line>
-    <line>
-      <![CDATA[STEP1120]]>
-    </line>
-    <line>
-      <![CDATA[STEP1121]]>
-    </line>
-    <line>
-      <![CDATA[STEP1122]]>
-    </line>
-    <line>
-      <![CDATA[STEP1123]]>
-    </line>
-    <line>
-      <![CDATA[STEP1124]]>
-    </line>
-    <line>
-      <![CDATA[STEP1125]]>
-    </line>
-    <line>
-      <![CDATA[STEP1126]]>
-    </line>
-    <line>
-      <![CDATA[STEP1127]]>
-    </line>
-    <line>
-      <![CDATA[STEP1128]]>
-    </line>
-    <line>
-      <![CDATA[STEP1129]]>
-    </line>
-    <line>
-      <![CDATA[STEP1130]]>
-    </line>
-    <line>
-      <![CDATA[STEP1131]]>
-    </line>
-    <line>
-      <![CDATA[STEP1132]]>
-    </line>
-    <line>
-      <![CDATA[STEP1133]]>
-    </line>
-    <line>
-      <![CDATA[STEP1134]]>
-    </line>
-    <line>
-      <![CDATA[STEP1135]]>
-    </line>
-    <line>
-      <![CDATA[STEP1136]]>
-    </line>
-    <line>
-      <![CDATA[STEP1137]]>
-    </line>
-    <line>
-      <![CDATA[STEP1138]]>
-    </line>
-    <line>
-      <![CDATA[STEP1139]]>
-    </line>
-    <line>
-      <![CDATA[STEP1140]]>
-    </line>
-    <line>
-      <![CDATA[STEP1141]]>
-    </line>
-    <line>
-      <![CDATA[STEP1142]]>
-    </line>
-    <line>
-      <![CDATA[STEP1143]]>
-    </line>
-    <line>
-      <![CDATA[STEP1144]]>
-    </line>
-    <line>
-      <![CDATA[STEP1145]]>
-    </line>
-    <line>
-      <![CDATA[STEP1146]]>
-    </line>
-    <line>
-      <![CDATA[STEP1147]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1927045" started-at="2020-12-03T13:23:40Z" finished-at="2020-12-03T13:55:47Z">
+  <suite name="Default suite" duration-ms="2419721" started-at="2020-12-15T06:03:39Z" finished-at="2020-12-15T06:43:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1927045" started-at="2020-12-03T13:23:40Z" finished-at="2020-12-03T13:55:47Z">
+    <test name="Default test" duration-ms="2419721" started-at="2020-12-15T06:03:39Z" finished-at="2020-12-15T06:43:59Z">
       <class name="commonMethods.Testcases">
-        <test-method status="PASS" signature="getDataFromConfig()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="getDataFromConfig" is-config="true" duration-ms="7231" started-at="2020-12-03T18:53:40Z" finished-at="2020-12-03T18:53:47Z">
+        <test-method status="PASS" signature="getDataFromConfig()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="getDataFromConfig" is-config="true" duration-ms="6646" started-at="2020-12-15T11:33:39Z" finished-at="2020-12-15T11:33:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDataFromConfig -->
-        <test-method status="PASS" signature="TC001_HealerProcess()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC001_HealerProcess" duration-ms="1010334" started-at="2020-12-03T18:53:47Z" finished-at="2020-12-03T19:10:38Z">
+        <test-method status="PASS" signature="TC001_HealerProcess()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC001_HealerProcess" duration-ms="1199711" started-at="2020-12-15T11:33:46Z" finished-at="2020-12-15T11:53:46Z">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
@@ -4864,6 +4525,10 @@
             <line>
               <![CDATA[STEP470]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- TC001_HealerProcess -->
+        <test-method status="PASS" signature="TC002_AdminPage()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC002_AdminPage" duration-ms="66030" started-at="2020-12-15T11:53:46Z" finished-at="2020-12-15T11:54:52Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP471]]>
             </line>
@@ -4924,6 +4589,10 @@
             <line>
               <![CDATA[STEP490]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- TC002_AdminPage -->
+        <test-method status="PASS" signature="TC003_HealerVerification()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC003_HealerVerification" duration-ms="34272" started-at="2020-12-15T11:54:52Z" finished-at="2020-12-15T11:55:26Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP491]]>
             </line>
@@ -4979,8 +4648,8 @@
               <![CDATA[STEP508]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC001_HealerProcess -->
-        <test-method status="PASS" signature="TC002_AdminPage()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC002_AdminPage" duration-ms="29829" started-at="2020-12-03T19:10:38Z" finished-at="2020-12-03T19:11:07Z">
+        </test-method> <!-- TC003_HealerVerification -->
+        <test-method status="PASS" signature="TC004_FirstCustomer()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC004_FirstCustomer" duration-ms="391304" started-at="2020-12-15T11:55:26Z" finished-at="2020-12-15T12:01:57Z">
           <reporter-output>
             <line>
               <![CDATA[STEP509]]>
@@ -5042,10 +4711,6 @@
             <line>
               <![CDATA[STEP528]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- TC002_AdminPage -->
-        <test-method status="PASS" signature="TC003_HealerVerification()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC003_HealerVerification" duration-ms="27173" started-at="2020-12-03T19:11:07Z" finished-at="2020-12-03T19:11:35Z">
-          <reporter-output>
             <line>
               <![CDATA[STEP529]]>
             </line>
@@ -5100,10 +4765,6 @@
             <line>
               <![CDATA[STEP546]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- TC003_HealerVerification -->
-        <test-method status="PASS" signature="TC004_CustomerProcess()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC004_CustomerProcess" duration-ms="851172" started-at="2020-12-03T19:11:35Z" finished-at="2020-12-03T19:25:46Z">
-          <reporter-output>
             <line>
               <![CDATA[STEP547]]>
             </line>
@@ -5572,6 +5233,10 @@
             <line>
               <![CDATA[STEP702]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- TC004_FirstCustomer -->
+        <test-method status="PASS" signature="TC005_SecondCustomer()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC005_SecondCustomer" duration-ms="342454" started-at="2020-12-15T12:01:57Z" finished-at="2020-12-15T12:07:40Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP703]]>
             </line>
@@ -6094,6 +5759,10 @@
             <line>
               <![CDATA[STEP876]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- TC005_SecondCustomer -->
+        <test-method status="PASS" signature="TC006_FirstCustomerCancellation()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC006_FirstCustomerCancellation" duration-ms="114380" started-at="2020-12-15T12:07:40Z" finished-at="2020-12-15T12:09:34Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP877]]>
             </line>
@@ -6262,6 +5931,10 @@
             <line>
               <![CDATA[STEP932]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- TC006_FirstCustomerCancellation -->
+        <test-method status="PASS" signature="TC007_SecondCustomerCancellation()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC007_SecondCustomerCancellation" duration-ms="126689" started-at="2020-12-15T12:09:34Z" finished-at="2020-12-15T12:11:41Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP933]]>
             </line>
@@ -6424,6 +6097,10 @@
             <line>
               <![CDATA[STEP986]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- TC007_SecondCustomerCancellation -->
+        <test-method status="PASS" signature="TC008_FirstRefund()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC008_FirstRefund" duration-ms="73021" started-at="2020-12-15T12:11:41Z" finished-at="2020-12-15T12:12:54Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP987]]>
             </line>
@@ -6496,6 +6173,10 @@
             <line>
               <![CDATA[STEP1010]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- TC008_FirstRefund -->
+        <test-method status="PASS" signature="TC009_SecondRefund()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="TC009_SecondRefund" duration-ms="62441" started-at="2020-12-15T12:12:54Z" finished-at="2020-12-15T12:13:56Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP1011]]>
             </line>
@@ -6568,348 +6249,9 @@
             <line>
               <![CDATA[STEP1034]]>
             </line>
-            <line>
-              <![CDATA[STEP1035]]>
-            </line>
-            <line>
-              <![CDATA[STEP1036]]>
-            </line>
-            <line>
-              <![CDATA[STEP1037]]>
-            </line>
-            <line>
-              <![CDATA[STEP1038]]>
-            </line>
-            <line>
-              <![CDATA[STEP1039]]>
-            </line>
-            <line>
-              <![CDATA[STEP1040]]>
-            </line>
-            <line>
-              <![CDATA[STEP1041]]>
-            </line>
-            <line>
-              <![CDATA[STEP1042]]>
-            </line>
-            <line>
-              <![CDATA[STEP1043]]>
-            </line>
-            <line>
-              <![CDATA[STEP1044]]>
-            </line>
-            <line>
-              <![CDATA[STEP1045]]>
-            </line>
-            <line>
-              <![CDATA[STEP1046]]>
-            </line>
-            <line>
-              <![CDATA[STEP1047]]>
-            </line>
-            <line>
-              <![CDATA[STEP1048]]>
-            </line>
-            <line>
-              <![CDATA[STEP1049]]>
-            </line>
-            <line>
-              <![CDATA[STEP1050]]>
-            </line>
-            <line>
-              <![CDATA[STEP1051]]>
-            </line>
-            <line>
-              <![CDATA[STEP1052]]>
-            </line>
-            <line>
-              <![CDATA[STEP1053]]>
-            </line>
-            <line>
-              <![CDATA[STEP1054]]>
-            </line>
-            <line>
-              <![CDATA[STEP1055]]>
-            </line>
-            <line>
-              <![CDATA[STEP1056]]>
-            </line>
-            <line>
-              <![CDATA[STEP1057]]>
-            </line>
-            <line>
-              <![CDATA[STEP1058]]>
-            </line>
-            <line>
-              <![CDATA[STEP1059]]>
-            </line>
-            <line>
-              <![CDATA[STEP1060]]>
-            </line>
-            <line>
-              <![CDATA[STEP1061]]>
-            </line>
-            <line>
-              <![CDATA[STEP1062]]>
-            </line>
-            <line>
-              <![CDATA[STEP1063]]>
-            </line>
-            <line>
-              <![CDATA[STEP1064]]>
-            </line>
-            <line>
-              <![CDATA[STEP1065]]>
-            </line>
-            <line>
-              <![CDATA[STEP1066]]>
-            </line>
-            <line>
-              <![CDATA[STEP1067]]>
-            </line>
-            <line>
-              <![CDATA[STEP1068]]>
-            </line>
-            <line>
-              <![CDATA[STEP1069]]>
-            </line>
-            <line>
-              <![CDATA[STEP1070]]>
-            </line>
-            <line>
-              <![CDATA[STEP1071]]>
-            </line>
-            <line>
-              <![CDATA[STEP1072]]>
-            </line>
-            <line>
-              <![CDATA[STEP1073]]>
-            </line>
-            <line>
-              <![CDATA[STEP1074]]>
-            </line>
-            <line>
-              <![CDATA[STEP1075]]>
-            </line>
-            <line>
-              <![CDATA[STEP1076]]>
-            </line>
-            <line>
-              <![CDATA[STEP1077]]>
-            </line>
-            <line>
-              <![CDATA[STEP1078]]>
-            </line>
-            <line>
-              <![CDATA[STEP1079]]>
-            </line>
-            <line>
-              <![CDATA[STEP1080]]>
-            </line>
-            <line>
-              <![CDATA[STEP1081]]>
-            </line>
-            <line>
-              <![CDATA[STEP1082]]>
-            </line>
-            <line>
-              <![CDATA[STEP1083]]>
-            </line>
-            <line>
-              <![CDATA[STEP1084]]>
-            </line>
-            <line>
-              <![CDATA[STEP1085]]>
-            </line>
-            <line>
-              <![CDATA[STEP1086]]>
-            </line>
-            <line>
-              <![CDATA[STEP1087]]>
-            </line>
-            <line>
-              <![CDATA[STEP1088]]>
-            </line>
-            <line>
-              <![CDATA[STEP1089]]>
-            </line>
-            <line>
-              <![CDATA[STEP1090]]>
-            </line>
-            <line>
-              <![CDATA[STEP1091]]>
-            </line>
-            <line>
-              <![CDATA[STEP1092]]>
-            </line>
-            <line>
-              <![CDATA[STEP1093]]>
-            </line>
-            <line>
-              <![CDATA[STEP1094]]>
-            </line>
-            <line>
-              <![CDATA[STEP1095]]>
-            </line>
-            <line>
-              <![CDATA[STEP1096]]>
-            </line>
-            <line>
-              <![CDATA[STEP1097]]>
-            </line>
-            <line>
-              <![CDATA[STEP1098]]>
-            </line>
-            <line>
-              <![CDATA[STEP1099]]>
-            </line>
-            <line>
-              <![CDATA[STEP1100]]>
-            </line>
-            <line>
-              <![CDATA[STEP1101]]>
-            </line>
-            <line>
-              <![CDATA[STEP1102]]>
-            </line>
-            <line>
-              <![CDATA[STEP1103]]>
-            </line>
-            <line>
-              <![CDATA[STEP1104]]>
-            </line>
-            <line>
-              <![CDATA[STEP1105]]>
-            </line>
-            <line>
-              <![CDATA[STEP1106]]>
-            </line>
-            <line>
-              <![CDATA[STEP1107]]>
-            </line>
-            <line>
-              <![CDATA[STEP1108]]>
-            </line>
-            <line>
-              <![CDATA[STEP1109]]>
-            </line>
-            <line>
-              <![CDATA[STEP1110]]>
-            </line>
-            <line>
-              <![CDATA[STEP1111]]>
-            </line>
-            <line>
-              <![CDATA[STEP1112]]>
-            </line>
-            <line>
-              <![CDATA[STEP1113]]>
-            </line>
-            <line>
-              <![CDATA[STEP1114]]>
-            </line>
-            <line>
-              <![CDATA[STEP1115]]>
-            </line>
-            <line>
-              <![CDATA[STEP1116]]>
-            </line>
-            <line>
-              <![CDATA[STEP1117]]>
-            </line>
-            <line>
-              <![CDATA[STEP1118]]>
-            </line>
-            <line>
-              <![CDATA[STEP1119]]>
-            </line>
-            <line>
-              <![CDATA[STEP1120]]>
-            </line>
-            <line>
-              <![CDATA[STEP1121]]>
-            </line>
-            <line>
-              <![CDATA[STEP1122]]>
-            </line>
-            <line>
-              <![CDATA[STEP1123]]>
-            </line>
-            <line>
-              <![CDATA[STEP1124]]>
-            </line>
-            <line>
-              <![CDATA[STEP1125]]>
-            </line>
-            <line>
-              <![CDATA[STEP1126]]>
-            </line>
-            <line>
-              <![CDATA[STEP1127]]>
-            </line>
-            <line>
-              <![CDATA[STEP1128]]>
-            </line>
-            <line>
-              <![CDATA[STEP1129]]>
-            </line>
-            <line>
-              <![CDATA[STEP1130]]>
-            </line>
-            <line>
-              <![CDATA[STEP1131]]>
-            </line>
-            <line>
-              <![CDATA[STEP1132]]>
-            </line>
-            <line>
-              <![CDATA[STEP1133]]>
-            </line>
-            <line>
-              <![CDATA[STEP1134]]>
-            </line>
-            <line>
-              <![CDATA[STEP1135]]>
-            </line>
-            <line>
-              <![CDATA[STEP1136]]>
-            </line>
-            <line>
-              <![CDATA[STEP1137]]>
-            </line>
-            <line>
-              <![CDATA[STEP1138]]>
-            </line>
-            <line>
-              <![CDATA[STEP1139]]>
-            </line>
-            <line>
-              <![CDATA[STEP1140]]>
-            </line>
-            <line>
-              <![CDATA[STEP1141]]>
-            </line>
-            <line>
-              <![CDATA[STEP1142]]>
-            </line>
-            <line>
-              <![CDATA[STEP1143]]>
-            </line>
-            <line>
-              <![CDATA[STEP1144]]>
-            </line>
-            <line>
-              <![CDATA[STEP1145]]>
-            </line>
-            <line>
-              <![CDATA[STEP1146]]>
-            </line>
-            <line>
-              <![CDATA[STEP1147]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TC004_CustomerProcess -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="teardown" is-config="true" duration-ms="1264" started-at="2020-12-03T19:25:46Z" finished-at="2020-12-03T19:25:47Z">
+        </test-method> <!-- TC009_SecondRefund -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:commonMethods.Testcases@6ca18a14]" name="teardown" is-config="true" duration-ms="2682" started-at="2020-12-15T12:13:56Z" finished-at="2020-12-15T12:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

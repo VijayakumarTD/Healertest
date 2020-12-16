@@ -225,7 +225,6 @@ public class CurrentRunPageWriter extends ReportsPage {
 
 	public static String getTestCaseName(ITestResult paramITestResult) {
 		return paramITestResult.getName();
-		
 	}
 
 	public static String getReportDir(ITestResult paramITestResult) {

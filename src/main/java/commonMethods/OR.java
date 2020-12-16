@@ -216,7 +216,7 @@ public interface OR {
 	
 	//Abhyanga
 	
-	public static String abhyangaService ="Abhyanga Service>(//div[@class='table-responsive']//table//tbody//tr//td//a[text()='Abhyanga']//following::td//a//span)[1]";
+	public static String abhyangaService ="Abhyanga Service>(//div[@class='table-responsive']//table//tbody//tr//td//a[text()='Abhyanga']//following::td//a//span[text()=' Need Description'])[1]";
 	public static String  abhyangaExpert="Expert, 5+ years of experience>//select[@id='levelOfExpertise']//option[@value='2']";
 	public static String  abhyangaMaster="Master, 10+ years of experience>//select[@id='levelOfExpertise']//option[@value='1']";
 	public static String  abhyangaCertified="Certified, 1+ years of experience>//select[@id='levelOfExpertise']//option[@value='3']";
@@ -226,7 +226,7 @@ public interface OR {
 	
 	//Urdvartana
 	
-	 public static String urdvartanaService ="Urdvartana Service>(//div[@class='table-responsive']//table//tbody//tr//td//a[text()='Urdvartana']//following::td//a//span)[1]";
+	 public static String urdvartanaService ="Urdvartana Service>(//div[@class='table-responsive']//table//tbody//tr//td//a[text()='Urdvartana']//following::td//a//span[text()=' Need Description'])[1]";
 	 public static String urdvartanaComplete ="Uradvartana Complete>((//div[@class='table-responsive']//tbody)[2]//tr//td[text()='Ayurveda']//following::td//a[text()='Complete'])[2]";
 	
 	
@@ -234,7 +234,7 @@ public interface OR {
 	
 	//Janu vasti
 	 
-	 public static String JanuVastiService ="Janu vasti Service>(//div[@class='table-responsive']//table//tbody//tr//td//a[text()='Janu vasti']//following::td//a//span)[1]";
+	 public static String JanuVastiService ="Janu vasti Service>(//div[@class='table-responsive']//table//tbody//tr//td//a[text()='Janu vasti']//following::td//a//span[text()=' Need Description'])[1]";
 	 public static String januVastiComplete ="Janu Vasti Complete>((//div[@class='table-responsive']//tbody)[2]//tr//td[text()='Ayurveda']//following::td//a[text()='Complete'])[3]";
 
 	 //Healer Logout 
@@ -245,12 +245,12 @@ public interface OR {
 	 
 	 //active 
 	 
-	 public static String yogaClassActive ="Yoga Class Active>((//div[@class='table-responsive']//tbody)[1]//tr//td[text()='Yoga']//following::td[2]//div//label//span[1])[1]";
-	 public static String personalYogaActive ="Persona yoga Session Active>((//div[@class='table-responsive']//tbody)[1]//tr//td[text()='Yoga']//following::td[2]//div//label//span)[2]";
-	 public static String yogaTherapyActive ="Yoga Therapy Active>((//div[@class='table-responsive']//tbody)[1]//tr//td[text()='Yoga']//following::td[2]//div//label//span)[3]";
-	 public static String abhyangaActive ="Abhyanga Active>((//div[@class='table-responsive']//tbody)[2]//tr//td[text()='Ayurveda']//following::td[2]//div//label//span)[1]";
-	 public static String urdvartanaActive ="Urdvartana Active>((//div[@class='table-responsive']//tbody)[2]//tr//td[text()='Ayurveda']//following::td[2]//div//label//span)[2]";
-	 public static String januVastiActive = "Januvasti Active>((//div[@class='table-responsive']//tbody)[2]//tr//td[text()='Ayurveda']//following::td[2]//div//label//span)[3]";
+	 public static String yogaClassActive ="Yoga Class Active>((//div[@class='table-responsive']//tbody)[1]//tr//td[text()='Yoga']//following::td[2]//div[@class='toggleWrapper']//label//span[1])[1]";
+	 public static String personalYogaActive ="Persona yoga Session Active>((//div[@class='table-responsive']//tbody)[1]//tr//td[text()='Yoga']//following::td[2]//div[@class='toggleWrapper']//label//span[1])[2]";
+	 public static String yogaTherapyActive ="Yoga Therapy Active>((//div[@class='table-responsive']//tbody)[1]//tr//td[text()='Yoga']//following::td[2]//div[@class='toggleWrapper']//label//span[1])[3]";
+	 public static String abhyangaActive ="Abhyanga Active>((//div[@class='table-responsive']//tbody)[2]//tr//td[text()='Ayurveda']//following::td[2]//div[@class='toggleWrapper']//label//span)[1]";
+	 public static String urdvartanaActive ="Urdvartana Active>((//div[@class='table-responsive']//tbody)[2]//tr//td[text()='Ayurveda']//following::td[2]//div[@class='toggleWrapper']//label//span)[2]";
+	 public static String januVastiActive = "Januvasti Active>((//div[@class='table-responsive']//tbody)[2]//tr//td[text()='Ayurveda']//following::td[2]//div[@class='toggleWrapper']//label//span)[3]";
 	 
 	
 	//add location 
@@ -265,7 +265,8 @@ public interface OR {
 	public static String usersTab ="Users>//span[text()='Users']";
 	public static String pendingHealers="Pending Healers>//li//a[text()='Pending Healers']";
 	public static String userSearch="User search>//input[@type='text'][@placeholder='Search...']";
-	public static String idVerify="Id verify>(//i[@data-toggle='modal'])[1]";
+	public static String idVerify="Id verify>(//i[@class='fa fa-id-card text-success'])[1]";
+	public static String idNotVerified ="Id Verify>//i[@class='fa fa-id-card text-danger']";
 	public static String verifyMatch ="Verify Match>(//div[@class='col-md-12 text-center']//button)[1]";
 	public static String okButton="OK>//button[text()='OK']";
 	public static String closeButton="Close button>(//button[text()='Close'])[1]";
@@ -375,7 +376,7 @@ public interface OR {
 	 public static String holisticCheckbox ="Holistic or Therapeutic Retreat>(//span[text()='Holistic or Therapeutic Retreat']//preceding::span[@class='bmd-radio'])[2]";
 	 public static String userAccount ="User Name>(//div[@class='media-body ']//h4)[1]";
 	 public static String scrollServices="Services>//div[@class='box-title']";
-	 public static String serviceRetreat ="Retreat Service>(//h4[@class='font-pink'])[4]//following::div//button[text()='Book']";
+	 public static String serviceRetreat ="Retreat Service>//a[text()='Test Retreat Service one']//following::div//button[text()='Book']";
 	 public static String viewPackages="View Packages>//div//a[text()='View Packages']";
 	 public static String bookPackages="Book this Packages>//button[text()='Book this Package']";
 	 public static String continueButton ="Continue Button>//button[text()='Continue']";
@@ -402,7 +403,11 @@ public interface OR {
 	 public static String otherCancellation="Other>(//label[text()='Cancellation Reason']//following::select)[1]//option[text()='Other']";
 	 public static String cancellation1="I can't make this date and time>//option[contains(text(),'make this date and time')]";
 	 public static String describeSituation="Describe your situation>(//label[text()='Describe your situation']//following-sibling::span[@class='bmd-form-group']/textarea[@class='form-control custom-form'])[2]";
+
+	 public static String describeSituation1 ="Describe your situation>(//span[@class='bmd-form-group is-filled']/textarea[@class='form-control custom-form'])";
 	 public static String policyType="Policy Type>(//span[text()='Policy:']//following::span)[1]";
+	 
+	 
 	 
 	 
 	 
@@ -414,13 +419,19 @@ public interface OR {
 	public static String refundAmount="Refund>(//span[text()=' Refund:']//following::span)[1]";
 	public static String cancelBookCan="Cancel booking>//a[text()='Cancel Booking']";
 	
+	public static String closePopup ="Popup close>(//div[@class='modal-content'])[4]//button[@class='close']//span[@aria-hidden='true']";
 	
 	
-	public static String cancelYogaClass ="Cancel Yoga Class>(//h5[text()='Check Yoga Class Service']//following::a[contains(text(),'Cancel')])[1]";
+	
+	public static String cancelYogaClass ="Cancel Yoga Class>(//h5[text()='Check Yoga Class Service']//following::a[2])[1]";
 	public static String receiptYoga ="Yoga class Receipt>(//h5[text()='Check Yoga Class Service'])[1]";
 	
+	public static String cancelUrdavartana = "Cancel Urdavartana>(//h5[text()='Check Urdvartana Service flow']//following::a[2])[1]";
+	public static String cancelJanuVasti = "Cancel JanuVasti>(//h5[text()='Check Januvasti Service Flow']//following::a[2])[1]";
+	
+	
 	public static String receiptRefund="Refund amount>//span[text()='Refund']//following::span[1]";
-	public static String notificationtab="Notifications>//div[@class='banner-content']//small[text()='Notifications']";
+	public static String notificationtab="Notifications>//ul[@class='menu-tabs']//div[@class='banner-content']//small[text()='Notifications']";
 			 
 			 
 			 
@@ -439,7 +450,7 @@ public interface OR {
 	public static String HealerRequest="Healer Request notification>(//div[contains(text(),'The healer has requested to change time ')]//following::u[text()='View Detail'])[1]";
 	public static String rejectCancel="Reject and Cancel booking>//button[text()='Reject and Cancel Booking']";
 	public static String yesPopup="Yes Popup>(//button[text()='Yes'])[2]";
-    public static String retreatCancel="Retreat Cancel>(//h5[text()='Test Retreat Service one']//following::a[contains(text(),'Cancel')])[1]";
+    public static String retreatCancel="Retreat Cancel>(//h5[text()='Test Retreat Service one']//following::a[3])[1]";
 	public static String pastBooking="Past Booking>//strong[text()=' | Past Bookings']";
     public static String abhyangaviewDetail="Abhyanga view detail>(//div[text()='You have received a new booking for Check Abhyanga Service flow']//following::u[text()='View Detail'])[1]";
 	public static String healerCancel="Cancel>//a[text()='Cancel']";
@@ -450,13 +461,14 @@ public interface OR {
 	
 	public static String acceptChanges="Accept Changes>//button[text()='Accept Change']";
 	public static String totalAmount="Total Amount>(//span[text()='Total Payment:']//following::span)[1]";
-				// public static String =">";
-				// public static String =">";
-				// public static String =">";
-				// public static String =">";
-				// public static String =">";
-				// public static String =">";
-				// public static String =">";
+	
+	public static String requestRefund="Refund>//a[text()='Refund']";
+	public static String requestOption="Request option>(//div[@class='custom-form-group']//select)[1]";
+    public static String unableAppoint="I was unable to make the appointment>//option[text()='I was unable to make the appointment']";
+	public static String provideDetails="Provide more details>//label[text()='Provide more details']//following::textarea[1]";
+    public static String refundRequest ="Request Refund>//a[text()='REQUEST REFUND']";
+	public static String requestedRefund="Refund Requested>//span[text()='Refund Requested']";
+	public static String dashBoard ="Dashboard>//a[text()='Dashboard']";
 			// public static String =">";
 				// public static String =">";
 				// public static String =">";
